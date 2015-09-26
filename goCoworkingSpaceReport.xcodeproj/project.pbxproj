@@ -39,6 +39,34 @@
 		DEE796621BB65292005128DF /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965D1BB65274005128DF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEE796631BB65292005128DF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965E1BB65274005128DF /* RealmSwift.framework */; };
 		DEE796641BB65292005128DF /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965E1BB65274005128DF /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEE7966C1BB6CEFA005128DF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE7966A1BB6CEFA005128DF /* Interface.storyboard */; };
+		DEE7966E1BB6CEFA005128DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE7966D1BB6CEFA005128DF /* Assets.xcassets */; };
+		DEE796751BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DEE7967C1BB6CEFA005128DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */; };
+		DEE7967E1BB6CEFA005128DF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */; };
+		DEE796801BB6CEFA005128DF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967F1BB6CEFA005128DF /* NotificationController.swift */; };
+		DEE796821BB6CEFA005128DF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796811BB6CEFA005128DF /* GlanceController.swift */; };
+		DEE796841BB6CEFA005128DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE796831BB6CEFA005128DF /* Assets.xcassets */; };
+		DEE796881BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */; };
+		DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796911BB6EFAD005128DF /* ProfileController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796941BB6F943005128DF /* NowOpenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796931BB6F943005128DF /* NowOpenController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796961BB6F971005128DF /* NowHereController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796951BB6F971005128DF /* NowHereController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796981BB6F992005128DF /* VisitHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796971BB6F992005128DF /* VisitHistoryController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE7969B1BB6FCDA005128DF /* BannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7969A1BB6FCDA005128DF /* BannerController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE7969E1BB6FDC6005128DF /* ProfileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7969D1BB6FDC6005128DF /* ProfileEditController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796A01BB6FE1F005128DF /* NowOpenDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7969F1BB6FE1F005128DF /* NowOpenDetailController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796A71BB70176005128DF /* ProfileNotTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796A51BB70176005128DF /* ProfileNotTapCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796A81BB70176005128DF /* ProfileNotTapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796A61BB70176005128DF /* ProfileNotTapCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DEE796AB1BB70198005128DF /* ProfileTapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796A91BB70198005128DF /* ProfileTapCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796AC1BB70198005128DF /* ProfileTapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796AA1BB70198005128DF /* ProfileTapCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DEE796AF1BB701C5005128DF /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796AD1BB701C5005128DF /* HistoryCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796B01BB701C5005128DF /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796AE1BB701C5005128DF /* HistoryCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DEE796B31BB70228005128DF /* HistoryTappedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796B11BB70228005128DF /* HistoryTappedCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796B41BB70228005128DF /* HistoryTappedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796B21BB70228005128DF /* HistoryTappedCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DEE796B71BB7024B005128DF /* NowOpenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796B51BB7024B005128DF /* NowOpenCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796B81BB7024B005128DF /* NowOpenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796B61BB7024B005128DF /* NowOpenCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DEE796BB1BB7026B005128DF /* NowHereCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796B91BB7026B005128DF /* NowHereCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796BC1BB7026B005128DF /* NowHereCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796BA1BB7026B005128DF /* NowHereCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +84,20 @@
 			remoteGlobalIDString = DEE795FC1BB4232F005128DF;
 			remoteInfo = goCoworkingSpaceReport;
 		};
+		DEE796761BB6CEFA005128DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE795F51BB4232F005128DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEE796731BB6CEFA005128DF;
+			remoteInfo = "goCoworkingSpaceReportWatch Extension";
+		};
+		DEE796861BB6CEFA005128DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE795F51BB4232F005128DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEE796671BB6CEFA005128DF;
+			remoteInfo = goCoworkingSpaceReportWatch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +111,28 @@
 				DEE796621BB65292005128DF /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE7968C1BB6CEFA005128DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DEE796751BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE796901BB6CEFA005128DF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DEE796881BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -108,6 +172,37 @@
 		DEE796551BB461C3005128DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DEE7965D1BB65274005128DF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		DEE7965E1BB65274005128DF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goCoworkingSpaceReportWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE7966B1BB6CEFA005128DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DEE7966D1BB6CEFA005128DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEE7966F1BB6CEFA005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "goCoworkingSpaceReportWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE7967A1BB6CEFA005128DF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DEE7967F1BB6CEFA005128DF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DEE796811BB6CEFA005128DF /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		DEE796831BB6CEFA005128DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEE796851BB6CEFA005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE796911BB6EFAD005128DF /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		DEE796931BB6F943005128DF /* NowOpenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowOpenController.swift; sourceTree = "<group>"; };
+		DEE796951BB6F971005128DF /* NowHereController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowHereController.swift; path = ../NowHereController.swift; sourceTree = "<group>"; };
+		DEE796971BB6F992005128DF /* VisitHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitHistoryController.swift; path = ../VisitHistoryController.swift; sourceTree = "<group>"; };
+		DEE7969A1BB6FCDA005128DF /* BannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerController.swift; sourceTree = "<group>"; };
+		DEE7969D1BB6FDC6005128DF /* ProfileEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditController.swift; sourceTree = "<group>"; };
+		DEE7969F1BB6FE1F005128DF /* NowOpenDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowOpenDetailController.swift; sourceTree = "<group>"; };
+		DEE796A51BB70176005128DF /* ProfileNotTapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNotTapCell.swift; sourceTree = "<group>"; };
+		DEE796A61BB70176005128DF /* ProfileNotTapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileNotTapCell.xib; sourceTree = "<group>"; };
+		DEE796A91BB70198005128DF /* ProfileTapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTapCell.swift; sourceTree = "<group>"; };
+		DEE796AA1BB70198005128DF /* ProfileTapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTapCell.xib; sourceTree = "<group>"; };
+		DEE796AD1BB701C5005128DF /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		DEE796AE1BB701C5005128DF /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		DEE796B11BB70228005128DF /* HistoryTappedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTappedCell.swift; sourceTree = "<group>"; };
+		DEE796B21BB70228005128DF /* HistoryTappedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTappedCell.xib; sourceTree = "<group>"; };
+		DEE796B51BB7024B005128DF /* NowOpenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowOpenCell.swift; sourceTree = "<group>"; };
+		DEE796B61BB7024B005128DF /* NowOpenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NowOpenCell.xib; sourceTree = "<group>"; };
+		DEE796B91BB7026B005128DF /* NowHereCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowHereCell.swift; sourceTree = "<group>"; };
+		DEE796BA1BB7026B005128DF /* NowHereCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NowHereCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +245,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEE796711BB6CEFA005128DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -159,6 +261,8 @@
 				DEE795FF1BB4232F005128DF /* goCoworkingSpaceReport */,
 				DEE796141BB4232F005128DF /* goCoworkingSpaceReportTests */,
 				DEE7961F1BB4232F005128DF /* goCoworkingSpaceReportUITests */,
+				DEE796691BB6CEFA005128DF /* goCoworkingSpaceReportWatch */,
+				DEE796781BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */,
 				DEE795FE1BB4232F005128DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,6 +273,8 @@
 				DEE795FD1BB4232F005128DF /* goCoworkingSpaceReport.app */,
 				DEE796111BB4232F005128DF /* goCoworkingSpaceReportTests.xctest */,
 				DEE7961C1BB4232F005128DF /* goCoworkingSpaceReportUITests.xctest */,
+				DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */,
+				DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,9 +285,12 @@
 				DEE7963E1BB46091005128DF /* Frameworks */,
 				DEE796311BB45610005128DF /* Libraries */,
 				DEE7962E1BB44791005128DF /* Constants */,
+				DEE796991BB6F9C1005128DF /* Containers */,
 				DEE796001BB4232F005128DF /* AppDelegate.swift */,
 				DEE796021BB4232F005128DF /* ViewController.swift */,
 				DEE796381BB45F77005128DF /* ListController.swift */,
+				DEE7969D1BB6FDC6005128DF /* ProfileEditController.swift */,
+				DEE7969F1BB6FE1F005128DF /* NowOpenDetailController.swift */,
 				DEE796041BB4232F005128DF /* Main.storyboard */,
 				DEE796071BB4232F005128DF /* Assets.xcassets */,
 				DEE796091BB4232F005128DF /* LaunchScreen.storyboard */,
@@ -249,6 +358,102 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DEE796691BB6CEFA005128DF /* goCoworkingSpaceReportWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DEE7966A1BB6CEFA005128DF /* Interface.storyboard */,
+				DEE7966D1BB6CEFA005128DF /* Assets.xcassets */,
+				DEE7966F1BB6CEFA005128DF /* Info.plist */,
+			);
+			path = goCoworkingSpaceReportWatch;
+			sourceTree = "<group>";
+		};
+		DEE796781BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */,
+				DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */,
+				DEE7967F1BB6CEFA005128DF /* NotificationController.swift */,
+				DEE796811BB6CEFA005128DF /* GlanceController.swift */,
+				DEE796831BB6CEFA005128DF /* Assets.xcassets */,
+				DEE796851BB6CEFA005128DF /* Info.plist */,
+				DEE796791BB6CEFA005128DF /* Supporting Files */,
+			);
+			path = "goCoworkingSpaceReportWatch Extension";
+			sourceTree = "<group>";
+		};
+		DEE796791BB6CEFA005128DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEE7967A1BB6CEFA005128DF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEE796991BB6F9C1005128DF /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				DEE7969C1BB6FD5D005128DF /* Components */,
+				DEE796911BB6EFAD005128DF /* ProfileController.swift */,
+				DEE796951BB6F971005128DF /* NowHereController.swift */,
+				DEE796931BB6F943005128DF /* NowOpenController.swift */,
+				DEE796971BB6F992005128DF /* VisitHistoryController.swift */,
+				DEE7969A1BB6FCDA005128DF /* BannerController.swift */,
+			);
+			name = Containers;
+			sourceTree = "<group>";
+		};
+		DEE7969C1BB6FD5D005128DF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796A41BB70067005128DF /* VisitHistory */,
+				DEE796A31BB7005A005128DF /* NowOpen */,
+				DEE796A21BB6FF95005128DF /* NowHere */,
+				DEE796A11BB6FF7A005128DF /* Profile */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		DEE796A11BB6FF7A005128DF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796A51BB70176005128DF /* ProfileNotTapCell.swift */,
+				DEE796A61BB70176005128DF /* ProfileNotTapCell.xib */,
+				DEE796A91BB70198005128DF /* ProfileTapCell.swift */,
+				DEE796AA1BB70198005128DF /* ProfileTapCell.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		DEE796A21BB6FF95005128DF /* NowHere */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796B91BB7026B005128DF /* NowHereCell.swift */,
+				DEE796BA1BB7026B005128DF /* NowHereCell.xib */,
+			);
+			name = NowHere;
+			sourceTree = "<group>";
+		};
+		DEE796A31BB7005A005128DF /* NowOpen */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796B51BB7024B005128DF /* NowOpenCell.swift */,
+				DEE796B61BB7024B005128DF /* NowOpenCell.xib */,
+			);
+			name = NowOpen;
+			sourceTree = "<group>";
+		};
+		DEE796A41BB70067005128DF /* VisitHistory */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796AD1BB701C5005128DF /* HistoryCell.swift */,
+				DEE796AE1BB701C5005128DF /* HistoryCell.xib */,
+				DEE796B11BB70228005128DF /* HistoryTappedCell.swift */,
+				DEE796B21BB70228005128DF /* HistoryTappedCell.xib */,
+			);
+			name = VisitHistory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,10 +465,12 @@
 				DEE795FA1BB4232F005128DF /* Frameworks */,
 				DEE795FB1BB4232F005128DF /* Resources */,
 				DEE796651BB65293005128DF /* Embed Frameworks */,
+				DEE796901BB6CEFA005128DF /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DEE796871BB6CEFA005128DF /* PBXTargetDependency */,
 			);
 			name = goCoworkingSpaceReport;
 			productName = goCoworkingSpaceReport;
@@ -306,6 +513,40 @@
 			productReference = DEE7961C1BB4232F005128DF /* goCoworkingSpaceReportUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DEE796671BB6CEFA005128DF /* goCoworkingSpaceReportWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE7968D1BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch" */;
+			buildPhases = (
+				DEE796661BB6CEFA005128DF /* Resources */,
+				DEE7968C1BB6CEFA005128DF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE796771BB6CEFA005128DF /* PBXTargetDependency */,
+			);
+			name = goCoworkingSpaceReportWatch;
+			productName = goCoworkingSpaceReportWatch;
+			productReference = DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DEE796731BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE796891BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch Extension" */;
+			buildPhases = (
+				DEE796701BB6CEFA005128DF /* Sources */,
+				DEE796711BB6CEFA005128DF /* Frameworks */,
+				DEE796721BB6CEFA005128DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "goCoworkingSpaceReportWatch Extension";
+			productName = "goCoworkingSpaceReportWatch Extension";
+			productReference = DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -326,6 +567,12 @@
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = DEE795FC1BB4232F005128DF;
 					};
+					DEE796671BB6CEFA005128DF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					DEE796731BB6CEFA005128DF = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = DEE795F81BB4232F005128DF /* Build configuration list for PBXProject "goCoworkingSpaceReport" */;
@@ -344,6 +591,8 @@
 				DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */,
 				DEE796101BB4232F005128DF /* goCoworkingSpaceReportTests */,
 				DEE7961B1BB4232F005128DF /* goCoworkingSpaceReportUITests */,
+				DEE796671BB6CEFA005128DF /* goCoworkingSpaceReportWatch */,
+				DEE796731BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -353,8 +602,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE796AC1BB70198005128DF /* ProfileTapCell.xib in Resources */,
 				DEE7960B1BB4232F005128DF /* LaunchScreen.storyboard in Resources */,
+				DEE796BC1BB7026B005128DF /* NowHereCell.xib in Resources */,
+				DEE796B41BB70228005128DF /* HistoryTappedCell.xib in Resources */,
+				DEE796A81BB70176005128DF /* ProfileNotTapCell.xib in Resources */,
 				DEE796081BB4232F005128DF /* Assets.xcassets in Resources */,
+				DEE796B01BB701C5005128DF /* HistoryCell.xib in Resources */,
+				DEE796B81BB7024B005128DF /* NowOpenCell.xib in Resources */,
 				DEE796061BB4232F005128DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +628,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEE796661BB6CEFA005128DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE7966E1BB6CEFA005128DF /* Assets.xcassets in Resources */,
+				DEE7966C1BB6CEFA005128DF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE796721BB6CEFA005128DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE796841BB6CEFA005128DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -380,13 +652,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE796BB1BB7026B005128DF /* NowHereCell.swift in Sources */,
+				DEE796961BB6F971005128DF /* NowHereController.swift in Sources */,
 				DEE796301BB45404005128DF /* ListStatus.swift in Sources */,
 				DEE796031BB4232F005128DF /* ViewController.swift in Sources */,
 				DEE796371BB4578D005128DF /* ColorDefinition.swift in Sources */,
+				DEE7969E1BB6FDC6005128DF /* ProfileEditController.swift in Sources */,
+				DEE796AB1BB70198005128DF /* ProfileTapCell.swift in Sources */,
+				DEE796AF1BB701C5005128DF /* HistoryCell.swift in Sources */,
 				DEE796011BB4232F005128DF /* AppDelegate.swift in Sources */,
 				DEE796351BB4575A005128DF /* DeviceSize.swift in Sources */,
+				DEE796981BB6F992005128DF /* VisitHistoryController.swift in Sources */,
+				DEE796B31BB70228005128DF /* HistoryTappedCell.swift in Sources */,
+				DEE7969B1BB6FCDA005128DF /* BannerController.swift in Sources */,
 				DEE796331BB456D9005128DF /* AnotherWindow.swift in Sources */,
 				DEE796391BB45F77005128DF /* ListController.swift in Sources */,
+				DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */,
+				DEE796941BB6F943005128DF /* NowOpenController.swift in Sources */,
+				DEE796A01BB6FE1F005128DF /* NowOpenDetailController.swift in Sources */,
+				DEE796A71BB70176005128DF /* ProfileNotTapCell.swift in Sources */,
+				DEE796B71BB7024B005128DF /* NowOpenCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +691,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEE796701BB6CEFA005128DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE796801BB6CEFA005128DF /* NotificationController.swift in Sources */,
+				DEE7967E1BB6CEFA005128DF /* ExtensionDelegate.swift in Sources */,
+				DEE7967C1BB6CEFA005128DF /* InterfaceController.swift in Sources */,
+				DEE796821BB6CEFA005128DF /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -418,6 +714,16 @@
 			isa = PBXTargetDependency;
 			target = DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */;
 			targetProxy = DEE7961D1BB4232F005128DF /* PBXContainerItemProxy */;
+		};
+		DEE796771BB6CEFA005128DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEE796731BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */;
+			targetProxy = DEE796761BB6CEFA005128DF /* PBXContainerItemProxy */;
+		};
+		DEE796871BB6CEFA005128DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEE796671BB6CEFA005128DF /* goCoworkingSpaceReportWatch */;
+			targetProxy = DEE796861BB6CEFA005128DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -436,6 +742,14 @@
 				DEE7960A1BB4232F005128DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DEE7966A1BB6CEFA005128DF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE7966B1BB6CEFA005128DF /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -600,6 +914,66 @@
 			};
 			name = Release;
 		};
+		DEE7968A1BB6CEFA005128DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "goCoworkingSpaceReportWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DEE7968B1BB6CEFA005128DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "goCoworkingSpaceReportWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DEE7968E1BB6CEFA005128DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = goCoworkingSpaceReportWatch_Extension;
+				INFOPLIST_FILE = goCoworkingSpaceReportWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DEE7968F1BB6CEFA005128DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = goCoworkingSpaceReportWatch_Extension;
+				INFOPLIST_FILE = goCoworkingSpaceReportWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,6 +1007,22 @@
 			buildConfigurations = (
 				DEE7962C1BB4232F005128DF /* Debug */,
 				DEE7962D1BB4232F005128DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEE796891BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE7968A1BB6CEFA005128DF /* Debug */,
+				DEE7968B1BB6CEFA005128DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEE7968D1BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE7968E1BB6CEFA005128DF /* Debug */,
+				DEE7968F1BB6CEFA005128DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

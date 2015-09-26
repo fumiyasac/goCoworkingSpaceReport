@@ -8,26 +8,37 @@
 
 import UIKit
 
-import Parse
-
 class ViewController: UIViewController {
 
+    //オープニング画像スクロールビュー
+    @IBOutlet var openingScrollView: UIScrollView!
+    
+    //ページコントロール
+    @IBOutlet var pageControl: UIPageControl!
+    
+    //はじめるボタン
+    @IBOutlet var startButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         // Parseテスト用のコード（Object has been saved.がコンソールに表示されれば通信が成功）
+        /*
         let testObject = PFObject(className: "TestObject")
         testObject["foo"] = "bar"
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             print("Object has been saved.")
         }
+        */
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }

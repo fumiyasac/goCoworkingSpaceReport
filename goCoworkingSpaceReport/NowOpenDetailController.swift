@@ -1,31 +1,15 @@
 //
-//  ListController.swift
+//  NowOpenDetailController.swift
 //  goCoworkingSpaceReport
 //
-//  Created by 酒井文也 on 2015/09/25.
+//  Created by 酒井文也 on 2015/09/27.
 //  Copyright © 2015年 just1factory. All rights reserved.
 //
 
 import UIKit
 
-//Parseクラスのインポート
-import Parse
+class NowOpenDetailController: UIViewController {
 
-class ListController: UIViewController {
-
-    //ラベルボタン
-    @IBOutlet var nowOpenButton: UIButton!
-    @IBOutlet var nowHereButton: UIButton!
-    @IBOutlet var visitHistoryButton: UIButton!
-    
-    //プロフィール表示用コンテナ
-    @IBOutlet var profileContainer: UIView!
-    
-    //コンテンツ表示用コンテナ
-    @IBOutlet var nowOpenContainer: UIView!
-    @IBOutlet var nowHereContainer: UIView!
-    @IBOutlet var visitHistoryContainer: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
