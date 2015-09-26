@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEE796011BB4232F005128DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796001BB4232F005128DF /* AppDelegate.swift */; };
+		DEE796031BB4232F005128DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796021BB4232F005128DF /* ViewController.swift */; };
+		DEE796061BB4232F005128DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE796041BB4232F005128DF /* Main.storyboard */; };
+		DEE796081BB4232F005128DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE796071BB4232F005128DF /* Assets.xcassets */; };
+		DEE7960B1BB4232F005128DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE796091BB4232F005128DF /* LaunchScreen.storyboard */; };
+		DEE796161BB4232F005128DF /* goCoworkingSpaceReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796151BB4232F005128DF /* goCoworkingSpaceReportTests.swift */; };
+		DEE796211BB4232F005128DF /* goCoworkingSpaceReportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796201BB4232F005128DF /* goCoworkingSpaceReportUITests.swift */; };
+		DEE796301BB45404005128DF /* ListStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7962F1BB45404005128DF /* ListStatus.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796331BB456D9005128DF /* AnotherWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796321BB456D9005128DF /* AnotherWindow.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796351BB4575A005128DF /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796341BB4575A005128DF /* DeviceSize.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796371BB4578D005128DF /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796361BB4578D005128DF /* ColorDefinition.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE796391BB45F77005128DF /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796381BB45F77005128DF /* ListController.swift */; settings = {ASSET_TAGS = (); }; };
+		DEE7963C1BB4608B005128DF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7963A1BB4608B005128DF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		DEE7963D1BB4608B005128DF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7963B1BB4608B005128DF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		DEE796401BB46107005128DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7963F1BB46107005128DF /* Accounts.framework */; };
+		DEE796421BB46114005128DF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796411BB46114005128DF /* Social.framework */; };
+		DEE796441BB46130005128DF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796431BB46130005128DF /* libsqlite3.tbd */; };
+		DEE796461BB46138005128DF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796451BB46138005128DF /* libz.tbd */; };
+		DEE796481BB46149005128DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796471BB46149005128DF /* SystemConfiguration.framework */; };
+		DEE7964A1BB4615A005128DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796491BB4615A005128DF /* StoreKit.framework */; };
+		DEE7964C1BB4616E005128DF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7964B1BB4616E005128DF /* Security.framework */; };
+		DEE7964E1BB4617E005128DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7964D1BB4617E005128DF /* QuartzCore.framework */; };
+		DEE796501BB4618F005128DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7964F1BB4618F005128DF /* CoreLocation.framework */; };
+		DEE796521BB4619D005128DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796511BB4619D005128DF /* CoreGraphics.framework */; };
+		DEE796541BB461B1005128DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796531BB461B1005128DF /* CFNetwork.framework */; };
+		DEE796561BB461C3005128DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796551BB461C3005128DF /* AudioToolbox.framework */; };
+		DEE796591BB64372005128DF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796571BB64372005128DF /* Realm.framework */; settings = {ASSET_TAGS = (); }; };
+		DEE7965A1BB64372005128DF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796581BB64372005128DF /* RealmSwift.framework */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEE796121BB4232F005128DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE795F51BB4232F005128DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEE795FC1BB4232F005128DF;
+			remoteInfo = goCoworkingSpaceReport;
+		};
+		DEE7961D1BB4232F005128DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE795F51BB4232F005128DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEE795FC1BB4232F005128DF;
+			remoteInfo = goCoworkingSpaceReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEE795FD1BB4232F005128DF /* goCoworkingSpaceReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goCoworkingSpaceReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE796001BB4232F005128DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEE796021BB4232F005128DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEE796051BB4232F005128DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEE796071BB4232F005128DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEE7960A1BB4232F005128DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEE7960C1BB4232F005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE796111BB4232F005128DF /* goCoworkingSpaceReportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goCoworkingSpaceReportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE796151BB4232F005128DF /* goCoworkingSpaceReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goCoworkingSpaceReportTests.swift; sourceTree = "<group>"; };
+		DEE796171BB4232F005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE7961C1BB4232F005128DF /* goCoworkingSpaceReportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goCoworkingSpaceReportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE796201BB4232F005128DF /* goCoworkingSpaceReportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goCoworkingSpaceReportUITests.swift; sourceTree = "<group>"; };
+		DEE796221BB4232F005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE7962F1BB45404005128DF /* ListStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStatus.swift; sourceTree = "<group>"; };
+		DEE796321BB456D9005128DF /* AnotherWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherWindow.swift; sourceTree = "<group>"; };
+		DEE796341BB4575A005128DF /* DeviceSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
+		DEE796361BB4578D005128DF /* ColorDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefinition.swift; sourceTree = "<group>"; };
+		DEE796381BB45F77005128DF /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		DEE7963A1BB4608B005128DF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DEE7963B1BB4608B005128DF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DEE7963F1BB46107005128DF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		DEE796411BB46114005128DF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		DEE796431BB46130005128DF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DEE796451BB46138005128DF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DEE796471BB46149005128DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DEE796491BB4615A005128DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DEE7964B1BB4616E005128DF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DEE7964D1BB4617E005128DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DEE7964F1BB4618F005128DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DEE796511BB4619D005128DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEE796531BB461B1005128DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DEE796551BB461C3005128DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DEE796571BB64372005128DF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		DEE796581BB64372005128DF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEE795FA1BB4232F005128DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE796561BB461C3005128DF /* AudioToolbox.framework in Frameworks */,
+				DEE796541BB461B1005128DF /* CFNetwork.framework in Frameworks */,
+				DEE796521BB4619D005128DF /* CoreGraphics.framework in Frameworks */,
+				DEE796501BB4618F005128DF /* CoreLocation.framework in Frameworks */,
+				DEE7964E1BB4617E005128DF /* QuartzCore.framework in Frameworks */,
+				DEE7964C1BB4616E005128DF /* Security.framework in Frameworks */,
+				DEE7964A1BB4615A005128DF /* StoreKit.framework in Frameworks */,
+				DEE796481BB46149005128DF /* SystemConfiguration.framework in Frameworks */,
+				DEE796461BB46138005128DF /* libz.tbd in Frameworks */,
+				DEE796591BB64372005128DF /* Realm.framework in Frameworks */,
+				DEE796441BB46130005128DF /* libsqlite3.tbd in Frameworks */,
+				DEE796421BB46114005128DF /* Social.framework in Frameworks */,
+				DEE796401BB46107005128DF /* Accounts.framework in Frameworks */,
+				DEE7963D1BB4608B005128DF /* Parse.framework in Frameworks */,
+				DEE7965A1BB64372005128DF /* RealmSwift.framework in Frameworks */,
+				DEE7963C1BB4608B005128DF /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE7960E1BB4232F005128DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE796191BB4232F005128DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEE795F41BB4232F005128DF = {
+			isa = PBXGroup;
+			children = (
+				DEE795FF1BB4232F005128DF /* goCoworkingSpaceReport */,
+				DEE796141BB4232F005128DF /* goCoworkingSpaceReportTests */,
+				DEE7961F1BB4232F005128DF /* goCoworkingSpaceReportUITests */,
+				DEE795FE1BB4232F005128DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEE795FE1BB4232F005128DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEE795FD1BB4232F005128DF /* goCoworkingSpaceReport.app */,
+				DEE796111BB4232F005128DF /* goCoworkingSpaceReportTests.xctest */,
+				DEE7961C1BB4232F005128DF /* goCoworkingSpaceReportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEE795FF1BB4232F005128DF /* goCoworkingSpaceReport */ = {
+			isa = PBXGroup;
+			children = (
+				DEE7963E1BB46091005128DF /* Frameworks */,
+				DEE796311BB45610005128DF /* Libraries */,
+				DEE7962E1BB44791005128DF /* Constants */,
+				DEE796001BB4232F005128DF /* AppDelegate.swift */,
+				DEE796021BB4232F005128DF /* ViewController.swift */,
+				DEE796381BB45F77005128DF /* ListController.swift */,
+				DEE796041BB4232F005128DF /* Main.storyboard */,
+				DEE796071BB4232F005128DF /* Assets.xcassets */,
+				DEE796091BB4232F005128DF /* LaunchScreen.storyboard */,
+				DEE7960C1BB4232F005128DF /* Info.plist */,
+			);
+			path = goCoworkingSpaceReport;
+			sourceTree = "<group>";
+		};
+		DEE796141BB4232F005128DF /* goCoworkingSpaceReportTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796151BB4232F005128DF /* goCoworkingSpaceReportTests.swift */,
+				DEE796171BB4232F005128DF /* Info.plist */,
+			);
+			path = goCoworkingSpaceReportTests;
+			sourceTree = "<group>";
+		};
+		DEE7961F1BB4232F005128DF /* goCoworkingSpaceReportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796201BB4232F005128DF /* goCoworkingSpaceReportUITests.swift */,
+				DEE796221BB4232F005128DF /* Info.plist */,
+			);
+			path = goCoworkingSpaceReportUITests;
+			sourceTree = "<group>";
+		};
+		DEE7962E1BB44791005128DF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DEE7962F1BB45404005128DF /* ListStatus.swift */,
+				DEE796321BB456D9005128DF /* AnotherWindow.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		DEE796311BB45610005128DF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796341BB4575A005128DF /* DeviceSize.swift */,
+				DEE796361BB4578D005128DF /* ColorDefinition.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		DEE7963E1BB46091005128DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEE796571BB64372005128DF /* Realm.framework */,
+				DEE796581BB64372005128DF /* RealmSwift.framework */,
+				DEE796551BB461C3005128DF /* AudioToolbox.framework */,
+				DEE796531BB461B1005128DF /* CFNetwork.framework */,
+				DEE796511BB4619D005128DF /* CoreGraphics.framework */,
+				DEE7964F1BB4618F005128DF /* CoreLocation.framework */,
+				DEE7964D1BB4617E005128DF /* QuartzCore.framework */,
+				DEE7964B1BB4616E005128DF /* Security.framework */,
+				DEE796491BB4615A005128DF /* StoreKit.framework */,
+				DEE796471BB46149005128DF /* SystemConfiguration.framework */,
+				DEE796451BB46138005128DF /* libz.tbd */,
+				DEE796431BB46130005128DF /* libsqlite3.tbd */,
+				DEE796411BB46114005128DF /* Social.framework */,
+				DEE7963F1BB46107005128DF /* Accounts.framework */,
+				DEE7963A1BB4608B005128DF /* Bolts.framework */,
+				DEE7963B1BB4608B005128DF /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE796251BB4232F005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReport" */;
+			buildPhases = (
+				DEE795F91BB4232F005128DF /* Sources */,
+				DEE795FA1BB4232F005128DF /* Frameworks */,
+				DEE795FB1BB4232F005128DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = goCoworkingSpaceReport;
+			productName = goCoworkingSpaceReport;
+			productReference = DEE795FD1BB4232F005128DF /* goCoworkingSpaceReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEE796101BB4232F005128DF /* goCoworkingSpaceReportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE796281BB4232F005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportTests" */;
+			buildPhases = (
+				DEE7960D1BB4232F005128DF /* Sources */,
+				DEE7960E1BB4232F005128DF /* Frameworks */,
+				DEE7960F1BB4232F005128DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE796131BB4232F005128DF /* PBXTargetDependency */,
+			);
+			name = goCoworkingSpaceReportTests;
+			productName = goCoworkingSpaceReportTests;
+			productReference = DEE796111BB4232F005128DF /* goCoworkingSpaceReportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEE7961B1BB4232F005128DF /* goCoworkingSpaceReportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE7962B1BB4232F005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportUITests" */;
+			buildPhases = (
+				DEE796181BB4232F005128DF /* Sources */,
+				DEE796191BB4232F005128DF /* Frameworks */,
+				DEE7961A1BB4232F005128DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE7961E1BB4232F005128DF /* PBXTargetDependency */,
+			);
+			name = goCoworkingSpaceReportUITests;
+			productName = goCoworkingSpaceReportUITests;
+			productReference = DEE7961C1BB4232F005128DF /* goCoworkingSpaceReportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEE795F51BB4232F005128DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = just1factory;
+				TargetAttributes = {
+					DEE795FC1BB4232F005128DF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					DEE796101BB4232F005128DF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DEE795FC1BB4232F005128DF;
+					};
+					DEE7961B1BB4232F005128DF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DEE795FC1BB4232F005128DF;
+					};
+				};
+			};
+			buildConfigurationList = DEE795F81BB4232F005128DF /* Build configuration list for PBXProject "goCoworkingSpaceReport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEE795F41BB4232F005128DF;
+			productRefGroup = DEE795FE1BB4232F005128DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */,
+				DEE796101BB4232F005128DF /* goCoworkingSpaceReportTests */,
+				DEE7961B1BB4232F005128DF /* goCoworkingSpaceReportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEE795FB1BB4232F005128DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE7960B1BB4232F005128DF /* LaunchScreen.storyboard in Resources */,
+				DEE796081BB4232F005128DF /* Assets.xcassets in Resources */,
+				DEE796061BB4232F005128DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE7960F1BB4232F005128DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE7961A1BB4232F005128DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEE795F91BB4232F005128DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE796301BB45404005128DF /* ListStatus.swift in Sources */,
+				DEE796031BB4232F005128DF /* ViewController.swift in Sources */,
+				DEE796371BB4578D005128DF /* ColorDefinition.swift in Sources */,
+				DEE796011BB4232F005128DF /* AppDelegate.swift in Sources */,
+				DEE796351BB4575A005128DF /* DeviceSize.swift in Sources */,
+				DEE796331BB456D9005128DF /* AnotherWindow.swift in Sources */,
+				DEE796391BB45F77005128DF /* ListController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE7960D1BB4232F005128DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE796161BB4232F005128DF /* goCoworkingSpaceReportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE796181BB4232F005128DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE796211BB4232F005128DF /* goCoworkingSpaceReportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEE796131BB4232F005128DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */;
+			targetProxy = DEE796121BB4232F005128DF /* PBXContainerItemProxy */;
+		};
+		DEE7961E1BB4232F005128DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */;
+			targetProxy = DEE7961D1BB4232F005128DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEE796041BB4232F005128DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE796051BB4232F005128DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEE796091BB4232F005128DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE7960A1BB4232F005128DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEE796231BB4232F005128DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEE796241BB4232F005128DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEE796261BB4232F005128DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/goCoworkingSpaceReport",
+				);
+				INFOPLIST_FILE = goCoworkingSpaceReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEE796271BB4232F005128DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/goCoworkingSpaceReport",
+				);
+				INFOPLIST_FILE = goCoworkingSpaceReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEE796291BB4232F005128DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = goCoworkingSpaceReportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goCoworkingSpaceReport.app/goCoworkingSpaceReport";
+			};
+			name = Debug;
+		};
+		DEE7962A1BB4232F005128DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = goCoworkingSpaceReportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goCoworkingSpaceReport.app/goCoworkingSpaceReport";
+			};
+			name = Release;
+		};
+		DEE7962C1BB4232F005128DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = goCoworkingSpaceReportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = goCoworkingSpaceReport;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DEE7962D1BB4232F005128DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = goCoworkingSpaceReportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = goCoworkingSpaceReport;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEE795F81BB4232F005128DF /* Build configuration list for PBXProject "goCoworkingSpaceReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE796231BB4232F005128DF /* Debug */,
+				DEE796241BB4232F005128DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE796251BB4232F005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE796261BB4232F005128DF /* Debug */,
+				DEE796271BB4232F005128DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEE796281BB4232F005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE796291BB4232F005128DF /* Debug */,
+				DEE7962A1BB4232F005128DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEE7962B1BB4232F005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE7962C1BB4232F005128DF /* Debug */,
+				DEE7962D1BB4232F005128DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEE795F51BB4232F005128DF /* Project object */;
+}
