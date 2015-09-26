@@ -33,8 +33,6 @@
 		DEE796521BB4619D005128DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796511BB4619D005128DF /* CoreGraphics.framework */; };
 		DEE796541BB461B1005128DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796531BB461B1005128DF /* CFNetwork.framework */; };
 		DEE796561BB461C3005128DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796551BB461C3005128DF /* AudioToolbox.framework */; };
-		DEE796591BB64372005128DF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796571BB64372005128DF /* Realm.framework */; settings = {ASSET_TAGS = (); }; };
-		DEE7965A1BB64372005128DF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796581BB64372005128DF /* RealmSwift.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +85,6 @@
 		DEE796511BB4619D005128DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DEE796531BB461B1005128DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DEE796551BB461C3005128DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		DEE796571BB64372005128DF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		DEE796581BB64372005128DF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +101,10 @@
 				DEE7964A1BB4615A005128DF /* StoreKit.framework in Frameworks */,
 				DEE796481BB46149005128DF /* SystemConfiguration.framework in Frameworks */,
 				DEE796461BB46138005128DF /* libz.tbd in Frameworks */,
-				DEE796591BB64372005128DF /* Realm.framework in Frameworks */,
 				DEE796441BB46130005128DF /* libsqlite3.tbd in Frameworks */,
 				DEE796421BB46114005128DF /* Social.framework in Frameworks */,
 				DEE796401BB46107005128DF /* Accounts.framework in Frameworks */,
 				DEE7963D1BB4608B005128DF /* Parse.framework in Frameworks */,
-				DEE7965A1BB64372005128DF /* RealmSwift.framework in Frameworks */,
 				DEE7963C1BB4608B005128DF /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,8 +202,6 @@
 		DEE7963E1BB46091005128DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEE796571BB64372005128DF /* Realm.framework */,
-				DEE796581BB64372005128DF /* RealmSwift.framework */,
 				DEE796551BB461C3005128DF /* AudioToolbox.framework */,
 				DEE796531BB461B1005128DF /* CFNetwork.framework */,
 				DEE796511BB4619D005128DF /* CoreGraphics.framework */,
