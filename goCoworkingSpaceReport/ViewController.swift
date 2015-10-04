@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Debug.
+    @IBOutlet var debugLabel: UILabel!
+    
     //オープニング画像スクロールビュー
     @IBOutlet var openingScrollView: UIScrollView!
     
@@ -33,12 +36,11 @@ class ViewController: UIViewController {
         */
         
         
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }

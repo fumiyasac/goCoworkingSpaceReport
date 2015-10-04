@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  goCoworkingSpaceReportWatch Extension
+//  PersonController.swift
+//  goCoworkingSpaceReport
 //
-//  Created by 酒井文也 on 2015/09/26.
+//  Created by 酒井文也 on 2015/10/04.
 //  Copyright © 2015年 just1factory. All rights reserved.
 //
 
@@ -10,14 +10,14 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
-    
+class PersonController: WKInterfaceController {
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
     }
-    
+
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

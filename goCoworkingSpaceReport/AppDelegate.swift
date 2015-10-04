@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 //Parseフレームワークのインポート
 import Parse
 import Bolts
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios_guide#localdatastore/iOS
@@ -30,6 +32,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        // WatchConnectivity Check
+        if (WCSession.isSupported()) {
+            let session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+            
+            if session.paired != true {
+                print("Apple Watch is not paired")
+            }
+            
+            if session.watchAppInstalled != true {
+                print("WatchKit app is not installed")
+            }
+            
+        } else {
+            print("WatchConnectivity is not supported on this device")
+        }
         
         // Override point for customization after application launch.
         return true
@@ -57,6 +77,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    //Interactive Messagingの処理
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
+        //コールバック用のDictionaryデータ
+        var replyValues = Dictionary<String, AnyObject>()
+        
+        //最初の画面のViewControllerのインスタンス
+        let viewController = self.window!.rootViewController as! ViewController
+        
+        //Watch側から送られてきた値（AnyObjectなのでStringにダウンキャスト）
+        let operation: String = message["command"] as! String
+        
+        if (operation == "checkin") {
+            
+            viewController.debugLabel.text = "チェックイン時間を記録しました！"
+            
+            //@todo:新規登録処理
+            
+            replyValues["status"] = "OK"
+            
+        } else if (operation == "checkout") {
+            
+            viewController.debugLabel.text = "チェックアウト時間を記録しました！"
+            
+            //@todo:既存更新処理
+            
+            replyValues["status"] = "OK"
+            
+        }
+        replyHandler(replyValues)
+    }
 }
 

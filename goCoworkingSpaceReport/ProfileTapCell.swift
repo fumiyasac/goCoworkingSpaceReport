@@ -10,6 +10,8 @@ import UIKit
 
 class ProfileTapCell: UITableViewCell {
 
+    @IBOutlet var editProfileLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

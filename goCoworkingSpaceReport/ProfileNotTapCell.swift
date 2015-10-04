@@ -10,6 +10,9 @@ import UIKit
 
 class ProfileNotTapCell: UITableViewCell {
 
+    @IBOutlet var profileCategoryLabel: UILabel!
+    @IBOutlet var profileCategoryText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,5 +1,5 @@
 //
-//  NowOpenController.swift
+//  NowHereController.swift
 //  goCoworkingSpaceReport
 //
 //  Created by 酒井文也 on 2015/09/27.
@@ -11,32 +11,29 @@ import UIKit
 //Parseクラスのインポート
 import Parse
 
-class NowOpenController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class NowHereController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var nowOpenTableView: UITableView!
+    @IBOutlet var nowHereTableView: UITableView!
     
-    //テーブルビューの要素数
+    //コレクションビューの要素数
     let sectionCount: Int = 1
     
-    //テーブルビューのセル数
+    //コレクションビューのセル数
     let cellCount: Int = 16
     
     //テーブルビューセルの高さ(Xibのサイズに合わせるのが理想)
-    let cellHeight: CGFloat = 150.0
+    let cellHeight: CGFloat = 140.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         //デリゲート
-        self.nowOpenTableView.delegate = self
-        self.nowOpenTableView.dataSource = self
+        self.nowHereTableView.delegate = self
+        self.nowHereTableView.dataSource = self
         
         //Xibのクラスを読み込む宣言を行う
-        let nibDefault:UINib = UINib(nibName: "NowOpenCell", bundle: nil)
-        self.nowOpenTableView.registerNib(nibDefault, forCellReuseIdentifier: "NowOpenCell")
-        
+        let nibDefault:UINib = UINib(nibName: "NowHereCell", bundle: nil)
+        self.nowHereTableView.registerNib(nibDefault, forCellReuseIdentifier: "NowHereCell")
     }
 
     //テーブルの要素数を設定する ※必須
@@ -57,20 +54,21 @@ class NowOpenController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         //Xibファイルを元にデータを作成する
-        let cell = tableView.dequeueReusableCellWithIdentifier("NowOpenCell") as? NowOpenCell;
-            
+        let cell = tableView.dequeueReusableCellWithIdentifier("NowHereCell") as? NowHereCell;
+        
         //テキスト・画像等の表示
         let shopImagePath = UIImage(named: "coedo.jpg")
         cell!.spaceImageMedium.image = shopImagePath
         
-        cell!.spaceTitleBold.text = "コワーキングスペースCo-Edo"
-        cell!.spacePlace.text = "東京メトロ茅場町駅徒歩3分"
-        cell!.spaceTime.text = "平日10:00~21:00 土日祝10:00~18:00"
+        cell!.statusLabel.text = "Coworking"
+        cell!.spaceTitle.text = "コワーキングスペースCo-Edo"
+        cell!.usernameLabel.text = "Fumiya Sakaiさん"
+        cell!.checkText.text = "現在上の場所でお仕事or勉強しています(^^)"
         
         //セルのアクセサリタイプと背景の設定
         cell!.accessoryType = UITableViewCellAccessoryType.None;
         cell!.selectionStyle = UITableViewCellSelectionStyle.None;
-            
+        
         return cell!
     }
     
@@ -81,19 +79,19 @@ class NowOpenController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     //セルの高さを返す ※必須
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        
         return cellHeight
     }
     
     //テーブルビューをリロードする
     func reloadData(){
-        self.nowOpenTableView.reloadData()
+        self.nowHereTableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation

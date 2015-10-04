@@ -17,7 +17,7 @@ import UIKit
 struct ColorDefinition {
     
     //16進数のカラーコードをiOSの設定に変換するメソッド
-    func colorWithHexString (hex:String) -> UIColor {
+    static func colorWithHexString (hex:String) -> UIColor {
         
         //受け取った値を大文字に変換する
         var cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString

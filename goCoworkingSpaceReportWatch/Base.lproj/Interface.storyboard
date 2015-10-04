@@ -10,12 +10,67 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="goCoworkingSpaceReportWatch" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="営業中リスト" id="vrW-l4-cSa"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="今いるよ!" id="875-3j-sqy"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="営業中リスト" id="vrW-l4-cSa">
+                            <connections>
+                                <segue destination="BkN-pd-20r" kind="modal" id="NbG-1U-kYO"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="今いるよ!" id="875-3j-sqy">
+                            <connections>
+                                <segue destination="diN-9w-jeB" kind="modal" id="8s1-dg-RPg"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Person Controller-->
+        <scene sceneID="K5P-Ou-Cq7">
+            <objects>
+                <controller hidesWhenLoading="NO" id="diN-9w-jeB" customClass="PersonController" customModule="goCoworkingSpaceReportWatch_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="477"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="G9B-T1-ZMf">
+            <objects>
+                <controller hidesWhenLoading="NO" id="BkN-pd-20r" customClass="DetailController" customModule="goCoworkingSpaceReportWatch_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="jCE-yF-dkR">
+                            <items>
+                                <button width="67" height="42" alignment="left" verticalAlignment="bottom" title="Check-In" id="E5K-Ey-ZmK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                    <variation key="device=watch42mm" height="52" width="77">
+                                        <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="sendMessages" destination="BkN-pd-20r" id="g7J-ki-m7y"/>
+                                    </connections>
+                                </button>
+                                <button width="67" height="42" alignment="right" verticalAlignment="bottom" title="Check-Out" id="xUI-DP-iTM">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                    <variation key="device=watch42mm" height="52" width="77">
+                                        <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                    </variation>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Label" textAlignment="center" id="I4j-jn-kaE">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="checkButton" destination="E5K-Ey-ZmK" id="IhP-WP-p1G"/>
+                        <outlet property="sendMessageLabel" destination="I4j-jn-kaE" id="rO1-PK-s1W"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="447" y="231"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

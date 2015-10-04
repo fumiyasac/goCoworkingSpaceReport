@@ -13,5 +13,17 @@ enum ListStatus {
     case AlreadyGone
     case NowOpened
     case StayingHere
+    
+    //状態対応するの値を返す
+    func toListControlNumber() -> Int {
+        switch (self) {
+            case .NowOpened:
+                return 0
+            case .AlreadyGone:
+                return 1
+            case .StayingHere:
+                return 2
+        }
+    }
 }
 
