@@ -8,10 +8,22 @@
 
 import UIKit
 
+//Parseクラスのインポート
+import Parse
+
 class ViewController: UIViewController {
 
     //Debug.
     @IBOutlet var debugLabel: UILabel!
+    
+    //チェックイン・チェックアウト時のデータ
+    var checkInData: NSMutableArray = NSMutableArray()
+    
+    let mailAddress: String = "info@example.com"
+    let coworkingSpaceId: Int = 1
+    
+    var checkInMessage: String!
+    var checkOutMessage: String!
     
     //オープニング画像スクロールビュー
     @IBOutlet var openingScrollView: UIScrollView!
@@ -23,6 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet var startButton: UIButton!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -34,8 +47,6 @@ class ViewController: UIViewController {
             print("Object has been saved.")
         }
         */
-        
-        
     }
     
     override func didReceiveMemoryWarning() {

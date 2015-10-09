@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE083B051BC70FB8000A35A7 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE083B041BC70FB8000A35A7 /* History.swift */; settings = {ASSET_TAGS = (); }; };
 		DE1181A51BC0F806002794AE /* NowHereController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181A31BC0F806002794AE /* NowHereController.swift */; settings = {ASSET_TAGS = (); }; };
 		DE1181A71BC0F8EE002794AE /* VisitHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181A41BC0F806002794AE /* VisitHistoryController.swift */; };
 		DE1181AA1BC0FA0D002794AE /* coedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1181A91BC0FA0D002794AE /* coedo.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -144,6 +145,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE083B041BC70FB8000A35A7 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DE1181A31BC0F806002794AE /* NowHereController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowHereController.swift; sourceTree = "<group>"; };
 		DE1181A41BC0F806002794AE /* VisitHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitHistoryController.swift; sourceTree = "<group>"; };
 		DE1181A91BC0FA0D002794AE /* coedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coedo.jpg; sourceTree = "<group>"; };
@@ -267,6 +269,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE083B021BC70F6F000A35A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE083B041BC70FB8000A35A7 /* History.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		DE1181A81BC0F9E8002794AE /* assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +312,7 @@
 		DEE795FF1BB4232F005128DF /* goCoworkingSpaceReport */ = {
 			isa = PBXGroup;
 			children = (
+				DE083B021BC70F6F000A35A7 /* Models */,
 				DE1181A81BC0F9E8002794AE /* assets */,
 				DEE7963E1BB46091005128DF /* Frameworks */,
 				DEE796311BB45610005128DF /* Libraries */,
@@ -697,6 +708,7 @@
 				DEE796331BB456D9005128DF /* AnotherWindow.swift in Sources */,
 				DEE796391BB45F77005128DF /* ListController.swift in Sources */,
 				DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */,
+				DE083B051BC70FB8000A35A7 /* History.swift in Sources */,
 				DEE796941BB6F943005128DF /* NowOpenController.swift in Sources */,
 				DEE796A01BB6FE1F005128DF /* NowOpenDetailController.swift in Sources */,
 				DE6C79341BBC519400F1A6E9 /* ColorStatus.swift in Sources */,

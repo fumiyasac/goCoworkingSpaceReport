@@ -82,6 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         
         //コールバック用のDictionaryデータ
         var replyValues = Dictionary<String, AnyObject>()
+        var backMessage: String!
         
         //最初の画面のViewControllerのインスタンス
         let viewController = self.window!.rootViewController as! ViewController
@@ -91,21 +92,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         
         if (operation == "checkin") {
             
-            viewController.debugLabel.text = "チェックイン時間を記録しました！"
-            
-            //@todo:新規登録処理
-            
-            replyValues["status"] = "OK"
-            
+            //(This is Test Code for 10/11)新規登録処理
+            backMessage = "データを追加したよ！"
+            let date = NSDate()
+            let history = History(historyDate: date)
+            history.saveHistory()
+
         } else if (operation == "checkout") {
             
-            viewController.debugLabel.text = "チェックアウト時間を記録しました！"
+            //(This is Test Code for 10/11)既存削除処理
+            backMessage = "表示をもどしたよ！"
             
-            //@todo:既存更新処理
+        } else {
             
-            replyValues["status"] = "OK"
-            
+            //(This is Test Code for 10/11)エラー発生
+            backMessage = "Error!"
         }
+        viewController.debugLabel.text = backMessage
+        replyValues["status"] = backMessage
         replyHandler(replyValues)
     }
 }

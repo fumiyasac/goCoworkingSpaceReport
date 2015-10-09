@@ -42,30 +42,38 @@
                                 <button width="67" height="42" alignment="left" verticalAlignment="bottom" title="Check-In" id="E5K-Ey-ZmK">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
-                                    <variation key="device=watch42mm" height="52" width="77">
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <variation key="device=watch38mm" title="Add Newest"/>
+                                    <variation key="device=watch42mm" height="52" title="Add Newest" width="77">
                                         <fontDescription key="font" type="boldSystem" pointSize="18"/>
                                     </variation>
                                     <connections>
-                                        <action selector="sendMessages" destination="BkN-pd-20r" id="g7J-ki-m7y"/>
+                                        <action selector="sendCheckInMessage" destination="BkN-pd-20r" id="tEE-NJ-M9Y"/>
                                     </connections>
                                 </button>
                                 <button width="67" height="42" alignment="right" verticalAlignment="bottom" title="Check-Out" id="xUI-DP-iTM">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="16"/>
-                                    <variation key="device=watch42mm" height="52" width="77">
+                                    <variation key="device=watch42mm" height="52" title="Del Oldest" width="77">
                                         <fontDescription key="font" type="boldSystem" pointSize="18"/>
                                     </variation>
+                                    <connections>
+                                        <action selector="sendCheckOutMessage" destination="BkN-pd-20r" id="h2d-Uh-qCi"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                         <label width="136" alignment="left" text="Label" textAlignment="center" id="I4j-jn-kaE">
-                            <variation key="device=watch42mm" width="156"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <variation key="device=watch42mm" width="156">
+                                <fontDescription key="font" type="system" pointSize="15"/>
+                            </variation>
                         </label>
                     </items>
                     <connections>
-                        <outlet property="checkButton" destination="E5K-Ey-ZmK" id="IhP-WP-p1G"/>
+                        <outlet property="sendCheckInBtn" destination="E5K-Ey-ZmK" id="MGA-VB-5pJ"/>
+                        <outlet property="sendCheckoutBtn" destination="xUI-DP-iTM" id="HEw-iO-Y4d"/>
                         <outlet property="sendMessageLabel" destination="I4j-jn-kaE" id="rO1-PK-s1W"/>
                     </connections>
                 </controller>
