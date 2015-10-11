@@ -13,6 +13,9 @@ import Parse
 
 class ListController: UIViewController, UIScrollViewDelegate, UINavigationControllerDelegate {
 
+    //透明ボタン
+    @IBOutlet var profileOpenButton: UIButton!
+    
     //ラベルボタン
     @IBOutlet var backButtonLabel: UILabel!
     @IBOutlet var nowOpenButton: UIButton!
@@ -32,9 +35,6 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
     
     //現在ページ表示位置用のメンバ変数
     var currentDisplayViewNumber: Int!
-
-    var wholeScrollWidth: CGFloat!
-    var wholeScrollHeight: CGFloat!
     
     var inactiveValue: CGFloat! = 0.5
     var activeValue: CGFloat!   = 1.0
@@ -54,26 +54,38 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
     //コンテナの最大数
     let maxContainer: Int! = 3
     
+    //profile部分が出てくる時のwidthのスライド値
+    let slideWidth: Int! = 240
+    
+    //スクロールビューの表示用のサイズ
+    var deviceContainerWidth: CGFloat!
+    var deviceContainerHeight: CGFloat!
+    
+    //スクロールビューの中身用のサイズ
+    var wholeScrollWidth: CGFloat!
+    var wholeScrollHeight: CGFloat!
+    
     override func viewWillAppear(animated: Bool) {
         
-        //現在起動中のデバイスを取得（スクリーンの幅・高さ）
-        let screenWidth: Int!  = DeviceSize.screenWidth()
-        let screenHeight: Int! = DeviceSize.screenHeight()
-        
-        let deviceContainerWidth: CGFloat!  = CGFloat(screenWidth)
-        let deviceContainerHeight: CGFloat! = CGFloat(screenHeight - self.downHeight)
-        
-        //スクロールビューのサイズ再設定
-        self.innerContainerScrollView.frame = CGRectMake(
-            CGFloat(0.0),
-            CGFloat(self.downHeight),
-            deviceContainerWidth,
-            deviceContainerHeight
-        )
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //プロフィール部分
+        self.profileContainer.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(65),
+            CGFloat(240),
+            CGFloat(DeviceSize.screenHeight()-65)
+        )
+        
+        //初期状態の設定
+        self.deviceContainerWidth = CGFloat(DeviceSize.screenWidth())
+        self.deviceContainerHeight = CGFloat(DeviceSize.screenHeight() - self.downHeight)
+        self.windowStatus = AnotherWindow.HideProfile
+        self.profileOpenButton.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
+        self.profileSlideClose()
         
         //NavigationControllerのデリゲート
         self.navigationController?.delegate = self
@@ -100,12 +112,12 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         self.innerContainerScrollView.delegate = self
         
         //スクロールビューの設定
-        wholeScrollWidth  = CGFloat(Int(self.view.frame.size.width) * maxContainer)
-        wholeScrollHeight = CGFloat(Int(self.view.frame.size.height) - self.downHeight)
+        self.wholeScrollWidth  = CGFloat(DeviceSize.screenWidth() * maxContainer)
+        self.wholeScrollHeight = CGFloat(DeviceSize.screenHeight() - self.downHeight)
         
         self.innerContainerScrollView.contentSize = CGSizeMake(
-            CGFloat(wholeScrollWidth),
-            CGFloat(wholeScrollHeight)
+            CGFloat(self.wholeScrollWidth),
+            CGFloat(self.wholeScrollHeight)
         )
         
         //現在位置の初期設定
@@ -116,9 +128,9 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         self.initWithScrollViewSetting()
         
         //コンテナの配置
-        for i in 0...maxContainer{
+        for i in 0...maxContainer {
             
-            let scrollViewInnerWidth :Int = Int(self.view.frame.size.width) * i
+            let scrollViewInnerWidth :Int = DeviceSize.screenWidth() * i
             
             //Containerの配置をする
             if (i == ListStatus.NowOpened.toListControlNumber()) {
@@ -126,8 +138,8 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
                 self.nowOpenContainer.frame = CGRectMake(
                     CGFloat(scrollViewInnerWidth),
                     CGFloat(0.0),
-                    CGFloat(wholeScrollWidth),
-                    CGFloat(wholeScrollHeight)
+                    CGFloat(self.wholeScrollWidth),
+                    CGFloat(self.wholeScrollHeight)
                 )
                 self.innerContainerScrollView.addSubview(self.nowOpenContainer)
                 
@@ -136,8 +148,8 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
                 self.visitHistoryContainer.frame = CGRectMake(
                     CGFloat(scrollViewInnerWidth),
                     CGFloat(0.0),
-                    CGFloat(wholeScrollWidth),
-                    CGFloat(wholeScrollHeight)
+                    CGFloat(self.wholeScrollWidth),
+                    CGFloat(self.wholeScrollHeight)
                 )
                 self.innerContainerScrollView.addSubview(self.visitHistoryContainer)
                 
@@ -146,8 +158,8 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
                 self.nowHereContainer.frame = CGRectMake(
                     CGFloat(scrollViewInnerWidth),
                     CGFloat(0.0),
-                    CGFloat(wholeScrollWidth),
-                    CGFloat(wholeScrollHeight)
+                    CGFloat(self.wholeScrollWidth),
+                    CGFloat(self.wholeScrollHeight)
                 )
                 self.innerContainerScrollView.addSubview(self.nowHereContainer)
                 
@@ -162,7 +174,13 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
     }
 
     func onClickProfileButton(sender: UIBarButtonItem) {
-        print("It will be Slide Contents to right and show & edit profile page.")
+        
+        if (self.windowStatus == AnotherWindow.HideProfile) {
+            self.windowStatus = AnotherWindow.DisplayProfile
+        } else if (self.windowStatus == AnotherWindow.DisplayProfile) {
+            self.windowStatus = AnotherWindow.HideProfile
+        }
+        self.switchAlphaAndStateContents(self.windowStatus)
     }
     
     @IBAction func displayNowOpen(sender: UIButton) {
@@ -181,6 +199,11 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         
         self.changeStatusWhenScroll(ListStatus.StayingHere.toListControlNumber())
         self.changeContainerOffsetWhenButtonPush(ListStatus.StayingHere.toListControlNumber())
+    }
+    
+    @IBAction func profileCloseAction(sender: UIButton) {
+        self.windowStatus = AnotherWindow.HideProfile
+        switchAlphaAndStateContents(self.windowStatus)
     }
     
     //UIScrollViewの設定
@@ -271,6 +294,117 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         
     }
     
+    //画面のアルファ値と
+    func switchAlphaAndStateContents(windowStatus: AnotherWindow) {
+        
+        //各状態に応じて透明ボタンと土台コンテンツの位置を決定する
+        if (windowStatus == AnotherWindow.DisplayProfile) {
+            
+            //アニメーションをする
+            UIView.animateWithDuration(0.2, delay: 0, options: [], animations: { () -> Void in
+                self.profileSlideOpen()
+            }, completion: { (finished: Bool) -> Void in
+            })
+            
+        } else if (windowStatus == AnotherWindow.HideProfile) {
+
+            //アニメーションをする
+            UIView.animateWithDuration(0.2, delay: 0, options: [], animations: { () -> Void in
+                self.profileSlideClose()
+            }, completion: { (finished: Bool) -> Void in
+            })
+            
+        }
+    }
+    
+    //プロフィール部分を開く
+    func profileSlideOpen() {
+        
+        //スクロールビューのサイズ再設定
+        self.innerContainerScrollView.frame = CGRectMake(
+            CGFloat(240),
+            CGFloat(self.downHeight),
+            self.deviceContainerWidth,
+            self.deviceContainerHeight
+        )
+        self.backButtonLabel.frame = CGRectMake(
+            CGFloat(240),
+            CGFloat(65),
+            self.deviceContainerWidth,
+            CGFloat(30)
+        )
+        self.nowOpenButton.frame = CGRectMake(
+            CGFloat(10+240),
+            CGFloat(65),
+            CGFloat(70),
+            CGFloat(30)
+        )
+        self.visitHistoryButton.frame = CGRectMake(
+            CGFloat((self.deviceContainerWidth/2-70/2)+240),
+            CGFloat(65),
+            CGFloat(70),
+            CGFloat(30)
+        )
+        self.nowHereButton.frame = CGRectMake(
+            CGFloat(self.deviceContainerWidth-80+240),
+            CGFloat(65),
+            CGFloat(70),
+            CGFloat(30)
+        )
+        self.profileOpenButton.enabled = true
+        self.profileOpenButton.alpha = 0.6
+        self.profileOpenButton.frame = CGRectMake(
+            CGFloat(240),
+            CGFloat(65),
+            self.deviceContainerWidth,
+            self.deviceContainerHeight + CGFloat(30)
+        )
+        
+    }
+    
+    //プロフィール部分を閉じる
+    func profileSlideClose() {
+        
+        //スクロールビューのサイズ再設定
+        self.innerContainerScrollView.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(self.downHeight),
+            self.deviceContainerWidth,
+            self.deviceContainerHeight
+        )
+        self.backButtonLabel.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(65),
+            self.deviceContainerWidth,
+            CGFloat(30)
+        )
+        self.nowOpenButton.frame = CGRectMake(
+            CGFloat(10),
+            CGFloat(65),
+            CGFloat(70),
+            CGFloat(30)
+        )
+        self.visitHistoryButton.frame = CGRectMake(CGFloat((self.deviceContainerWidth/2-70/2)),
+            CGFloat(65),
+            CGFloat(70),
+            CGFloat(30)
+        )
+        self.nowHereButton.frame = CGRectMake(CGFloat(self.deviceContainerWidth-80),
+            CGFloat(65),
+            CGFloat(70),
+            CGFloat(30)
+        )
+        self.profileOpenButton.enabled = false
+        self.profileOpenButton.alpha = 0
+        self.profileOpenButton.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(65),
+            self.deviceContainerWidth,
+            self.deviceContainerHeight + CGFloat(30)
+        )
+        
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

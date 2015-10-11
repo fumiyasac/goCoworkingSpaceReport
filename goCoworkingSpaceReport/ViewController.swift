@@ -16,15 +16,6 @@ class ViewController: UIViewController {
     //Debug.
     @IBOutlet var debugLabel: UILabel!
     
-    //チェックイン・チェックアウト時のデータ
-    var checkInData: NSMutableArray = NSMutableArray()
-    
-    let mailAddress: String = "info@example.com"
-    let coworkingSpaceId: Int = 1
-    
-    var checkInMessage: String!
-    var checkOutMessage: String!
-    
     //オープニング画像スクロールビュー
     @IBOutlet var openingScrollView: UIScrollView!
     

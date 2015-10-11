@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE083B051BC70FB8000A35A7 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE083B041BC70FB8000A35A7 /* History.swift */; settings = {ASSET_TAGS = (); }; };
+		DE083B601BCAA413000A35A7 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE083B5F1BCAA413000A35A7 /* CameraController.swift */; settings = {ASSET_TAGS = (); }; };
 		DE1181A51BC0F806002794AE /* NowHereController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181A31BC0F806002794AE /* NowHereController.swift */; settings = {ASSET_TAGS = (); }; };
 		DE1181A71BC0F8EE002794AE /* VisitHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181A41BC0F806002794AE /* VisitHistoryController.swift */; };
 		DE1181AA1BC0FA0D002794AE /* coedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1181A91BC0FA0D002794AE /* coedo.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -54,7 +55,6 @@
 		DEE796751BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DEE7967C1BB6CEFA005128DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */; };
 		DEE7967E1BB6CEFA005128DF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */; };
-		DEE796801BB6CEFA005128DF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967F1BB6CEFA005128DF /* NotificationController.swift */; };
 		DEE796821BB6CEFA005128DF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796811BB6CEFA005128DF /* GlanceController.swift */; };
 		DEE796841BB6CEFA005128DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE796831BB6CEFA005128DF /* Assets.xcassets */; };
 		DEE796881BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */; };
@@ -146,6 +146,7 @@
 
 /* Begin PBXFileReference section */
 		DE083B041BC70FB8000A35A7 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		DE083B5F1BCAA413000A35A7 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		DE1181A31BC0F806002794AE /* NowHereController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowHereController.swift; sourceTree = "<group>"; };
 		DE1181A41BC0F806002794AE /* VisitHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitHistoryController.swift; sourceTree = "<group>"; };
 		DE1181A91BC0FA0D002794AE /* coedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coedo.jpg; sourceTree = "<group>"; };
@@ -196,7 +197,6 @@
 		DEE7967A1BB6CEFA005128DF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		DEE7967F1BB6CEFA005128DF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		DEE796811BB6CEFA005128DF /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		DEE796831BB6CEFA005128DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE796851BB6CEFA005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -319,6 +319,7 @@
 				DEE7962E1BB44791005128DF /* Constants */,
 				DEE796991BB6F9C1005128DF /* Containers */,
 				DEE796001BB4232F005128DF /* AppDelegate.swift */,
+				DE083B5F1BCAA413000A35A7 /* CameraController.swift */,
 				DEE796021BB4232F005128DF /* ViewController.swift */,
 				DEE796381BB45F77005128DF /* ListController.swift */,
 				DEE7969D1BB6FDC6005128DF /* ProfileEditController.swift */,
@@ -410,7 +411,6 @@
 				DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */,
 				DE1181AC1BC11CC6002794AE /* DetailController.swift */,
 				DE1181AE1BC11CE4002794AE /* PersonController.swift */,
-				DEE7967F1BB6CEFA005128DF /* NotificationController.swift */,
 				DEE796811BB6CEFA005128DF /* GlanceController.swift */,
 				DEE796831BB6CEFA005128DF /* Assets.xcassets */,
 				DEE796851BB6CEFA005128DF /* Info.plist */,
@@ -694,6 +694,7 @@
 				DE1181A71BC0F8EE002794AE /* VisitHistoryController.swift in Sources */,
 				DEE796301BB45404005128DF /* ListStatus.swift in Sources */,
 				DE6C79361BBC536C00F1A6E9 /* TitleText.swift in Sources */,
+				DE083B601BCAA413000A35A7 /* CameraController.swift in Sources */,
 				DEE796031BB4232F005128DF /* ViewController.swift in Sources */,
 				DEE796371BB4578D005128DF /* ColorDefinition.swift in Sources */,
 				DEE7969E1BB6FDC6005128DF /* ProfileEditController.swift in Sources */,
@@ -737,7 +738,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE796801BB6CEFA005128DF /* NotificationController.swift in Sources */,
 				DEE7967E1BB6CEFA005128DF /* ExtensionDelegate.swift in Sources */,
 				DEE7967C1BB6CEFA005128DF /* InterfaceController.swift in Sources */,
 				DE1181AD1BC11CC6002794AE /* DetailController.swift in Sources */,

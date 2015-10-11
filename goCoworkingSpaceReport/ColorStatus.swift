@@ -15,4 +15,3 @@ enum ColorStatus: String {
     case Brown  = "cc9933"
     case White  = "ffffff"
 }
-
