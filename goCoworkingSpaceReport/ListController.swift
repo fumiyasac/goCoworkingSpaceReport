@@ -352,7 +352,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
             CGFloat(30)
         )
         self.profileOpenButton.enabled = true
-        self.profileOpenButton.alpha = 0.6
+        self.profileOpenButton.alpha = 0.85
         self.profileOpenButton.frame = CGRectMake(
             CGFloat(240),
             CGFloat(65),

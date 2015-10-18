@@ -11,13 +11,16 @@ import UIKit
 //Parseクラスのインポート
 import Parse
 
+//CALayerクラスのインポート
+import QuartzCore
+
 class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //プロフィールのラベル
     @IBOutlet var profileTitleLabel: UILabel!
     
     //プロフィール詳細のテーブルビュー
-    @IBOutlet var profileTebleView: UITableView!
+    @IBOutlet weak var profileTableView: UITableView!
     
     //バナー用のコンテナ
     @IBOutlet var bannerContainer: UIView!
@@ -27,28 +30,96 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     //テーブルビューのセル数
     let cellCountOne: Int = 4
-    let cellCountTwo: Int = 1
+    let cellCountTwo: Int = 3
 
     //テーブルビューのセル高
     let cellHeightOne: CGFloat = 65.0
     let cellHeightTwo: CGFloat = 40.0
     
+    //テーブルビューの下の離す高さと
+    let underHeight: Int! = 60
+    let upperHeight: Int! = 65
+    let titleLabelHeight: Int! = 28
+    
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.profileTableView.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(28),
+            CGFloat(240),
+            CGFloat(DeviceSize.screenHeight() - (self.underHeight + self.upperHeight + self.titleLabelHeight))
+        )
+        
         //デリゲート
-        self.profileTebleView.delegate = self
-        self.profileTebleView.dataSource = self
+        self.profileTableView.delegate = self
+        self.profileTableView.dataSource = self
         
         //Xibのクラスを読み込む宣言を行う
         let notTapNib:UINib = UINib(nibName: "ProfileNotTapCell", bundle: nil)
-        self.profileTebleView.registerNib(notTapNib, forCellReuseIdentifier: "ProfileNotTapCell")
+        self.profileTableView.registerNib(notTapNib, forCellReuseIdentifier: "ProfileNotTapCell")
         let tapNib:UINib = UINib(nibName: "ProfileTapCell", bundle: nil)
-        self.profileTebleView.registerNib(tapNib, forCellReuseIdentifier: "ProfileTapCell")
+        self.profileTableView.registerNib(tapNib, forCellReuseIdentifier: "ProfileTapCell")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        if (section == 0) {
+            
+            let profileImage: UIImageView! = UIImageView(
+                frame: CGRect(x:75, y:15, width: 90, height: 90)
+            )
+            profileImage.layer.cornerRadius = CGFloat(45)
+            
+            let otherLabel: UILabel! = UILabel(
+                frame: CGRect(x:0, y:115, width: tableView.bounds.width, height: 20)
+            )
+            otherLabel.textAlignment = NSTextAlignment.Center
+            otherLabel.font = UIFont.boldSystemFontOfSize(19)
+            
+            let profileImageArea: UIView! = UIView(
+                frame: CGRect(x:0, y:0, width: tableView.bounds.width, height: 150)
+            )
+            profileImageArea.addSubview(profileImage)
+            profileImageArea.addSubview(otherLabel)
+            
+            profileImageArea.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Gray.rawValue)
+            profileImage.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
+            otherLabel.textColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
+            otherLabel.text = "username"
+            
+            return profileImageArea
+            
+        } else {
+            
+            let otherLabel: UILabel! = UILabel(
+                frame: CGRect(x:0, y:0, width: tableView.bounds.width, height: 28)
+            )
+            otherLabel.textAlignment = NSTextAlignment.Center
+            otherLabel.font = UIFont.boldSystemFontOfSize(15)
+            otherLabel.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Brown.rawValue)
+            otherLabel.textColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
+            otherLabel.text = "その他の設定"
+            return otherLabel
+        }
+        
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        if (section == 0) {
+            return CGFloat(150.0)
+        } else {
+            return CGFloat(28.0)
+        }
     }
     
     //テーブルの要素数を設定する ※必須
@@ -75,6 +146,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell: UITableViewCell!
+        let profileBtnArray: Array! = ["> プロフィールを編集する","> このアプリの説明","> アプリからのお知らせ"]
         
         //セクションのセル高
         if (indexPath.section == 0) {
@@ -87,11 +159,10 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
             cellOne!.profileCategoryText.text = "テキスト"
         
             //セルのアクセサリタイプ
-            cellOne!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator;
+            cellOne!.accessoryType = UITableViewCellAccessoryType.None;
         
             //セルタップ時の背景を変えない
             cellOne!.selectionStyle = UITableViewCellSelectionStyle.None;
-        
             cell = cellOne!
         
         } else if (indexPath.section == 1) {
@@ -100,14 +171,13 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
             let cellTwo = tableView.dequeueReusableCellWithIdentifier("ProfileTapCell") as? ProfileTapCell;
             
             //テキスト・画像等の表示
-            cellTwo!.editProfileLabel.text = "> 編集する"
+            cellTwo!.editProfileLabel.text = profileBtnArray[indexPath.row]
             
             //セルのアクセサリタイプ
-            cellTwo!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator;
+            cellTwo!.accessoryType = UITableViewCellAccessoryType.None;
             
             //セルタップ時の背景を変えない
             cellTwo!.selectionStyle = UITableViewCellSelectionStyle.None;
-            
             cell = cellTwo!
         }
         return cell;
