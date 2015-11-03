@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="274" width="320" height="20"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2eL-Dn-gJS">
@@ -174,6 +174,7 @@
                         <outlet property="profileOpenButton" destination="9ee-x9-CIs" id="XUg-pn-AEq"/>
                         <outlet property="visitHistoryButton" destination="tCG-bu-KrP" id="bgU-vc-LVJ"/>
                         <outlet property="visitHistoryContainer" destination="UsY-ws-mFr" id="Ipa-rm-qcA"/>
+                        <segue destination="Tru-I8-XNq" kind="push" identifier="goNowOpenDetail" id="B6h-zp-wmn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EX1-DQ-r42" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,7 +184,7 @@
         <!--Profile Edit Controller-->
         <scene sceneID="A8o-IS-2Dz">
             <objects>
-                <viewController id="zFT-QD-Yja" customClass="ProfileEditController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileEdit" id="zFT-QD-Yja" customClass="ProfileEditController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xmf-EF-oBR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,21 +193,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxl-Q6-d1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315" y="216"/>
+            <point key="canvasLocation" x="1704" y="216"/>
         </scene>
         <!--Now Open Detail Controller-->
         <scene sceneID="tLl-WD-GEb">
             <objects>
-                <viewController id="Tru-I8-XNq" customClass="NowOpenDetailController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goNowOpenDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tru-I8-XNq" customClass="NowOpenDetailController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZcP-Km-gkq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="S5E-RN-Dar"/>
+                    <connections>
+                        <segue destination="tkx-m8-AMr" kind="push" identifier="goRelatedInfo" id="OWp-m9-mK6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSf-WO-Pbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="216"/>
+            <point key="canvasLocation" x="1315" y="216"/>
+        </scene>
+        <!--Related Controller-->
+        <scene sceneID="eql-Vu-Jyn">
+            <objects>
+                <viewController id="tkx-m8-AMr" customClass="RelatedController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPA-a4-9mg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e5I-Ve-lxc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2J-EC-edR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="-443"/>
         </scene>
         <!--Camera Controller-->
         <scene sceneID="cKB-Eb-0nw">

@@ -29,11 +29,11 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     let sectionCount: Int = 2
     
     //テーブルビューのセル数
-    let cellCountOne: Int = 4
+    let cellCountOne: Int = 6
     let cellCountTwo: Int = 3
 
     //テーブルビューのセル高
-    let cellHeightOne: CGFloat = 65.0
+    let cellHeightOne: CGFloat = 55.0
     let cellHeightTwo: CGFloat = 40.0
     
     //テーブルビューの下の離す高さと
@@ -41,8 +41,17 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     let upperHeight: Int! = 65
     let titleLabelHeight: Int! = 28
     
+    //現在認証中のユーザー名
+    var currentUser: String?
+    
     override func viewWillAppear(animated: Bool) {
         
+        //認証中か否かの判定
+        if PFUser.currentUser() == nil {
+            self.currentUser = "UNKNOWN"
+        } else {
+            //@todo: 自分の情報をParse.comより取得
+        }
     }
     
     override func viewDidLoad() {
@@ -94,7 +103,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
             profileImageArea.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Gray.rawValue)
             profileImage.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
             otherLabel.textColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
-            otherLabel.text = "username"
+            otherLabel.text = self.currentUser
             
             return profileImageArea
             
@@ -186,7 +195,14 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     //セルをタップした時に呼び出される
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (indexPath.section == 1) {
-            print("Left TableView Tapped！")
+            
+            if (indexPath.row == 0) {
+                
+                //遷移するViewを定義して遷移する(Containerでembedされているのでこの記法になる)
+                let profileEdit:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileEdit") as! ProfileEditController
+                profileEdit.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+                self.presentViewController(profileEdit, animated: true, completion: nil)
+            }
         }
     }
     

@@ -7,5 +7,5 @@
 //
 
 enum TitleText: String {
-    case Top = "コワーキングスペースへ行こう！"
+    case Top = "コワーキングFun!"
 }

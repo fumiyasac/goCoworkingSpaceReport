@@ -8,14 +8,37 @@
 
 import UIKit
 
-class NowOpenDetailController: UIViewController {
+class NowOpenDetailController: UIViewController, UINavigationControllerDelegate {
 
+    //ナビゲーションのアイテム
+    var relatedButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //NavigationControllerのデリゲート
+        self.navigationController?.delegate = self
+        
+        //ナビゲーション関連設定
+        self.navigationController?.navigationBar.barTintColor = ColorDefinition.colorWithHexString(ColorStatus.Yellow.rawValue)
+        self.navigationController?.navigationBar.tintColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
+        
+        let attrs = [
+            NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSFontAttributeName : UIFont(name: "Georgia-Bold", size: 15)!
+        ]
+        self.navigationController?.navigationBar.titleTextAttributes = attrs
+        
+        //Buttonを設置
+        self.relatedButton = UIBarButtonItem(title: "関連情報", style: .Plain, target: self, action: "onClickRelatedButton:")
+        self.navigationItem.title = ""
+        self.navigationItem.rightBarButtonItem = self.relatedButton
     }
-
+    
+    func onClickRelatedButton(sender: UIBarButtonItem) {
+        print("Related Contents.")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

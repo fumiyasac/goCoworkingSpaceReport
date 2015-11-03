@@ -36,7 +36,6 @@ class NowOpenController: UIViewController, UITableViewDelegate, UITableViewDataS
         //Xibのクラスを読み込む宣言を行う
         let nibDefault:UINib = UINib(nibName: "NowOpenCell", bundle: nil)
         self.nowOpenTableView.registerNib(nibDefault, forCellReuseIdentifier: "NowOpenCell")
-        
     }
 
     //テーブルの要素数を設定する ※必須
@@ -76,7 +75,8 @@ class NowOpenController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     //セルをタップした時に呼び出される
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //@todo: go some controller...
+        //@todo: detailData (Dictionary) to "sender:"
+        self.parentViewController?.performSegueWithIdentifier("goNowOpenDetail", sender: nil)
     }
     
     //セルの高さを返す ※必須
