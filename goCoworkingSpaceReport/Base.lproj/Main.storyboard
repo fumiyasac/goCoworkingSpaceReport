@@ -202,10 +202,26 @@
                     <view key="view" contentMode="scaleToFill" id="ZcP-Km-gkq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" id="7pn-db-4tR">
+                                <rect key="frame" x="0.0" y="65" width="320" height="140"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="c4f-D5-Lgr" kind="embed" id="Ria-ar-KFc"/>
+                                </connections>
+                            </containerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lsb-0h-gUH">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="S5E-RN-Dar"/>
                     <connections>
+                        <outlet property="detailTableView" destination="Lsb-0h-gUH" id="KlN-5b-A8g"/>
+                        <outlet property="userThumbContainer" destination="7pn-db-4tR" id="XzB-5f-RnV"/>
                         <segue destination="tkx-m8-AMr" kind="push" identifier="goRelatedInfo" id="OWp-m9-mK6"/>
                     </connections>
                 </viewController>
@@ -294,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Au6-uV-Pn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="898.5"/>
+            <point key="canvasLocation" x="580" y="932.5"/>
         </scene>
         <!--Now Open Controller-->
         <scene sceneID="OI1-mL-xmg">
@@ -318,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhR-dR-KF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="884"/>
+            <point key="canvasLocation" x="929" y="918"/>
         </scene>
         <!--Now Here Controller-->
         <scene sceneID="KRK-t7-luB">
@@ -342,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQT-n6-0fJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315" y="884"/>
+            <point key="canvasLocation" x="1315" y="918"/>
         </scene>
         <!--Visit History Controller-->
         <scene sceneID="Myy-CB-ee5">
@@ -366,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KA5-ZR-03l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="884"/>
+            <point key="canvasLocation" x="1704" y="918"/>
         </scene>
         <!--Banner Controller-->
         <scene sceneID="hDH-nX-gzz">
@@ -399,6 +415,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYW-X5-eS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="580" y="1328"/>
+        </scene>
+        <!--User Thumb Controller-->
+        <scene sceneID="vGz-Nq-T7A">
+            <objects>
+                <viewController id="c4f-D5-Lgr" customClass="UserThumbController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="naW-qX-7Ig">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5l5-z2-GQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1315" y="-229"/>
         </scene>
     </scenes>
 </document>

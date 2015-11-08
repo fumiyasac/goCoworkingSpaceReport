@@ -122,7 +122,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         
         //現在位置の初期設定
         self.currentStatus = ListStatus.NowOpened
-        self.changeStatusWhenScroll(ListStatus.NowOpened.toListControlNumber())
+        self.changeStatusWhenScroll(ListStatus.NowOpened.returnValue())
         
         //UIScrollViewの細かい設定
         self.initWithScrollViewSetting()
@@ -133,7 +133,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
             let scrollViewInnerWidth :Int = DeviceSize.screenWidth() * i
             
             //Containerの配置をする
-            if (i == ListStatus.NowOpened.toListControlNumber()) {
+            if (i == ListStatus.NowOpened.returnValue()) {
                 
                 self.nowOpenContainer.frame = CGRectMake(
                     CGFloat(scrollViewInnerWidth),
@@ -143,7 +143,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
                 )
                 self.innerContainerScrollView.addSubview(self.nowOpenContainer)
                 
-            } else if (i == ListStatus.AlreadyGone.toListControlNumber()) {
+            } else if (i == ListStatus.AlreadyGone.returnValue()) {
 
                 self.visitHistoryContainer.frame = CGRectMake(
                     CGFloat(scrollViewInnerWidth),
@@ -153,7 +153,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
                 )
                 self.innerContainerScrollView.addSubview(self.visitHistoryContainer)
                 
-            } else if (i == ListStatus.StayingHere.toListControlNumber()) {
+            } else if (i == ListStatus.StayingHere.returnValue()) {
                 
                 self.nowHereContainer.frame = CGRectMake(
                     CGFloat(scrollViewInnerWidth),
@@ -185,20 +185,20 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
     
     @IBAction func displayNowOpen(sender: UIButton) {
         
-        self.changeStatusWhenScroll(ListStatus.NowOpened.toListControlNumber())
-        self.changeContainerOffsetWhenButtonPush(ListStatus.NowOpened.toListControlNumber())
+        self.changeStatusWhenScroll(ListStatus.NowOpened.returnValue())
+        self.changeContainerOffsetWhenButtonPush(ListStatus.NowOpened.returnValue())
     }
     
     @IBAction func displayVisitHistory(sender: UIButton) {
         
-        self.changeStatusWhenScroll(ListStatus.AlreadyGone.toListControlNumber())
-        self.changeContainerOffsetWhenButtonPush(ListStatus.AlreadyGone.toListControlNumber())
+        self.changeStatusWhenScroll(ListStatus.AlreadyGone.returnValue())
+        self.changeContainerOffsetWhenButtonPush(ListStatus.AlreadyGone.returnValue())
     }
     
     @IBAction func displayNowHere(sender: UIButton) {
         
-        self.changeStatusWhenScroll(ListStatus.StayingHere.toListControlNumber())
-        self.changeContainerOffsetWhenButtonPush(ListStatus.StayingHere.toListControlNumber())
+        self.changeStatusWhenScroll(ListStatus.StayingHere.returnValue())
+        self.changeContainerOffsetWhenButtonPush(ListStatus.StayingHere.returnValue())
     }
     
     @IBAction func profileCloseAction(sender: UIButton) {
@@ -237,7 +237,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
     //enumのステータスを変更する＆ボタンの見た目を変更する
     func changeStatusWhenScroll(page: Int) {
         
-        if (page == ListStatus.NowOpened.toListControlNumber()) {
+        if (page == ListStatus.NowOpened.returnValue()) {
             
             self.currentStatus = ListStatus.NowOpened
             
@@ -250,7 +250,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
             self.nowHereButton.enabled      = true
             self.visitHistoryButton.enabled = true
             
-        } else if (page == ListStatus.AlreadyGone.toListControlNumber()) {
+        } else if (page == ListStatus.AlreadyGone.returnValue()) {
             
             self.currentStatus = ListStatus.AlreadyGone
 
@@ -263,7 +263,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
             self.nowHereButton.enabled      = true
             self.visitHistoryButton.enabled = false
             
-        } else if (page == ListStatus.StayingHere.toListControlNumber()) {
+        } else if (page == ListStatus.StayingHere.returnValue()) {
             
             self.currentStatus = ListStatus.StayingHere
             

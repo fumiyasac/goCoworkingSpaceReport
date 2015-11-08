@@ -15,7 +15,7 @@ enum ListStatus {
     case StayingHere
     
     //状態対応するの値を返す
-    func toListControlNumber() -> Int {
+    func returnValue() -> Int {
         switch (self) {
             case .NowOpened:
                 return 0

@@ -6,6 +6,9 @@
 //  Copyright © 2015年 just1factory. All rights reserved.
 //
 
+//タイトル用情報のenum
 enum TitleText: String {
+    
+    //タイトルテキスト一覧
     case Top = "コワーキングFun!"
 }
