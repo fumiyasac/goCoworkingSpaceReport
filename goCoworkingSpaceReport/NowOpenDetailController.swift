@@ -22,6 +22,16 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     //ナビゲーションのアイテム
     var helpButton: UIBarButtonItem!
     
+    override func viewWillAppear(animated: Bool) {
+        
+        self.detailTableView.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(65),
+            CGFloat(DeviceSize.screenWidth()),
+            CGFloat(DeviceSize.screenHeight() - 65)
+        )
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +41,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         //テーブルビュー関連設定
         self.detailTableView.delegate = self
         self.detailTableView.dataSource = self
+        self.detailTableView.separatorColor = UIColor.clearColor()
         
         //ナビゲーション関連設定
         self.navigationController?.navigationBar.barTintColor = ColorDefinition.colorWithHexString(ColorStatus.Yellow.rawValue)
@@ -48,7 +59,30 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         self.navigationItem.title = ""
         self.navigationItem.rightBarButtonItem = self.helpButton
         
+        let backButton: UIBarButtonItem = UIBarButtonItem()
+        
+        // 戻るボタンの文字を空文字にする
+        backButton.title = ""
+        self.navigationItem.backBarButtonItem = backButton
+        
         //各セクション用のXibの設定
+        let nibMainImage:UINib = UINib(nibName: "IntroductionImageCell", bundle: nil)
+        self.detailTableView.registerNib(nibMainImage, forCellReuseIdentifier: "IntroductionImage")
+        
+        let nibMainText:UINib = UINib(nibName: "IntroductionTextCell", bundle: nil)
+        self.detailTableView.registerNib(nibMainText, forCellReuseIdentifier: "IntroductionText")
+        
+        let nibDetailButton:UINib = UINib(nibName: "DetailButtonCell", bundle: nil)
+        self.detailTableView.registerNib(nibDetailButton, forCellReuseIdentifier: "DetailButton")
+        
+        let nibFacebook:UINib = UINib(nibName: "FacebookCell", bundle: nil)
+        self.detailTableView.registerNib(nibFacebook, forCellReuseIdentifier: "Facebook")
+        
+        let nibEventAndStudy:UINib = UINib(nibName: "EventAndStudyCell", bundle: nil)
+        self.detailTableView.registerNib(nibEventAndStudy, forCellReuseIdentifier: "EventAndStudy")
+        
+        let nibBlank:UINib = UINib(nibName: "BlankCell", bundle: nil)
+        self.detailTableView.registerNib(nibBlank, forCellReuseIdentifier: "Blank")
         
     }
     
@@ -138,9 +172,41 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         
         var cell: UITableViewCell!
         
-        //@todo: 読み込むXibに関する条件分岐を行う
-
-        return cell;
+        //読み込むXibに関する条件分岐を行う
+        //Enumで設定した行数
+        switch (indexPath.section) {
+            
+            case DetailTableDefinition.CoworkingSpaceIntroductionImage.returnValue():
+                cell = tableView.dequeueReusableCellWithIdentifier("IntroductionImage") as? IntroductionImageCell
+                cell.accessoryType = UITableViewCellAccessoryType.None
+                break
+            
+            case DetailTableDefinition.CoworkingSpaceIntroductionText.returnValue():
+                cell = tableView.dequeueReusableCellWithIdentifier("IntroductionText") as? IntroductionTextCell
+                cell.accessoryType = UITableViewCellAccessoryType.None
+                break
+            
+            case DetailTableDefinition.DetailButtonCell.returnValue():
+                cell = tableView.dequeueReusableCellWithIdentifier("DetailButton") as? DetailButtonCell
+                cell.accessoryType = UITableViewCellAccessoryType.None
+                break
+            
+            case DetailTableDefinition.FacebookInformation.returnValue():
+                cell = tableView.dequeueReusableCellWithIdentifier("Facebook") as? FacebookCell
+                cell.accessoryType = UITableViewCellAccessoryType.None
+                break
+            
+            case DetailTableDefinition.EventAndStudyInformation.returnValue():
+                cell = tableView.dequeueReusableCellWithIdentifier("EventAndStudy") as? EventAndStudyCell
+                cell.accessoryType = UITableViewCellAccessoryType.None
+                break
+            
+            default:
+                cell = tableView.dequeueReusableCellWithIdentifier("Blank") as? BlankCell
+                cell.accessoryType = UITableViewCellAccessoryType.None
+                break
+        }
+        return cell
     }
     
     //セルをタップした時に呼び出される

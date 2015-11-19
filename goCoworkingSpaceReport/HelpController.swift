@@ -1,5 +1,5 @@
 //
-//  RelatedController.swift
+//  HelpController.swift
 //  goCoworkingSpaceReport
 //
 //  Created by 酒井文也 on 2015/11/04.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RelatedController: UIViewController {
+class HelpController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,12 @@ class RelatedController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
+        let backButton: UIBarButtonItem = UIBarButtonItem()
+        // 戻るボタンの文字を空文字にする
+        backButton.title = ""
+        viewController.navigationItem.backBarButtonItem = backButton
+    }
 
     /*
     // MARK: - Navigation

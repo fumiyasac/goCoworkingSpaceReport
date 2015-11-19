@@ -10,9 +10,26 @@ import UIKit
 
 class IntroductionTextCell: UITableViewCell {
 
+    //サマリー文章
+    @IBOutlet var introductionTextSummary: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
+        self.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(0),
+            CGFloat(DeviceSize.screenWidth()),
+            CGFloat(120)
+        )
+        
+        self.introductionTextSummary.frame = CGRectMake(
+            CGFloat(5),
+            CGFloat(5),
+            CGFloat(DeviceSize.screenWidth()-10),
+            CGFloat(110)
+        )
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

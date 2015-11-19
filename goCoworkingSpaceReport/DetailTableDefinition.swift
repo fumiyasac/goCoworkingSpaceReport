@@ -65,11 +65,11 @@ enum DetailTableDefinition {
             case .CoworkingSpaceIntroductionImage:
                 return 180.0
             case .CoworkingSpaceIntroductionText:
-                return 80.0
+                return 120.0
             case .EverybodyPhotographHeaderOnly:
                 return 0.0
             case .DetailButtonCell:
-                return 70.0
+                return 100.0
             case .FacebookInformation:
                 return 100.0
             case .EventAndStudyInformation:
