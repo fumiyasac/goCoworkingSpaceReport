@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var startButton: UIButton!
     
     //ページ数
-    let pageNumber = 2;
+    let pageNumber = 2
     
     //スクロールビューにセットする画像
     var image1: UIImage!
@@ -56,7 +56,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         // ページコントロールの初期値設定
         self.pageControl.currentPage = 0
         
-        // ページするオプションを有効にするための設定（今回は縦にスクロール）
+        // ページするオプションを有効にするための設定（今回は横にスクロール）
         self.openingScrollView.delegate = self
         self.openingScrollView.pagingEnabled = true
         self.openingScrollView.scrollEnabled = true

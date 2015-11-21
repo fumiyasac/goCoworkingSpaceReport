@@ -13,10 +13,8 @@ enum DetailTableDefinition {
     //テーブルビューの状態（コワーキングスペースの詳細画面）
     case CoworkingSpaceIntroductionImage
     case CoworkingSpaceIntroductionText
-    case EverybodyPhotographHeaderOnly
+    case CoworkingSpaceIntroductionDetail
     case DetailButtonCell
-    case FacebookInformation
-    case EventAndStudyInformation
     case SocialButtonHeaderOnly
     
     //Enumに対応するセクション値を返す
@@ -26,16 +24,12 @@ enum DetailTableDefinition {
                 return 0
             case .CoworkingSpaceIntroductionText:
                 return 1
-            case .EverybodyPhotographHeaderOnly:
+            case .CoworkingSpaceIntroductionDetail:
                 return 2
             case .DetailButtonCell:
                 return 3
-            case .FacebookInformation:
-                return 4
-            case .EventAndStudyInformation:
-                return 5
             case .SocialButtonHeaderOnly:
-                return 6
+                return 4
         }
     }
     
@@ -46,14 +40,10 @@ enum DetailTableDefinition {
                 return 1
             case .CoworkingSpaceIntroductionText:
                 return 1
-            case .EverybodyPhotographHeaderOnly:
-                return 0
+            case .CoworkingSpaceIntroductionDetail:
+                return 1
             case .DetailButtonCell:
-                return 4
-            case .FacebookInformation:
-                return 6
-            case .EventAndStudyInformation:
-                return 6
+                return 7
             case .SocialButtonHeaderOnly:
                 return 0
         }
@@ -65,14 +55,10 @@ enum DetailTableDefinition {
             case .CoworkingSpaceIntroductionImage:
                 return 180.0
             case .CoworkingSpaceIntroductionText:
-                return 120.0
-            case .EverybodyPhotographHeaderOnly:
-                return 0.0
+                return 160.0
+            case .CoworkingSpaceIntroductionDetail:
+                return 320.0
             case .DetailButtonCell:
-                return 100.0
-            case .FacebookInformation:
-                return 100.0
-            case .EventAndStudyInformation:
                 return 100.0
             case .SocialButtonHeaderOnly:
                 return 0.0
@@ -82,7 +68,7 @@ enum DetailTableDefinition {
     //Enumに対応するヘッダー高さの値を返す
     func sectionHeaderHeight() -> Double {
         switch (self) {
-            case .EverybodyPhotographHeaderOnly:
+            case .DetailButtonCell:
                 return 140.0
             case .SocialButtonHeaderOnly:
                 return 100.0

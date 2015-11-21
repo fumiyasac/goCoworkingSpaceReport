@@ -24,11 +24,19 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     
     override func viewWillAppear(animated: Bool) {
         
+        //テーブルビューの初期位置の設定をする
         self.detailTableView.frame = CGRectMake(
             CGFloat(0),
             CGFloat(65),
             CGFloat(DeviceSize.screenWidth()),
             CGFloat(DeviceSize.screenHeight() - 65)
+        )
+        
+        self.userThumbContainer.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(0),
+            CGFloat(DeviceSize.screenWidth()),
+            CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
         )
     }
     
@@ -68,18 +76,15 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         //各セクション用のXibの設定
         let nibMainImage:UINib = UINib(nibName: "IntroductionImageCell", bundle: nil)
         self.detailTableView.registerNib(nibMainImage, forCellReuseIdentifier: "IntroductionImage")
-        
+
         let nibMainText:UINib = UINib(nibName: "IntroductionTextCell", bundle: nil)
         self.detailTableView.registerNib(nibMainText, forCellReuseIdentifier: "IntroductionText")
         
+        let nibMainDetail:UINib = UINib(nibName: "IntroductionDetailCell", bundle: nil)
+        self.detailTableView.registerNib(nibMainDetail, forCellReuseIdentifier: "IntroductionDetail")
+        
         let nibDetailButton:UINib = UINib(nibName: "DetailButtonCell", bundle: nil)
         self.detailTableView.registerNib(nibDetailButton, forCellReuseIdentifier: "DetailButton")
-        
-        let nibFacebook:UINib = UINib(nibName: "FacebookCell", bundle: nil)
-        self.detailTableView.registerNib(nibFacebook, forCellReuseIdentifier: "Facebook")
-        
-        let nibEventAndStudy:UINib = UINib(nibName: "EventAndStudyCell", bundle: nil)
-        self.detailTableView.registerNib(nibEventAndStudy, forCellReuseIdentifier: "EventAndStudy")
         
         let nibBlank:UINib = UINib(nibName: "BlankCell", bundle: nil)
         self.detailTableView.registerNib(nibBlank, forCellReuseIdentifier: "Blank")
@@ -100,16 +105,23 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         //ヘッダーが必要な物はここにaddSubView
         switch (section) {
             
-            case DetailTableDefinition.EverybodyPhotographHeaderOnly.returnValue():
+            case DetailTableDefinition.DetailButtonCell.returnValue():
             
                 //@todo: Header用のContainerを突っ込む
-                
+                headerViewBase = UIView()
+                headerViewBase?.addSubview(self.userThumbContainer)
+                headerViewBase?.frame = CGRectMake(
+                    CGFloat(0),
+                    CGFloat(0),
+                    CGFloat(DeviceSize.screenWidth()),
+                    CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+                )
+                //headerViewBase?.multipleTouchEnabled = true
                 return headerViewBase
             
             case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
             
                 //@todo: Social連携等のボタンを配置したものを突っ込む
-                
                 return headerViewBase
             
             default:
@@ -124,8 +136,8 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         //セクションヘッダー高
         switch (section) {
             
-            case DetailTableDefinition.EverybodyPhotographHeaderOnly.returnValue():
-                return CGFloat(DetailTableDefinition.EverybodyPhotographHeaderOnly.sectionHeaderHeight())
+            case DetailTableDefinition.DetailButtonCell.returnValue():
+                return CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
             
             case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
                 return CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeaderHeight())
@@ -138,7 +150,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     //テーブルの行数を設定する ※必須
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //Enumで設定した行数
+        //Enumで設定した行数（仮）
         switch (section) {
             
             case DetailTableDefinition.CoworkingSpaceIntroductionImage.returnValue():
@@ -147,17 +159,11 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             case DetailTableDefinition.CoworkingSpaceIntroductionText.returnValue():
                 return DetailTableDefinition.CoworkingSpaceIntroductionText.sectionAmount()
             
-            case DetailTableDefinition.EverybodyPhotographHeaderOnly.returnValue():
-                return DetailTableDefinition.EverybodyPhotographHeaderOnly.sectionAmount()
+            case DetailTableDefinition.CoworkingSpaceIntroductionDetail.returnValue():
+                return DetailTableDefinition.CoworkingSpaceIntroductionDetail.sectionAmount()
             
             case DetailTableDefinition.DetailButtonCell.returnValue():
                 return DetailTableDefinition.DetailButtonCell.sectionAmount()
-            
-            case DetailTableDefinition.FacebookInformation.returnValue():
-                return DetailTableDefinition.FacebookInformation.sectionAmount()
-            
-            case DetailTableDefinition.EventAndStudyInformation.returnValue():
-                return DetailTableDefinition.EventAndStudyInformation.sectionAmount()
             
             case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
                 return DetailTableDefinition.SocialButtonHeaderOnly.sectionAmount()
@@ -177,33 +183,38 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         switch (indexPath.section) {
             
             case DetailTableDefinition.CoworkingSpaceIntroductionImage.returnValue():
-                cell = tableView.dequeueReusableCellWithIdentifier("IntroductionImage") as? IntroductionImageCell
-                cell.accessoryType = UITableViewCellAccessoryType.None
+                let cellOne = tableView.dequeueReusableCellWithIdentifier("IntroductionImage") as? IntroductionImageCell
+                cellOne!.accessoryType = UITableViewCellAccessoryType.None
+                cellOne!.selectionStyle = UITableViewCellSelectionStyle.None
+                cell = cellOne!
                 break
             
             case DetailTableDefinition.CoworkingSpaceIntroductionText.returnValue():
-                cell = tableView.dequeueReusableCellWithIdentifier("IntroductionText") as? IntroductionTextCell
-                cell.accessoryType = UITableViewCellAccessoryType.None
+                let cellTwo = tableView.dequeueReusableCellWithIdentifier("IntroductionText") as? IntroductionTextCell
+                cellTwo!.accessoryType = UITableViewCellAccessoryType.None
+                cellTwo!.selectionStyle = UITableViewCellSelectionStyle.None
+                cell = cellTwo!
+                break
+            
+            case DetailTableDefinition.CoworkingSpaceIntroductionDetail.returnValue():
+                let cellThree = tableView.dequeueReusableCellWithIdentifier("IntroductionDetail") as? IntroductionDetailCell
+                cellThree!.accessoryType = UITableViewCellAccessoryType.None
+                cellThree!.selectionStyle = UITableViewCellSelectionStyle.None
+                cell = cellThree!
                 break
             
             case DetailTableDefinition.DetailButtonCell.returnValue():
-                cell = tableView.dequeueReusableCellWithIdentifier("DetailButton") as? DetailButtonCell
-                cell.accessoryType = UITableViewCellAccessoryType.None
-                break
-            
-            case DetailTableDefinition.FacebookInformation.returnValue():
-                cell = tableView.dequeueReusableCellWithIdentifier("Facebook") as? FacebookCell
-                cell.accessoryType = UITableViewCellAccessoryType.None
-                break
-            
-            case DetailTableDefinition.EventAndStudyInformation.returnValue():
-                cell = tableView.dequeueReusableCellWithIdentifier("EventAndStudy") as? EventAndStudyCell
-                cell.accessoryType = UITableViewCellAccessoryType.None
+                let cellFour = tableView.dequeueReusableCellWithIdentifier("DetailButton") as? DetailButtonCell
+                cellFour!.accessoryType = UITableViewCellAccessoryType.None
+                cellFour!.selectionStyle = UITableViewCellSelectionStyle.None
+                cell = cellFour!
                 break
             
             default:
-                cell = tableView.dequeueReusableCellWithIdentifier("Blank") as? BlankCell
-                cell.accessoryType = UITableViewCellAccessoryType.None
+                let cellBlank = tableView.dequeueReusableCellWithIdentifier("Blank") as? BlankCell
+                cellBlank!.accessoryType = UITableViewCellAccessoryType.None
+                cellBlank!.selectionStyle = UITableViewCellSelectionStyle.None
+                cell = cellBlank!
                 break
         }
         return cell
@@ -227,17 +238,11 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             case DetailTableDefinition.CoworkingSpaceIntroductionText.returnValue():
                 return CGFloat(DetailTableDefinition.CoworkingSpaceIntroductionText.sectionHeight())
             
-            case DetailTableDefinition.EverybodyPhotographHeaderOnly.returnValue():
-                return CGFloat(DetailTableDefinition.EverybodyPhotographHeaderOnly.sectionHeight())
+            case DetailTableDefinition.CoworkingSpaceIntroductionDetail.returnValue():
+                return CGFloat(DetailTableDefinition.CoworkingSpaceIntroductionDetail.sectionHeight())
             
             case DetailTableDefinition.DetailButtonCell.returnValue():
                 return CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeight())
-            
-            case DetailTableDefinition.FacebookInformation.returnValue():
-                return CGFloat(DetailTableDefinition.FacebookInformation.sectionHeight())
-            
-            case DetailTableDefinition.EventAndStudyInformation.returnValue():
-                return CGFloat(DetailTableDefinition.EventAndStudyInformation.sectionHeight())
             
             case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
                 return CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeight())

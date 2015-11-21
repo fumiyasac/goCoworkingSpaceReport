@@ -56,7 +56,7 @@ class NowOpenController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         //Xibファイルを元にデータを作成する
-        let cell = tableView.dequeueReusableCellWithIdentifier("NowOpenCell") as? NowOpenCell;
+        let cell = tableView.dequeueReusableCellWithIdentifier("NowOpenCell") as? NowOpenCell
             
         //テキスト・画像等の表示
         let shopImagePath = UIImage(named: "coedo.jpg")
@@ -67,8 +67,8 @@ class NowOpenController: UIViewController, UITableViewDelegate, UITableViewDataS
         cell!.spaceTime.text = "平日10:00~21:00 土日祝10:00~18:00"
         
         //セルのアクセサリタイプと背景の設定
-        cell!.accessoryType = UITableViewCellAccessoryType.None;
-        cell!.selectionStyle = UITableViewCellSelectionStyle.None;
+        cell!.accessoryType = UITableViewCellAccessoryType.None
+        cell!.selectionStyle = UITableViewCellSelectionStyle.None
             
         return cell!
     }

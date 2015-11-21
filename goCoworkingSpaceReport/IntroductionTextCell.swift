@@ -21,14 +21,14 @@ class IntroductionTextCell: UITableViewCell {
             CGFloat(0),
             CGFloat(0),
             CGFloat(DeviceSize.screenWidth()),
-            CGFloat(120)
+            CGFloat(160)
         )
         
         self.introductionTextSummary.frame = CGRectMake(
             CGFloat(5),
             CGFloat(5),
             CGFloat(DeviceSize.screenWidth()-10),
-            CGFloat(110)
+            CGFloat(150)
         )
     }
 

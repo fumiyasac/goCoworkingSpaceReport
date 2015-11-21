@@ -62,10 +62,10 @@ class VisitHistoryController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         //開閉の制御をするための条件分岐
-        if(self.targetCellSelected(indexPath)){
+        if (self.targetCellSelected(indexPath)) {
             
             //Xibファイルを元にデータを作成する
-            let cell = tableView.dequeueReusableCellWithIdentifier("HistoryTappedCell") as? HistoryTappedCell;
+            let cell = tableView.dequeueReusableCellWithIdentifier("HistoryTappedCell") as? HistoryTappedCell
             
             //テキスト・画像等の表示
             cell!.dateLabel.text = "Date:2015.10.04"
@@ -78,15 +78,15 @@ class VisitHistoryController: UIViewController, UITableViewDelegate, UITableView
             cell!.textMemo.text = "今日はSwiftビギナーズ勉強会にお越しいただき誠にありがとうございます！"
             
             //セルのアクセサリタイプと背景の設定
-            cell!.accessoryType = UITableViewCellAccessoryType.None;
-            cell!.selectionStyle = UITableViewCellSelectionStyle.None;
+            cell!.accessoryType = UITableViewCellAccessoryType.None
+            cell!.selectionStyle = UITableViewCellSelectionStyle.None
             
             return cell!
             
-        }else{
+        } else {
             
             //Xibファイルを元にデータを作成する
-            let cell = tableView.dequeueReusableCellWithIdentifier("HistoryCell") as? HistoryCell;
+            let cell = tableView.dequeueReusableCellWithIdentifier("HistoryCell") as? HistoryCell
             
             //テキスト・画像等の表示
             cell!.dateLabel.text = "Date:2015.10.04"
@@ -95,8 +95,8 @@ class VisitHistoryController: UIViewController, UITableViewDelegate, UITableView
             cell!.spaceImageSmall.image = shopImagePath
             
             //セルのアクセサリタイプと背景の設定
-            cell!.accessoryType = UITableViewCellAccessoryType.None;
-            cell!.selectionStyle = UITableViewCellSelectionStyle.None;
+            cell!.accessoryType = UITableViewCellAccessoryType.None
+            cell!.selectionStyle = UITableViewCellSelectionStyle.None
             
             return cell!
         }

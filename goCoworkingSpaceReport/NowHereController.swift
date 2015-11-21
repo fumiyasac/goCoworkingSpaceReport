@@ -54,7 +54,7 @@ class NowHereController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         //Xibファイルを元にデータを作成する
-        let cell = tableView.dequeueReusableCellWithIdentifier("NowHereCell") as? NowHereCell;
+        let cell = tableView.dequeueReusableCellWithIdentifier("NowHereCell") as? NowHereCell
         
         //テキスト・画像等の表示
         let shopImagePath = UIImage(named: "coedo.jpg")
@@ -66,8 +66,8 @@ class NowHereController: UIViewController, UITableViewDelegate, UITableViewDataS
         cell!.checkText.text = "現在上の場所でお仕事or勉強しています(^^)"
         
         //セルのアクセサリタイプと背景の設定
-        cell!.accessoryType = UITableViewCellAccessoryType.None;
-        cell!.selectionStyle = UITableViewCellSelectionStyle.None;
+        cell!.accessoryType = UITableViewCellAccessoryType.None
+        cell!.selectionStyle = UITableViewCellSelectionStyle.None
         
         return cell!
     }

@@ -35,13 +35,6 @@ class DetailButtonCell: UITableViewCell {
             CGFloat(DeviceSize.screenWidth()),
             CGFloat(100)
         )
-        
-        self.viewBackground.frame = CGRectMake(
-            CGFloat(5),
-            CGFloat(5),
-            CGFloat(DeviceSize.screenWidth()-10),
-            CGFloat(DeviceSize.screenHeight()-10)
-        )
 
         self.viewThumbImage.frame = CGRectMake(
             CGFloat(5),
@@ -51,21 +44,21 @@ class DetailButtonCell: UITableViewCell {
         )
         
         self.detailButtonTitle.frame = CGRectMake(
-            CGFloat(5),
+            CGFloat(100),
             CGFloat(5),
             CGFloat(DeviceSize.screenWidth()-120),
             CGFloat(20)
         )
         
         self.detailButtonRemark.frame = CGRectMake(
-            CGFloat(5),
+            CGFloat(100),
             CGFloat(30),
             CGFloat(DeviceSize.screenWidth()-120),
             CGFloat(20)
         )
         
         self.detailButtonText.frame = CGRectMake(
-            CGFloat(5),
+            CGFloat(95),
             CGFloat(50),
             CGFloat(DeviceSize.screenWidth()-110),
             CGFloat(40)

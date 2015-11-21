@@ -168,10 +168,10 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
             cellOne!.profileCategoryText.text = "テキスト"
         
             //セルのアクセサリタイプ
-            cellOne!.accessoryType = UITableViewCellAccessoryType.None;
+            cellOne!.accessoryType = UITableViewCellAccessoryType.None
         
             //セルタップ時の背景を変えない
-            cellOne!.selectionStyle = UITableViewCellSelectionStyle.None;
+            cellOne!.selectionStyle = UITableViewCellSelectionStyle.None
             cell = cellOne!
         
         } else if (indexPath.section == 1) {

@@ -8,28 +8,136 @@
 
 import UIKit
 
-class UserThumbController: UIViewController {
+class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerDelegate {
 
+    //みんなのPhoto表示用のUIScrollView
+    @IBOutlet var userPhotoScrollView: UIScrollView!
+    
+    let pageNumber: Int! = 2
+    let pagePicsCount: Int! = 7
+    
+    override func viewWillAppear(animated: Bool) {
+         self.userPhotoScrollView.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(0),
+            CGFloat(DeviceSize.screenWidth()),
+            CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+        )
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.userPhotoScrollView.contentOffset = CGPointMake(
+            CGFloat(0),
+            CGFloat(0)
+        )
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //デリゲート
+        self.userPhotoScrollView.delegate = self
+        
+        //スクロールビューの設定
+        self.userPhotoScrollView.contentSize = CGSizeMake(
+            CGFloat(DeviceSize.screenWidth() * self.pageNumber),
+            CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+        )
+        
+        self.userPhotoScrollView.pagingEnabled = false
+        self.userPhotoScrollView.scrollEnabled = true
+        self.userPhotoScrollView.directionalLockEnabled = false
+        self.userPhotoScrollView.showsHorizontalScrollIndicator = true
+        self.userPhotoScrollView.showsVerticalScrollIndicator = false
+        self.userPhotoScrollView.bounces = false
+        self.userPhotoScrollView.scrollsToTop = false
+        
+        //LongPressGestureをつける
+        //長押しを認識 & 0.9秒間は長押しする
+        //let myLongPressGesture: UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPressGesture:")
+        //myLongPressGesture.delegate = self;
+        //myLongPressGesture.minimumPressDuration = 0.9
+        
+        //UIImageViewを作成してScrollViewへ追加
+        for i in 0...pagePicsCount {
+            
+            let userView: UIView! = UIView()
+            userView.frame = CGRectMake(
+                CGFloat(DeviceSize.screenWidth()/4*i),
+                CGFloat(0),
+                CGFloat(DeviceSize.screenWidth()/4),
+                CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+            )
+            self.userPhotoScrollView.addSubview(userView)
+            
+            let myLongPressGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "imageTapGesture:")
+            myLongPressGesture.delegate = self;
+            
+            let userImageView: UIImageView! = UIImageView()
+            userView.addSubview(userImageView)
+            
+            let userImageLabelTitle: UILabel! = UILabel()
+            userView.addSubview(userImageLabelTitle)
 
-        // Do any additional setup after loading the view.
+            let userImageLabelDate: UILabel! = UILabel()
+            userView.addSubview(userImageLabelDate)
+            
+            userImageView.frame = CGRectMake(
+                CGFloat((DeviceSize.screenWidth()/4)/2 - 35),
+                CGFloat(18),
+                CGFloat(70),
+                CGFloat(70)
+            )
+            userImageView.layer.cornerRadius = CGFloat(35)
+            userImageView.addGestureRecognizer(myLongPressGesture)
+            userImageView.tag = i
+            
+            userImageLabelTitle.font = UIFont.boldSystemFontOfSize(10.0)
+            userImageLabelTitle.textColor = ColorDefinition.colorWithHexString(ColorStatus.Gray.rawValue)
+            userImageLabelTitle.textAlignment = NSTextAlignment.Center
+            userImageLabelTitle.text = "test"
+            userImageLabelTitle.frame = CGRectMake(
+                CGFloat(5),
+                CGFloat(100),
+                CGFloat(DeviceSize.screenWidth()/4-10),
+                CGFloat(20)
+            )
+            
+            userImageLabelDate.font = UIFont.boldSystemFontOfSize(10.0)
+            userImageLabelDate.textColor = ColorDefinition.colorWithHexString(ColorStatus.Gray.rawValue)
+            userImageLabelDate.textAlignment = NSTextAlignment.Center
+            userImageLabelDate.text = "2015.11.21"
+            userImageLabelDate.frame = CGRectMake(
+                CGFloat(5),
+                CGFloat(120),
+                CGFloat(Int(DeviceSize.screenWidth()/4-10)),
+                CGFloat(20)
+            )
+            
+            if(i % 2 == 0){
+                userImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test1.rawValue)
+            }else{
+                userImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test2.rawValue)
+            }
+            
+            //LongTapGestureができるようにする
+            userView.multipleTouchEnabled = true
+            userImageView.userInteractionEnabled = true
+        }
+        
     }
-
+    
+    //中の画像がタップされたら親のViewControllerのメソッドを呼び出す
+    func imageTapGesture(sender: UITapGestureRecognizer) {
+        let tappedIndex: Int! = sender.view?.tag
+        
+        print("----- Tapped. -----")
+        print(tappedIndex)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

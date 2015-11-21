@@ -54,7 +54,6 @@ class BannerController: UIViewController,UIScrollViewDelegate {
             CGFloat(60)
         )
         
-        self.bannerScrollView.delegate = self
         self.bannerScrollView.pagingEnabled = false
         self.bannerScrollView.scrollEnabled = false
         self.bannerScrollView.directionalLockEnabled = true
@@ -64,23 +63,32 @@ class BannerController: UIViewController,UIScrollViewDelegate {
         self.bannerScrollView.scrollsToTop = false
         
         //UIImageViewを作成してScrollViewへ追加
-        let firstImageView: UIImageView! = UIImageView(
-            frame: CGRect(x: 0, y: 0, width: 240, height: 60)
-        )
-        firstImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test1.rawValue)
-        self.bannerScrollView.addSubview(firstImageView)
-        
-        let secondImageView: UIImageView! = UIImageView(
-            frame: CGRect(x: 240, y: 0, width: 240, height: 60)
-        )
-        secondImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test2.rawValue)
-        self.bannerScrollView.addSubview(secondImageView)
-        
-        let thirdImageView: UIImageView! = UIImageView(
-            frame: CGRect(x: 240*2, y: 0, width: 240, height: 60)
-        )
-        thirdImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test3.rawValue)
-        self.bannerScrollView.addSubview(thirdImageView)
+        for i in 0...bannerPageNumber {
+           
+            let bannerImageView: UIImageView! = UIImageView()
+            bannerImageView.frame = CGRectMake(
+                CGFloat(240*i),
+                CGFloat(0),
+                CGFloat(240),
+                CGFloat(60)
+            )
+            
+            switch (i) {
+                case 0:
+                    bannerImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test1.rawValue)
+                    break
+                case 1:
+                    bannerImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test2.rawValue)
+                    break
+                case 2:
+                    bannerImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test3.rawValue)
+                    break
+                default:
+                    bannerImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test0.rawValue)
+                    break
+            }
+            self.bannerScrollView.addSubview(bannerImageView)
+        }
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(6.0, target: self, selector: Selector("scrollViewAnimation"), userInfo: nil, repeats: true)
     }
