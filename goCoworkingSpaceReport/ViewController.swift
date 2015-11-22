@@ -67,22 +67,34 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.openingScrollView.scrollsToTop = false
         
         //UIImageViewを3つ作成してScrollViewへ追加
-        let firstImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: DeviceSize.screenWidth(), height: DeviceSize.screenHeight()))
-        firstImageView.image = self.image1
-        firstImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test1.rawValue)
-        self.openingScrollView.addSubview(firstImageView)
-        
-        let secondImageView = UIImageView(frame: CGRect(x: DeviceSize.screenWidth(), y: 0, width: DeviceSize.screenWidth(), height: DeviceSize.screenHeight()))
-        secondImageView.image = self.image2
-        secondImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test2.rawValue)
-        self.openingScrollView.addSubview(secondImageView)
-        
-        let thirdImageView = UIImageView(frame: CGRect(x: DeviceSize.screenWidth() * 2, y: 0, width: DeviceSize.screenWidth(), height: DeviceSize.screenHeight()))
-        thirdImageView.image = self.image3
-        thirdImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test3.rawValue)
-        self.openingScrollView.addSubview(thirdImageView)
+        for i in 0...self.pageNumber {
+
+            let targetImageView = UIImageView(
+                frame: CGRect(
+                    x: DeviceSize.screenWidth()*i,
+                    y: 0,
+                    width: DeviceSize.screenWidth(),
+                    height: DeviceSize.screenHeight()
+                )
+            )
+            self.openingScrollView.addSubview(targetImageView)
+
+            //画像の設定変更
+            if (i == 0) {
+                targetImageView.image = self.image1
+                targetImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test1.rawValue)
+            } else if (i == 1) {
+                targetImageView.image = self.image2
+                targetImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test2.rawValue)
+            } else if (i == 2) {
+                targetImageView.image = self.image3
+                targetImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test3.rawValue)
+            }
+
+        }
+
     }
-    
+
     //スクロールを検知した際に行われる処理
     func scrollViewDidScroll(scrollview: UIScrollView) {
         

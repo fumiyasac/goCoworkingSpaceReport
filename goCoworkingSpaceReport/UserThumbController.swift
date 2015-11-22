@@ -25,13 +25,6 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
         )
     }
     
-    override func viewDidLayoutSubviews() {
-        self.userPhotoScrollView.contentOffset = CGPointMake(
-            CGFloat(0),
-            CGFloat(0)
-        )
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,12 +45,6 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
         self.userPhotoScrollView.bounces = false
         self.userPhotoScrollView.scrollsToTop = false
         
-        //LongPressGestureをつける
-        //長押しを認識 & 0.9秒間は長押しする
-        //let myLongPressGesture: UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPressGesture:")
-        //myLongPressGesture.delegate = self;
-        //myLongPressGesture.minimumPressDuration = 0.9
-        
         //UIImageViewを作成してScrollViewへ追加
         for i in 0...pagePicsCount {
             
@@ -70,6 +57,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
             )
             self.userPhotoScrollView.addSubview(userView)
             
+            //TapGestureを付与する
             let myLongPressGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "imageTapGesture:")
             myLongPressGesture.delegate = self;
             

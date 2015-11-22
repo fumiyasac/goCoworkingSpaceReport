@@ -10,13 +10,14 @@
 enum ColorStatus: String {
     
     //実際に使用するカラースキーム
-    case Red    = "cc0000"
-    case Green  = "339933"
-    case Orange = "ff9900"
-    case Yellow = "ffcc33"
-    case Gray   = "666666"
-    case Brown  = "cc9933"
-    case White  = "ffffff"
+    case Red       = "cc0000"
+    case Green     = "339933"
+    case Orange    = "ff9900"
+    case Yellow    = "ffcc33"
+    case Gray      = "666666"
+    case LightGray = "cccccc"
+    case Brown     = "cc9933"
+    case White     = "ffffff"
     
     //テスト用カラースキーム
     case Test0 = "000000"
