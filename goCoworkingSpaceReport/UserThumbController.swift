@@ -108,7 +108,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
                 userImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test2.rawValue)
             }
             
-            //LongTapGestureができるようにする
+            //TapGestureができるようにする
             userView.multipleTouchEnabled = true
             userImageView.userInteractionEnabled = true
         }

@@ -11,6 +11,9 @@ import UIKit
 //Parseクラスのインポート
 import Parse
 
+//Realmクラスのインポート
+import Realm
+
 class ViewController: UIViewController, UIScrollViewDelegate {
 
     //Debug.
@@ -36,15 +39,19 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        // Parseテスト用のコード（Object has been saved.がコンソールに表示されれば通信が成功）
+
+        //Parseテスト用のコード（Object has been saved.がコンソールに表示されれば通信が成功）
         /*
         let testObject = PFObject(className: "TestObject")
         testObject["foo"] = "bar"
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             print("Object has been saved.")
         }
+        */
+
+        //Realmクラスのテスト用のコード（Realmのデフォルトパス[(以下略)/Documents/default.realm]がコンソールに表示されれば通信が成功）
+        /*
+        print(RLMRealm.defaultRealmPath())
         */
 
         //スクロールビューの設定
