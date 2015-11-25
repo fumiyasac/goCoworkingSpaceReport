@@ -13,20 +13,26 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     //みんなのPhoto表示用のUIScrollView
     @IBOutlet var userPhotoScrollView: UIScrollView!
     
+    //みんなのPhoto用のラベル
+    @IBOutlet var userPhotoLabel: UILabel!
+    
     let pageNumber: Int! = 2
     let pagePicsCount: Int! = 7
     
     override func viewWillAppear(animated: Bool) {
          self.userPhotoScrollView.frame = CGRectMake(
             CGFloat(0),
-            CGFloat(0),
+            CGFloat(30),
             CGFloat(DeviceSize.screenWidth()),
-            CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+            CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
         )
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //タイトル
+        self.userPhotoLabel.text = MessageText.userPhotoTitle.rawValue
         
         //デリゲート
         self.userPhotoScrollView.delegate = self
@@ -34,7 +40,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
         //スクロールビューの設定
         self.userPhotoScrollView.contentSize = CGSizeMake(
             CGFloat(DeviceSize.screenWidth() * self.pageNumber),
-            CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+            CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
         )
         
         self.userPhotoScrollView.pagingEnabled = false
@@ -53,7 +59,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
                 CGFloat(DeviceSize.screenWidth()/4*i),
                 CGFloat(0),
                 CGFloat(DeviceSize.screenWidth()/4),
-                CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+                CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
             )
             self.userPhotoScrollView.addSubview(userView)
             
@@ -71,7 +77,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
             userView.addSubview(userImageLabelDate)
             
             userImageView.frame = CGRectMake(
-                CGFloat((DeviceSize.screenWidth()/4)/2 - 35),
+                ceil(CGFloat((DeviceSize.screenWidth()/4)/2 - 35)),
                 CGFloat(18),
                 CGFloat(70),
                 CGFloat(70)
@@ -87,7 +93,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
             userImageLabelTitle.frame = CGRectMake(
                 CGFloat(5),
                 CGFloat(100),
-                CGFloat(DeviceSize.screenWidth()/4-10),
+                ceil(CGFloat(DeviceSize.screenWidth()/4-10)),
                 CGFloat(20)
             )
             
@@ -98,7 +104,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
             userImageLabelDate.frame = CGRectMake(
                 CGFloat(5),
                 CGFloat(120),
-                CGFloat(Int(DeviceSize.screenWidth()/4-10)),
+                ceil(CGFloat(Int(DeviceSize.screenWidth()/4-10))),
                 CGFloat(20)
             )
             

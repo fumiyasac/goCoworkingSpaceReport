@@ -324,6 +324,7 @@
 		DE1181A81BC0F9E8002794AE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DE779AF31C06217F00E4978B /* Sample */,
 				DE1181A91BC0FA0D002794AE /* coedo.jpg */,
 			);
 			name = Assets;
@@ -509,6 +510,20 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		DE779AF31C06217F00E4978B /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		DE779AF41C06219800E4978B /* FunctionUnit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FunctionUnit;
+			sourceTree = "<group>";
+		};
 		DEE795F41BB4232F005128DF = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +557,7 @@
 				DEE796311BB45610005128DF /* Libraries */,
 				DEE7962E1BB44791005128DF /* Constants */,
 				DEE796991BB6F9C1005128DF /* Containers */,
+				DE779AF41C06219800E4978B /* FunctionUnit */,
 				DEE796001BB4232F005128DF /* AppDelegate.swift */,
 				DE083B5F1BCAA413000A35A7 /* CameraController.swift */,
 				DEE796021BB4232F005128DF /* ViewController.swift */,

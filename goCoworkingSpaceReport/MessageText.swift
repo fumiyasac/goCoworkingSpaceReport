@@ -10,6 +10,7 @@
 enum MessageText: String {
     
     //プロフィールの変更
+    case userPhotoTitle      = "最新のみんなのPhoto"
     case ValidProfileSaved   = "プロフィール情報の変更が完了しました!"
     case InvalidProfileSaved = "プロフィール情報の変更に失敗しました。"
 }

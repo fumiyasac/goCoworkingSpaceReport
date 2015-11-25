@@ -15,6 +15,7 @@ enum DetailTableDefinition {
     case CoworkingSpaceIntroductionText
     case CoworkingSpaceIntroductionDetail
     case DetailButtonCell
+    case EveryoneGalleryHeaderOnly
     case SocialButtonHeaderOnly
     
     //Enumに対応するセクション値を返す
@@ -28,8 +29,10 @@ enum DetailTableDefinition {
                 return 2
             case .DetailButtonCell:
                 return 3
-            case .SocialButtonHeaderOnly:
+            case .EveryoneGalleryHeaderOnly:
                 return 4
+            case .SocialButtonHeaderOnly:
+                return 5
         }
     }
     
@@ -44,7 +47,7 @@ enum DetailTableDefinition {
                 return 1
             case .DetailButtonCell:
                 return 7
-            case .SocialButtonHeaderOnly:
+            default:
                 return 0
         }
     }
@@ -60,7 +63,7 @@ enum DetailTableDefinition {
                 return 320.0
             case .DetailButtonCell:
                 return 100.0
-            case .SocialButtonHeaderOnly:
+            default:
                 return 0.0
         }
     }
@@ -68,8 +71,8 @@ enum DetailTableDefinition {
     //Enumに対応するヘッダー高さの値を返す
     func sectionHeaderHeight() -> Double {
         switch (self) {
-            case .DetailButtonCell:
-                return 140.0
+            case .EveryoneGalleryHeaderOnly:
+                return 170.0
             case .SocialButtonHeaderOnly:
                 return 100.0
             default:

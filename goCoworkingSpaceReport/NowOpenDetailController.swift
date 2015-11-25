@@ -11,7 +11,7 @@ import UIKit
 class NowOpenDetailController: UIViewController, UINavigationControllerDelegate, UITableViewDelegate,UITableViewDataSource {
 
     //テーブルビューの要素数
-    let sectionCount: Int = 7
+    let sectionCount: Int = 6
     
     //テーブルビュー
     @IBOutlet var detailTableView: UITableView!
@@ -36,7 +36,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             CGFloat(0),
             CGFloat(0),
             CGFloat(DeviceSize.screenWidth()),
-            CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+            CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
         )
     }
     
@@ -95,7 +95,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         //要素数を返す
-        return sectionCount
+        return self.sectionCount
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -105,7 +105,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         //ヘッダーが必要な物はここにaddSubView
         switch (section) {
             
-            case DetailTableDefinition.DetailButtonCell.returnValue():
+            case DetailTableDefinition.EveryoneGalleryHeaderOnly.returnValue():
             
                 //@todo: Header用のContainerを突っ込む
                 headerViewBase = UIView()
@@ -114,12 +114,12 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                     CGFloat(0),
                     CGFloat(0),
                     CGFloat(DeviceSize.screenWidth()),
-                    CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+                    CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
                 )
                 //headerViewBase?.multipleTouchEnabled = true
                 return headerViewBase
             
-            case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
+            case DetailTableDefinition.EveryoneGalleryHeaderOnly.returnValue():
             
                 //@todo: Social連携等のボタンを配置したものを突っ込む
                 return headerViewBase
@@ -136,8 +136,8 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         //セクションヘッダー高
         switch (section) {
             
-            case DetailTableDefinition.DetailButtonCell.returnValue():
-                return CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeaderHeight())
+            case DetailTableDefinition.EveryoneGalleryHeaderOnly.returnValue():
+                return CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
             
             case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
                 return CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeaderHeight())
@@ -164,9 +164,6 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             
             case DetailTableDefinition.DetailButtonCell.returnValue():
                 return DetailTableDefinition.DetailButtonCell.sectionAmount()
-            
-            case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
-                return DetailTableDefinition.SocialButtonHeaderOnly.sectionAmount()
             
             default:
                 return 0
@@ -205,7 +202,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             
             case DetailTableDefinition.DetailButtonCell.returnValue():
                 let cellFour = tableView.dequeueReusableCellWithIdentifier("DetailButton") as? DetailButtonCell
-                cellFour!.accessoryType = UITableViewCellAccessoryType.None
+                cellFour!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
                 cellFour!.selectionStyle = UITableViewCellSelectionStyle.None
                 cell = cellFour!
                 break
@@ -243,9 +240,6 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             
             case DetailTableDefinition.DetailButtonCell.returnValue():
                 return CGFloat(DetailTableDefinition.DetailButtonCell.sectionHeight())
-            
-            case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
-                return CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeight())
             
             default:
                 return CGFloat(0.0)
