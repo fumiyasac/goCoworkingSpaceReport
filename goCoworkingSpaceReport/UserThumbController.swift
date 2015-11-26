@@ -31,9 +31,6 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //タイトル
-        self.userPhotoLabel.text = MessageText.userPhotoTitle.rawValue
-        
         //デリゲート
         self.userPhotoScrollView.delegate = self
         
@@ -127,6 +124,12 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
         
         print("----- Tapped. -----")
         print(tappedIndex)
+    }
+    
+    //投稿画面へのボタンアクション
+    @IBAction func postPhotoAction(sender: UIButton) {
+        print("----- Action. -----")
+        print("----- postPhotoAction -----")
     }
     
     override func didReceiveMemoryWarning() {

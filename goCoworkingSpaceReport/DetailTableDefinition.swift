@@ -72,7 +72,7 @@ enum DetailTableDefinition {
     func sectionHeaderHeight() -> Double {
         switch (self) {
             case .EveryoneGalleryHeaderOnly:
-                return 170.0
+                return 220.0
             case .SocialButtonHeaderOnly:
                 return 100.0
             default:
