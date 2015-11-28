@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NowOpenDetailController: UIViewController, UINavigationControllerDelegate, UITableViewDelegate,UITableViewDataSource {
+class NowOpenDetailController: UIViewController, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
 
     //テーブルビューの要素数
     let sectionCount: Int = 6
@@ -29,7 +29,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             CGFloat(0),
             CGFloat(65),
             CGFloat(DeviceSize.screenWidth()),
-            CGFloat(DeviceSize.screenHeight() - 65)
+            CGFloat(DeviceSize.screenHeight() - 109)
         )
         
         self.userThumbContainer.frame = CGRectMake(
@@ -41,8 +41,9 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
         //NavigationControllerのデリゲート
         self.navigationController?.delegate = self
         
@@ -202,6 +203,16 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             
             case DetailTableDefinition.DetailButtonCell.returnValue():
                 let cellFour = tableView.dequeueReusableCellWithIdentifier("DetailButton") as? DetailButtonCell
+                
+                //テーブルビューの画像・文言の設定を行う
+                let detailButtonArrayGroups: [[String]] = NowDetailTableCellDefintion.cellConstTexts()
+                let detailButtonArray: Array = detailButtonArrayGroups[indexPath.row]
+                
+                cellFour!.viewThumbImage.image = UIImage(named: detailButtonArray[0])
+                cellFour!.detailButtonTitle.text = detailButtonArray[1]
+                cellFour!.detailButtonRemark.text = detailButtonArray[2]
+                cellFour!.detailButtonText.text = detailButtonArray[3]
+                
                 cellFour!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
                 cellFour!.selectionStyle = UITableViewCellSelectionStyle.None
                 cell = cellFour!
@@ -213,14 +224,31 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                 cellBlank!.selectionStyle = UITableViewCellSelectionStyle.None
                 cell = cellBlank!
                 break
-        }
-        return cell
+            }
+            return cell
     }
     
     //セルをタップした時に呼び出される
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        //@todo: Safariで飛ばす必要のある部分だけ処理を書く
+        //@todo: 各コントローラーへの遷移
+        switch (indexPath.section) {
+            
+            case DetailTableDefinition.DetailButtonCell.returnValue():
+        
+                if indexPath.row == 0 {
+                    
+                    let mapPopup:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MapPopup") as! MapPopupUnitController
+                    
+                    mapPopup.view.backgroundColor = UIColor.clearColor()
+                    mapPopup.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+                    self.presentViewController(mapPopup, animated: false, completion: nil)
+                }
+            
+            default:
+                break
+        }
+        
     }
     
     //セルの高さを返す ※必須

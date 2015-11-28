@@ -10,6 +10,9 @@ import UIKit
 
 class IntroductionImageCell: UITableViewCell {
 
+    //ラベル
+    @IBOutlet var introductionHead: UILabel!
+    
     //写真
     @IBOutlet var introductionImage: UIImageView!
     
@@ -29,24 +32,31 @@ class IntroductionImageCell: UITableViewCell {
             CGFloat(DeviceSize.screenWidth()),
             CGFloat(180)
         )
-        
-        self.introductionImage.frame = CGRectMake(
+
+        self.introductionHead.frame = CGRectMake(
             CGFloat(0),
             CGFloat(0),
             CGFloat(DeviceSize.screenWidth()),
-            CGFloat(180)
+            CGFloat(30)
+        )
+        
+        self.introductionImage.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(30),
+            CGFloat(DeviceSize.screenWidth()),
+            CGFloat(200)
         )
         
         self.introductionTitle.frame = CGRectMake(
             CGFloat(5),
-            CGFloat(140),
+            CGFloat(190),
             CGFloat(DeviceSize.screenWidth()-10),
             CGFloat(20)
         )
         
         self.introductionStation.frame = CGRectMake(
             CGFloat(5),
-            CGFloat(160),
+            CGFloat(210),
             CGFloat(DeviceSize.screenWidth()-10),
             CGFloat(20)
         )

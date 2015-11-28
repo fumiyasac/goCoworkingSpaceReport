@@ -128,7 +128,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     
     //投稿画面へのボタンアクション
     @IBAction func postPhotoAction(sender: UIButton) {
-        print("----- Action. -----")
+        
         print("----- postPhotoAction -----")
     }
     

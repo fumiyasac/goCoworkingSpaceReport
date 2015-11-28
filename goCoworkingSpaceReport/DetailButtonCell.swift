@@ -9,9 +9,9 @@
 import UIKit
 
 class DetailButtonCell: UITableViewCell {
-
-    //ボタン背景
-    @IBOutlet var viewBackground: UIView!
+    
+    //ボーダー
+    @IBOutlet var detailBorder: UIView!
     
     //ボタン画像
     @IBOutlet var viewThumbImage: UIImageView!
@@ -36,6 +36,13 @@ class DetailButtonCell: UITableViewCell {
             CGFloat(100)
         )
 
+       self.detailBorder.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(0),
+            CGFloat(DeviceSize.screenWidth()),
+            CGFloat(0.5)
+        )
+        
         self.viewThumbImage.frame = CGRectMake(
             CGFloat(5),
             CGFloat(5),
@@ -60,8 +67,8 @@ class DetailButtonCell: UITableViewCell {
         self.detailButtonText.frame = CGRectMake(
             CGFloat(95),
             CGFloat(50),
-            CGFloat(DeviceSize.screenWidth()-110),
-            CGFloat(40)
+            CGFloat(DeviceSize.screenWidth()-115),
+            CGFloat(45)
         )
     }
 

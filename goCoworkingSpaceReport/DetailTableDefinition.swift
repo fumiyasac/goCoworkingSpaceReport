@@ -46,7 +46,7 @@ enum DetailTableDefinition {
             case .CoworkingSpaceIntroductionDetail:
                 return 1
             case .DetailButtonCell:
-                return 7
+                return 8
             default:
                 return 0
         }
@@ -56,7 +56,7 @@ enum DetailTableDefinition {
     func sectionHeight() -> Double {
         switch (self) {
             case .CoworkingSpaceIntroductionImage:
-                return 180.0
+                return 230.0
             case .CoworkingSpaceIntroductionText:
                 return 160.0
             case .CoworkingSpaceIntroductionDetail:
@@ -74,7 +74,7 @@ enum DetailTableDefinition {
             case .EveryoneGalleryHeaderOnly:
                 return 220.0
             case .SocialButtonHeaderOnly:
-                return 100.0
+                return 180.0
             default:
                 return 0.0
         }
