@@ -74,7 +74,7 @@ enum DetailTableDefinition {
             case .EveryoneGalleryHeaderOnly:
                 return 220.0
             case .SocialButtonHeaderOnly:
-                return 180.0
+                return 210.0
             default:
                 return 0.0
         }

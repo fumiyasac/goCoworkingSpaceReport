@@ -24,7 +24,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
             CGFloat(0),
             CGFloat(30),
             CGFloat(DeviceSize.screenWidth()),
-            CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
+            CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight()-50)
         )
     }
     
@@ -37,7 +37,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
         //スクロールビューの設定
         self.userPhotoScrollView.contentSize = CGSizeMake(
             CGFloat(DeviceSize.screenWidth() * self.pageNumber),
-            CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
+            CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight()-50)
         )
         
         self.userPhotoScrollView.pagingEnabled = false
@@ -56,7 +56,7 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
                 CGFloat(DeviceSize.screenWidth()/4*i),
                 CGFloat(0),
                 CGFloat(DeviceSize.screenWidth()/4),
-                CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
+                CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight()-50)
             )
             self.userPhotoScrollView.addSubview(userView)
             

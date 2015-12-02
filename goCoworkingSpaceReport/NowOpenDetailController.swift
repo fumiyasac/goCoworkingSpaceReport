@@ -18,6 +18,9 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     
     //ユーザーの写真サムネイル用のコンテナ
     @IBOutlet var userThumbContainer: UIView!
+
+    //ポートフォリオ用のコンテナ
+    @IBOutlet var portfolioThumbContainer: UIView!
     
     //ナビゲーションのアイテム
     var helpButton: UIBarButtonItem!
@@ -37,6 +40,13 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             CGFloat(0),
             CGFloat(DeviceSize.screenWidth()),
             CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
+        )
+        
+        self.portfolioThumbContainer.frame = CGRectMake(
+            CGFloat(0),
+            CGFloat(0),
+            CGFloat(DeviceSize.screenWidth()),
+            CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeaderHeight())
         )
     }
     
@@ -120,9 +130,20 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                 //headerViewBase?.multipleTouchEnabled = true
                 return headerViewBase
             
-            case DetailTableDefinition.EveryoneGalleryHeaderOnly.returnValue():
+            case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
             
                 //@todo: Social連携等のボタンを配置したものを突っ込む
+                
+                headerViewBase = UIView()
+                headerViewBase?.addSubview(self.portfolioThumbContainer)
+                headerViewBase?.frame = CGRectMake(
+                    CGFloat(0),
+                    CGFloat(0),
+                    CGFloat(DeviceSize.screenWidth()),
+                    CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeaderHeight())
+                )
+                //headerViewBase?.multipleTouchEnabled = true
+
                 return headerViewBase
             
             default:
