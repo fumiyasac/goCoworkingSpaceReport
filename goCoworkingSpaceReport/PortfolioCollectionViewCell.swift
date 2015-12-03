@@ -30,7 +30,7 @@ class PortfolioCollectionViewCell: UICollectionViewCell {
             CGFloat(3),
             CGFloat(3),
             CGFloat((DeviceSize.screenWidth()*2/3)-6),
-            CGFloat(154)
+            CGFloat(152)
         )
         
         self.favoriteIcon.frame = CGRectMake(
@@ -44,12 +44,12 @@ class PortfolioCollectionViewCell: UICollectionViewCell {
             CGFloat(3),
             CGFloat(3),
             CGFloat((DeviceSize.screenWidth()*2/3)-6),
-            CGFloat(154)
+            CGFloat(152)
         )
         
         self.descText.frame = CGRectMake(
             CGFloat(3),
-            CGFloat(111),
+            CGFloat(109),
             CGFloat((DeviceSize.screenWidth()*2/3)-6),
             CGFloat(46)
         )

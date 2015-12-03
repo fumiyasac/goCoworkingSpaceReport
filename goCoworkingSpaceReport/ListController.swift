@@ -294,7 +294,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         
     }
     
-    //画面のアルファ値と
+    //画面のアルファ値とボタンの開閉を設定する
     func switchAlphaAndStateContents(windowStatus: AnotherWindow) {
         
         //各状態に応じて透明ボタンと土台コンテンツの位置を決定する
@@ -409,14 +409,4 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         super.didReceiveMemoryWarning()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

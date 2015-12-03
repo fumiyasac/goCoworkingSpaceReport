@@ -27,7 +27,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     
     override func viewWillAppear(animated: Bool) {
         
-        //テーブルビューの初期位置の設定をする
+        //初期位置
         self.detailTableView.frame = CGRectMake(
             CGFloat(0),
             CGFloat(65),
@@ -127,7 +127,6 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                     CGFloat(DeviceSize.screenWidth()),
                     CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
                 )
-                //headerViewBase?.multipleTouchEnabled = true
                 return headerViewBase
             
             case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
@@ -142,8 +141,6 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                     CGFloat(DeviceSize.screenWidth()),
                     CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeaderHeight())
                 )
-                //headerViewBase?.multipleTouchEnabled = true
-
                 return headerViewBase
             
             default:
@@ -172,7 +169,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     //テーブルの行数を設定する ※必須
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //Enumで設定した行数（仮）
+        //Enumで設定した行数
         switch (section) {
             
             case DetailTableDefinition.CoworkingSpaceIntroductionImage.returnValue():
@@ -303,17 +300,6 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
