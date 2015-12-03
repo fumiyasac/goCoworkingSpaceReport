@@ -121,13 +121,12 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     //中の画像がタップされたら親のViewControllerのメソッドを呼び出す
     func imageTapGesture(sender: UITapGestureRecognizer) {
         let tappedIndex: Int! = sender.view?.tag
-        print("----- Tapped index . -----")
-        print(tappedIndex)
+        print("----- Index of \(tappedIndex) is tapped. -----")
     }
     
     //投稿画面へのボタンアクション
     @IBAction func postPhotoAction(sender: UIButton) {
-        print("----- postPhotoAction -----")
+        print("----- PostPhotoAction is tapped. -----")
     }
     
     override func didReceiveMemoryWarning() {

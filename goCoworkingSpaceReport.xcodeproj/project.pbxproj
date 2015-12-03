@@ -35,6 +35,7 @@
 		DE488BA41C0004EF007F96B2 /* DetailRelateTableDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE488BA31C0004EF007F96B2 /* DetailRelateTableDefinition.swift */; };
 		DE488BA91C001FE1007F96B2 /* IntroductionDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE488BA71C001FE1007F96B2 /* IntroductionDetailCell.swift */; };
 		DE488BAA1C001FE1007F96B2 /* IntroductionDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE488BA81C001FE1007F96B2 /* IntroductionDetailCell.xib */; };
+		DE4AF2A71C10968A0010FEFA /* PortfolioPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4AF2A61C10968A0010FEFA /* PortfolioPopupUnitController.swift */; };
 		DE6C79321BBC211100F1A6E9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79311BBC211100F1A6E9 /* Validation.swift */; };
 		DE6C79341BBC519400F1A6E9 /* ColorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */; };
 		DE6C79361BBC536C00F1A6E9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79351BBC536C00F1A6E9 /* TitleText.swift */; };
@@ -200,6 +201,7 @@
 		DE488BA31C0004EF007F96B2 /* DetailRelateTableDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRelateTableDefinition.swift; sourceTree = "<group>"; };
 		DE488BA71C001FE1007F96B2 /* IntroductionDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionDetailCell.swift; sourceTree = "<group>"; };
 		DE488BA81C001FE1007F96B2 /* IntroductionDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroductionDetailCell.xib; sourceTree = "<group>"; };
+		DE4AF2A61C10968A0010FEFA /* PortfolioPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioPopupUnitController.swift; sourceTree = "<group>"; };
 		DE6C79311BBC211100F1A6E9 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStatus.swift; sourceTree = "<group>"; };
 		DE6C79351BBC536C00F1A6E9 /* TitleText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
@@ -520,21 +522,36 @@
 			name = IntroductionDetail;
 			sourceTree = "<group>";
 		};
-		DE488BAB1C00488F007F96B2 /* NowOpenRelated */ = {
+		DE488BAB1C00488F007F96B2 /* FaceBookFeed */ = {
 			isa = PBXGroup;
 			children = (
 				DE488BAD1C0048BB007F96B2 /* Cells */,
 			);
-			name = NowOpenRelated;
+			name = FaceBookFeed;
 			sourceTree = "<group>";
 		};
 		DE488BAD1C0048BB007F96B2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				DE3F81841BEF409A009EEFE7 /* Facebook */,
-				DE3F818A1BEF4154009EEFE7 /* EventAndStudy */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		DE4AF2A21C10931B0010FEFA /* StudyFeed */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F818A1BEF4154009EEFE7 /* EventAndStudy */,
+			);
+			name = StudyFeed;
+			sourceTree = "<group>";
+		};
+		DE4AF2A31C10959E0010FEFA /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				DE4AF2A61C10968A0010FEFA /* PortfolioPopupUnitController.swift */,
+			);
+			name = Portfolio;
 			sourceTree = "<group>";
 		};
 		DE779AF31C06217F00E4978B /* Sample */ = {
@@ -571,6 +588,7 @@
 		DE779AFD1C08D59B00E4978B /* PopupUnits */ = {
 			isa = PBXGroup;
 			children = (
+				DE4AF2A31C10959E0010FEFA /* Portfolio */,
 				DE779B031C08D8A500E4978B /* Photo */,
 				DE779AFE1C08D5FA00E4978B /* Map */,
 			);
@@ -754,8 +772,9 @@
 		DEE7969C1BB6FD5D005128DF /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				DE4AF2A21C10931B0010FEFA /* StudyFeed */,
 				DE3F815E1BEF1ABD009EEFE7 /* Banner */,
-				DE488BAB1C00488F007F96B2 /* NowOpenRelated */,
+				DE488BAB1C00488F007F96B2 /* FaceBookFeed */,
 				DE3F81591BEF1960009EEFE7 /* NowOpenDetail */,
 				DEE796A41BB70067005128DF /* VisitHistory */,
 				DEE796A31BB7005A005128DF /* NowOpen */,
@@ -1047,6 +1066,7 @@
 				DE3F81791BEF3FD3009EEFE7 /* FacebookCell.swift in Sources */,
 				DE779B011C08D89300E4978B /* PhotoPopupUnitController.swift in Sources */,
 				DEBA35F61C0A4088002D3C62 /* NowDetailTableCellDefintion.swift in Sources */,
+				DE4AF2A71C10968A0010FEFA /* PortfolioPopupUnitController.swift in Sources */,
 				DE3F81691BEF3D3E009EEFE7 /* IntroductionTextCell.swift in Sources */,
 				DEE796A71BB70176005128DF /* ProfileNotTapCell.swift in Sources */,
 				DEE796B71BB7024B005128DF /* NowOpenCell.swift in Sources */,

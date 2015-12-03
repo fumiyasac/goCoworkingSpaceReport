@@ -23,8 +23,6 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
     var coworkingSpaceRoute: String!
     
     //配置したインスタンス群
-    
-    
     @IBOutlet var mapBackGround: UIView!
     @IBOutlet var mapCloseBtn: UIButton!
     @IBOutlet var mapTitleLbl: UILabel!
@@ -36,12 +34,10 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         
+        //再配置用の計算値
         let mapRouteViewPosY: Int = DeviceSize.screenHeight() - 160
-        
-        let routeTitlePosY: Int = DeviceSize.screenHeight() - 180
-        
+        let routeTitlePosY: Int = DeviceSize.screenHeight() - 182
         let mapRouteWidth: Int = DeviceSize.screenHeight() - 290
-
         let mapThumbPosY: Int = DeviceSize.screenHeight() - 260
         
         self.mapImg.frame = CGRectMake(
@@ -69,10 +65,8 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
             CGFloat(10),
             CGFloat(mapRouteViewPosY),
             CGFloat(DeviceSize.screenWidth()-20),
-            CGFloat(140)
+            CGFloat(150)
         )
-        
-        self.mapRoute.textColor = ColorDefinition.colorWithHexString(ColorStatus.White.rawValue)
 
     }
     
@@ -105,21 +99,14 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
         mapDisplayArea.mapType = MKMapType.Standard
         //----- サンプル用テストデータ #End ------
         
+        //@todo: データ実装
+        
     }
     
     @IBAction func closeMapViewAction(sender: UIButton) {
         
         //押されたらポップアップ状態から消す
         self.dismissViewControllerAnimated(false, completion: nil)
-        /*
-        UIView.animateWithDuration(0.2, delay: 0, options: [], animations: {
-                self.view.alpha = 0.2
-            
-            }, completion: { finished in
-                self.view.removeFromSuperview()
-                self.view.alpha = 1.0
-        })
-        */
     }
     
     override func didReceiveMemoryWarning() {

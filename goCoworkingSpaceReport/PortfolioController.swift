@@ -67,7 +67,13 @@ class PortfolioController: UIViewController,UICollectionViewDelegate,UICollectio
     
     //セルをタップした時に呼び出される
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("collectionViewCell Tapped!")
+        
+        //@todo: 処理記載
+        let portfolioPopup:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortfolioPopup") as! PortfolioPopupUnitController
+        
+        portfolioPopup.view.backgroundColor = UIColor.clearColor()
+        portfolioPopup.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        self.presentViewController(portfolioPopup, animated: false, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
