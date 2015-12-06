@@ -231,7 +231,12 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                 cellFour!.detailButtonRemark.text = detailButtonArray[2]
                 cellFour!.detailButtonText.text = detailButtonArray[3]
                 
-                cellFour!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+                if indexPath.row > 1 {
+                    cellFour!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+                } else {
+                    cellFour!.accessoryType = UITableViewCellAccessoryType.None
+                }
+                
                 cellFour!.selectionStyle = UITableViewCellSelectionStyle.None
                 cell = cellFour!
                 break

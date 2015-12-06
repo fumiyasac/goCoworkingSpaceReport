@@ -67,7 +67,7 @@ class DetailButtonCell: UITableViewCell {
         self.detailButtonText.frame = CGRectMake(
             CGFloat(95),
             CGFloat(50),
-            CGFloat(DeviceSize.screenWidth()-115),
+            CGFloat(DeviceSize.screenWidth()-120),
             CGFloat(45)
         )
     }

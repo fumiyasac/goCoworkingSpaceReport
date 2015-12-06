@@ -11,9 +11,6 @@ import UIKit
 //MapKitをインポート
 import MapKit
 
-//CALayerクラスのインポート
-import QuartzCore
-
 class MapPopupUnitController: UIViewController, MKMapViewDelegate {
 
     //詳細ページからもらう値

@@ -104,7 +104,7 @@ class ListController: UIViewController, UIScrollViewDelegate, UINavigationContro
         self.backButton = UIBarButtonItem(title: "戻る", style: .Plain, target: self, action: "onClickBackButton:")
         self.profileButton = UIBarButtonItem(title: "Profile", style: .Plain, target: self, action: "onClickProfileButton:")
 
-        self.navigationItem.title = TitleText.Top.rawValue
+        self.navigationItem.title = "" //TitleText.Top.rawValue
         self.navigationItem.leftBarButtonItem  = self.backButton
         self.navigationItem.rightBarButtonItem = self.profileButton
         

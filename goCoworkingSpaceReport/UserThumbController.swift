@@ -122,6 +122,13 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     func imageTapGesture(sender: UITapGestureRecognizer) {
         let tappedIndex: Int! = sender.view?.tag
         print("----- Index of \(tappedIndex) is tapped. -----")
+        
+        //@todo: 処理記載
+        let photoPopup:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PhotoPopup") as! PhotoPopupUnitController
+        
+        photoPopup.view.backgroundColor = UIColor.clearColor()
+        photoPopup.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        self.presentViewController(photoPopup, animated: false, completion: nil)
     }
     
     //投稿画面へのボタンアクション
