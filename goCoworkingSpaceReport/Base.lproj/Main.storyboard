@@ -12,10 +12,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.75" contentMode="scaleToFill" id="Lq2-LY-S03">
+                            <view contentMode="scaleToFill" id="Lq2-LY-S03">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新の特集記事紹介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tx4-nF-hbC">
                                 <rect key="frame" x="10" y="70" width="300" height="20"/>
@@ -67,10 +67,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.75" contentMode="scaleToFill" id="ZYv-QX-bsa">
+                            <view contentMode="scaleToFill" id="ZYv-QX-bsa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="みんなのPhoto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dIn-a1-Pz5">
                                 <rect key="frame" x="10" y="70" width="300" height="20"/>
@@ -157,10 +157,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.75" contentMode="scaleToFill" id="Gif-fd-bhe">
+                            <view contentMode="scaleToFill" id="Gif-fd-bhe">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポートフォリオのタイトルが入ります" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vDt-Ki-7V1">
                                 <rect key="frame" x="10" y="70" width="300" height="20"/>
@@ -245,10 +245,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.75" contentMode="scaleToFill" id="YTe-Ww-BDg">
+                            <view contentMode="scaleToFill" id="YTe-Ww-BDg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="mjc-bc-TNo">
                                 <rect key="frame" x="10" y="100" width="300" height="200"/>
@@ -543,6 +543,7 @@
                         <outlet property="portfolioThumbContainer" destination="adF-dG-6GN" id="Fzw-zn-oke"/>
                         <outlet property="userThumbContainer" destination="7pn-db-4tR" id="XzB-5f-RnV"/>
                         <segue destination="tkx-m8-AMr" kind="push" identifier="goRelatedInfo" id="OWp-m9-mK6"/>
+                        <segue destination="Hho-rU-m0h" kind="modal" identifier="displayMap" id="Z4a-q6-8ey"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSf-WO-Pbt" userLabel="First Responder" sceneMemberID="firstResponder"/>

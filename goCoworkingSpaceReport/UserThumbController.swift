@@ -9,7 +9,7 @@
 import UIKit
 
 class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerDelegate {
-
+    
     //みんなのPhoto表示用のUIScrollView
     @IBOutlet var userPhotoScrollView: UIScrollView!
     
@@ -105,9 +105,9 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
                 CGFloat(20)
             )
             
-            if(i % 2 == 0){
+            if i % 2 == 0 {
                 userImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test1.rawValue)
-            }else{
+            } else {
                 userImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test2.rawValue)
             }
             
@@ -120,15 +120,22 @@ class UserThumbController: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     
     //中の画像がタップされたら親のViewControllerのメソッドを呼び出す
     func imageTapGesture(sender: UITapGestureRecognizer) {
+        
         let tappedIndex: Int! = sender.view?.tag
-        print("----- Index of \(tappedIndex) is tapped. -----")
+        print("----- Photo Index Number of \(tappedIndex) is tapped. -----")
         
-        //@todo: 処理記載
-        let photoPopup:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PhotoPopup") as! PhotoPopupUnitController
+        //@todo: 処理記載（tappedIndexをキーにしてParseから取得した画像などのデータを持ってくる）
         
-        photoPopup.view.backgroundColor = UIColor.clearColor()
-        photoPopup.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-        self.presentViewController(photoPopup, animated: false, completion: nil)
+        
+        
+        //詳細データを遷移先へ引き渡す処理
+        let photoPopup:PhotoPopupUnitController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PhotoPopup") as! PhotoPopupUnitController
+        
+        /* 実際の値の渡し方の一例：
+        photoPopup.photoUserNameLbl.text = "fumiyasac"
+        */
+        
+        self.presentViewController(photoPopup, animated: true, completion: nil)
     }
     
     //投稿画面へのボタンアクション

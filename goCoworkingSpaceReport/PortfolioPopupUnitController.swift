@@ -9,15 +9,7 @@
 import UIKit
 
 class PortfolioPopupUnitController: UIViewController, UITextViewDelegate {
-    
-    //詳細ページからもらう値
-    var portfolioId : Int!
-    var portfolioTitle : String!
-    var portfolioImage: UIImage!
-    var portfolioCategory: String!
-    var portfolioShortText: String!
-    var portfolioLongText: String!
-    
+        
     //配置したインスタンス群
     @IBOutlet var portfolioBackground: UIView!
     @IBOutlet var portfolioCloseBtn: UIButton!
@@ -84,7 +76,7 @@ class PortfolioPopupUnitController: UIViewController, UITextViewDelegate {
     @IBAction func closeBtnAction(sender: UIButton) {
         
         //押されたらポップアップ状態から消す
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

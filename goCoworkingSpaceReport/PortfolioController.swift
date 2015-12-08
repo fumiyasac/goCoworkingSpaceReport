@@ -68,12 +68,19 @@ class PortfolioController: UIViewController,UICollectionViewDelegate,UICollectio
     //セルをタップした時に呼び出される
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        //@todo: 処理記載
-        let portfolioPopup:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortfolioPopup") as! PortfolioPopupUnitController
+        let tappedIndex: Int! = indexPath.row
+        print("----- Portfolio Number of \(tappedIndex) is tapped. -----")
         
-        portfolioPopup.view.backgroundColor = UIColor.clearColor()
-        portfolioPopup.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-        self.presentViewController(portfolioPopup, animated: false, completion: nil)
+        //@todo: 処理記載（tappedIndexの値をキーとしてWordPressのデータをCakePHPでマージしたAPIより取得した画像などのデータを持ってくる）
+        
+        /* 実際の値の渡し方の一例：
+        photoPopup.photoUserNameLbl.text = "fumiyasac"
+        */
+        
+        //詳細データを遷移先へ引き渡す処理
+        let portfolioPopup:PortfolioPopupUnitController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortfolioPopup") as! PortfolioPopupUnitController
+        
+        self.presentViewController(portfolioPopup, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

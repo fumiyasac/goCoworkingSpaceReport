@@ -13,6 +13,8 @@ class DetailButtonCell: UITableViewCell {
     //ボーダー
     @IBOutlet var detailBorder: UIView!
     
+    @IBOutlet var clickIcon: UILabel!
+    
     //ボタン画像
     @IBOutlet var viewThumbImage: UIImageView!
     

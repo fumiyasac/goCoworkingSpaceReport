@@ -13,11 +13,14 @@ import MapKit
 
 class MapPopupUnitController: UIViewController, MKMapViewDelegate {
 
-    //詳細ページからもらう値
-    var coworkingSpaceId : Int!
-    var coworkingSpaceTitle : String!
-    var coworkingSpaceImage: UIImage!
-    var coworkingSpaceRoute: String!
+    //遷移元から送られてきたDictionary
+    var mapDataList: [String : String]!
+    
+    //詳細ページからもらう値を入れる変数
+    var coworkingSpaceId : Int! = 0
+    var coworkingSpaceTitle : String! = ""
+    var coworkingSpaceImage: String! = ""
+    var coworkingSpaceRoute: String! = ""
     
     //配置したインスタンス群
     @IBOutlet var mapBackGround: UIView!
@@ -64,25 +67,28 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
             CGFloat(DeviceSize.screenWidth()-20),
             CGFloat(150)
         )
-
     }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
         //----- サンプル用テストデータ #Start ------
-        self.coworkingSpaceId = 1
-        self.mapTitleLbl.text = "コワーキングスペースCoEdo"
-        let mapImgThumb = UIImage(named: "coedo.jpg")
+        print(self.coworkingSpaceId)
+        
+        print(self.coworkingSpaceTitle)
+        self.mapTitleLbl.text = self.coworkingSpaceTitle
+        
+        print(self.coworkingSpaceImage)
+        let mapImgThumb = UIImage(named: self.coworkingSpaceImage)
         self.mapImg.image = mapImgThumb
-        self.mapRoute.text = "道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。"
         
-        // 緯度・軽度を設定
-        let location:CLLocationCoordinate2D
-        = CLLocationCoordinate2DMake(35.68154,139.752498)
+        print(self.coworkingSpaceRoute)
+        self.mapRoute.text = self.coworkingSpaceRoute
         
-        self.mapDisplayArea.setCenterCoordinate(location,animated:true)
+        //緯度・軽度を設定
+        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(35.68154, 139.752498)
+        self.mapDisplayArea.setCenterCoordinate(location, animated:true)
         
         //縮尺を設定
         var region:MKCoordinateRegion = mapDisplayArea.region
@@ -90,10 +96,10 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
         region.span.latitudeDelta = 0.02
         region.span.longitudeDelta = 0.02
         
-        mapDisplayArea.setRegion(region,animated:true)
+        self.mapDisplayArea.setRegion(region, animated:true)
         
         //地図表示
-        mapDisplayArea.mapType = MKMapType.Standard
+        self.mapDisplayArea.mapType = MKMapType.Standard
         //----- サンプル用テストデータ #End ------
         
         //@todo: データ実装
@@ -103,7 +109,7 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
     @IBAction func closeMapViewAction(sender: UIButton) {
         
         //押されたらポップアップ状態から消す
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

@@ -25,6 +25,9 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     //ナビゲーションのアイテム
     var helpButton: UIBarButtonItem!
     
+    //
+    var mapDataList: [String : String] = [:]
+    
     override func viewWillAppear(animated: Bool) {
         
         //初期位置
@@ -232,8 +235,12 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                 cellFour!.detailButtonText.text = detailButtonArray[3]
                 
                 if indexPath.row > 1 {
+                    cellFour!.clickIcon.alpha = 0
+                    cellFour!.clickIcon.enabled = false
                     cellFour!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
                 } else {
+                    cellFour!.clickIcon.alpha = 1
+                    cellFour!.clickIcon.enabled = true
                     cellFour!.accessoryType = UITableViewCellAccessoryType.None
                 }
                 
@@ -251,6 +258,22 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             return cell
     }
     
+    //segueを呼び出したときに呼ばれるメソッド
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "displayMap" {
+            
+            self.mapDataList = sender as! [String : String]
+            let mapController = segue.destinationViewController as! MapPopupUnitController
+            
+            //データの引き渡し
+            mapController.coworkingSpaceId = Int(self.mapDataList["id"]!)
+            mapController.coworkingSpaceTitle = self.mapDataList["title"]
+            mapController.coworkingSpaceImage = self.mapDataList["thumb"]
+            mapController.coworkingSpaceRoute = self.mapDataList["route"]
+        }
+    }
+    
     //セルをタップした時に呼び出される
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
@@ -261,11 +284,13 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         
                 if indexPath.row == 0 {
                     
-                    let mapPopup:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MapPopup") as! MapPopupUnitController
-                    
-                    mapPopup.view.backgroundColor = UIColor.clearColor()
-                    mapPopup.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-                    self.presentViewController(mapPopup, animated: false, completion: nil)
+                    let resultDictionary: [String : String] = [
+                        "id" : "1",
+                        "title" : "コワーキングスペースCoEdo",
+                        "thumb" : "coedo.jpg",
+                        "route" : "道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。"
+                    ]
+                    self.performSegueWithIdentifier("displayMap", sender: resultDictionary)
                 }
             
             default:

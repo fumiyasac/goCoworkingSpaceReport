@@ -44,9 +44,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xpe-KQ-fDb">
+                        <rect key="frame" x="260" y="7" width="45" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="clickIcon" destination="xpe-KQ-fDb" id="hTz-rh-QKH"/>
                 <outlet property="detailBorder" destination="RxU-cr-0hy" id="iaq-fE-Xyb"/>
                 <outlet property="detailButtonRemark" destination="Zmr-CB-wSC" id="QkG-tv-wMl"/>
                 <outlet property="detailButtonText" destination="TvE-Bd-ln7" id="rxs-js-iCt"/>

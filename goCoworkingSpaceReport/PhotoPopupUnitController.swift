@@ -9,13 +9,6 @@
 import UIKit
 
 class PhotoPopupUnitController: UIViewController {
-
-    //詳細ページからもらう値
-    var photoUserId: Int!
-    var photoUserName: String!
-    var photoUserImage: UIImage!
-    var photoImage: UIImage!
-    var photoComment: String!
     
     //配置したインスタンス群
     @IBOutlet var photoBackGround: UIView!
@@ -43,14 +36,12 @@ class PhotoPopupUnitController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //@todo:データの処理
-        
     }
 
     @IBAction func photoCloseAction(sender: UIButton) {
         
         //押されたらポップアップ状態から消す
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
