@@ -62,6 +62,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         // ページコントロールの初期値設定
         self.pageControl.currentPage = 0
+        self.pageControl.numberOfPages = (self.pageNumber + 1)
         
         // ページするオプションを有効にするための設定（今回は横にスクロール）
         self.openingScrollView.delegate = self

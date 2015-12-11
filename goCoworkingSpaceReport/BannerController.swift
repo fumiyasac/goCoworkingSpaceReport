@@ -84,7 +84,7 @@ class BannerController: UIViewController,UIScrollViewDelegate {
                     bannerImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test3.rawValue)
                     break
                 default:
-                    bannerImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Test0.rawValue)
+                    bannerImageView.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.Black.rawValue)
                     break
             }
             self.bannerScrollView.addSubview(bannerImageView)

@@ -18,9 +18,9 @@ enum ColorStatus: String {
     case LightGray = "cccccc"
     case Brown     = "cc9933"
     case White     = "ffffff"
+    case Black     = "000000"
     
     //テスト用カラースキーム
-    case Test0 = "000000"
     case Test1 = "99ccff"
     case Test2 = "ff6699"
     case Test3 = "66ff66"

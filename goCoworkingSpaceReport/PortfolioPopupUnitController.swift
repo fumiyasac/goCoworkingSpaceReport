@@ -79,6 +79,9 @@ class PortfolioPopupUnitController: UIViewController, UITextViewDelegate {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func goPortfolioAction(sender: UIButton) {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

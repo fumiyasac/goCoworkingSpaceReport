@@ -25,8 +25,11 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     //ナビゲーションのアイテム
     var helpButton: UIBarButtonItem!
     
-    //
+    //Map用の設定
     var mapDataList: [String : String] = [:]
+
+    //Featured用の設定
+    var featuredDataList: [String : String] = [:]
     
     override func viewWillAppear(animated: Bool) {
         
@@ -271,6 +274,11 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             mapController.coworkingSpaceTitle = self.mapDataList["title"]
             mapController.coworkingSpaceImage = self.mapDataList["thumb"]
             mapController.coworkingSpaceRoute = self.mapDataList["route"]
+            
+        } else if segue.identifier == "displayFeatured" {
+            
+            
+            
         }
     }
     
@@ -291,6 +299,12 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                         "route" : "道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。道順が入ります。"
                     ]
                     self.performSegueWithIdentifier("displayMap", sender: resultDictionary)
+                    
+                } else if indexPath.row == 1 {
+                    
+                    let resultDictionary: [String : String] = [:]
+                    self.performSegueWithIdentifier("displayFeatured", sender: resultDictionary)
+                    
                 }
             
             default:
