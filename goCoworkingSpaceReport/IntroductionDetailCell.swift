@@ -16,7 +16,8 @@ class IntroductionDetailCell: UITableViewCell {
     @IBOutlet var detailOpen: UILabel!
     @IBOutlet var detailSeat: UILabel!
     @IBOutlet var detailOwner: UILabel!
-
+    @IBOutlet var detailMoney: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -25,7 +26,7 @@ class IntroductionDetailCell: UITableViewCell {
             CGFloat(0),
             CGFloat(0),
             CGFloat(DeviceSize.screenWidth()),
-            CGFloat(320)
+            CGFloat(380)
         )
         
         self.detailPlace.frame = CGRectMake(
@@ -59,6 +60,13 @@ class IntroductionDetailCell: UITableViewCell {
         self.detailOwner.frame = CGRectMake(
             CGFloat(10),
             CGFloat(270),
+            CGFloat(DeviceSize.screenWidth()-20),
+            CGFloat(40)
+        )
+        
+        self.detailMoney.frame = CGRectMake(
+            CGFloat(10),
+            CGFloat(330),
             CGFloat(DeviceSize.screenWidth()-20),
             CGFloat(40)
         )

@@ -60,7 +60,7 @@ enum DetailTableDefinition {
             case .CoworkingSpaceIntroductionText:
                 return 160.0
             case .CoworkingSpaceIntroductionDetail:
-                return 320.0
+                return 380.0
             case .DetailButtonCell:
                 return 100.0
             default:

@@ -305,6 +305,11 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                     let resultDictionary: [String : String] = [:]
                     self.performSegueWithIdentifier("displayFeatured", sender: resultDictionary)
                     
+                } else if indexPath.row == 2 {
+                    
+                    let resultDictionary: [String : String] = [:]
+                    self.performSegueWithIdentifier("goGourmetInfo", sender: resultDictionary)
+                    
                 }
             
             default:

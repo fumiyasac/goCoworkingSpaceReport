@@ -15,10 +15,10 @@ class NowHereController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet var nowHereTableView: UITableView!
     
-    //コレクションビューの要素数
+    //テーブルビューの要素数
     let sectionCount: Int = 1
     
-    //コレクションビューのセル数
+    //テーブルビューのセル数
     let cellCount: Int = 16
     
     //テーブルビューセルの高さ(Xibのサイズに合わせるのが理想)

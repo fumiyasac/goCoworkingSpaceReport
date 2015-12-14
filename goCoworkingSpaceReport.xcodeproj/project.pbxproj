@@ -36,6 +36,7 @@
 		DE488BA91C001FE1007F96B2 /* IntroductionDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE488BA71C001FE1007F96B2 /* IntroductionDetailCell.swift */; };
 		DE488BAA1C001FE1007F96B2 /* IntroductionDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE488BA81C001FE1007F96B2 /* IntroductionDetailCell.xib */; };
 		DE4AF2A71C10968A0010FEFA /* PortfolioPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4AF2A61C10968A0010FEFA /* PortfolioPopupUnitController.swift */; };
+		DE57B7171C1E7233008F29F5 /* GourmetSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57B7161C1E7233008F29F5 /* GourmetSearchController.swift */; };
 		DE6C79321BBC211100F1A6E9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79311BBC211100F1A6E9 /* Validation.swift */; };
 		DE6C79341BBC519400F1A6E9 /* ColorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */; };
 		DE6C79361BBC536C00F1A6E9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79351BBC536C00F1A6E9 /* TitleText.swift */; };
@@ -43,6 +44,9 @@
 		DE779AFA1C08D56B00E4978B /* MapPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE779AF81C08D56A00E4978B /* MapPopupUnitController.swift */; };
 		DE779B011C08D89300E4978B /* PhotoPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE779AFF1C08D89300E4978B /* PhotoPopupUnitController.swift */; };
 		DE779B051C0975C900E4978B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE779B041C0975C800E4978B /* MapKit.framework */; };
+		DEA09C661C1E873B006FF723 /* GourmetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA09C641C1E873B006FF723 /* GourmetCell.swift */; };
+		DEA09C671C1E873B006FF723 /* GourmetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA09C651C1E873B006FF723 /* GourmetCell.xib */; };
+		DEA09C691C1EB7FB006FF723 /* GourmetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */; };
 		DEA5F1481C13B7DB0081B475 /* FeaturedPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5F1471C13B7DA0081B475 /* FeaturedPopupUnitController.swift */; };
 		DEBA35F61C0A4088002D3C62 /* NowDetailTableCellDefintion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBA35F51C0A4088002D3C62 /* NowDetailTableCellDefintion.swift */; };
 		DEE796011BB4232F005128DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796001BB4232F005128DF /* AppDelegate.swift */; };
@@ -203,6 +207,7 @@
 		DE488BA71C001FE1007F96B2 /* IntroductionDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionDetailCell.swift; sourceTree = "<group>"; };
 		DE488BA81C001FE1007F96B2 /* IntroductionDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroductionDetailCell.xib; sourceTree = "<group>"; };
 		DE4AF2A61C10968A0010FEFA /* PortfolioPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioPopupUnitController.swift; sourceTree = "<group>"; };
+		DE57B7161C1E7233008F29F5 /* GourmetSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GourmetSearchController.swift; sourceTree = "<group>"; };
 		DE6C79311BBC211100F1A6E9 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStatus.swift; sourceTree = "<group>"; };
 		DE6C79351BBC536C00F1A6E9 /* TitleText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
@@ -210,6 +215,9 @@
 		DE779AF81C08D56A00E4978B /* MapPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPopupUnitController.swift; sourceTree = "<group>"; };
 		DE779AFF1C08D89300E4978B /* PhotoPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPopupUnitController.swift; sourceTree = "<group>"; };
 		DE779B041C0975C800E4978B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DEA09C641C1E873B006FF723 /* GourmetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GourmetCell.swift; sourceTree = "<group>"; };
+		DEA09C651C1E873B006FF723 /* GourmetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GourmetCell.xib; sourceTree = "<group>"; };
+		DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GourmetStatus.swift; sourceTree = "<group>"; };
 		DEA5F1471C13B7DA0081B475 /* FeaturedPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedPopupUnitController.swift; sourceTree = "<group>"; };
 		DEBA35F51C0A4088002D3C62 /* NowDetailTableCellDefintion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowDetailTableCellDefintion.swift; sourceTree = "<group>"; };
 		DEE795FD1BB4232F005128DF /* goCoworkingSpaceReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goCoworkingSpaceReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -506,13 +514,13 @@
 			name = Blank;
 			sourceTree = "<group>";
 		};
-		DE3F818A1BEF4154009EEFE7 /* EventAndStudy */ = {
+		DE3F818A1BEF4154009EEFE7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				DE3F818B1BEF417B009EEFE7 /* EventAndStudyCell.swift */,
 				DE3F818C1BEF417B009EEFE7 /* EventAndStudyCell.xib */,
 			);
-			name = EventAndStudy;
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		DE488BA51C001F68007F96B2 /* IntroductionDetail */ = {
@@ -543,7 +551,7 @@
 		DE4AF2A21C10931B0010FEFA /* StudyFeed */ = {
 			isa = PBXGroup;
 			children = (
-				DE3F818A1BEF4154009EEFE7 /* EventAndStudy */,
+				DE3F818A1BEF4154009EEFE7 /* Cells */,
 			);
 			name = StudyFeed;
 			sourceTree = "<group>";
@@ -614,6 +622,40 @@
 			name = Photo;
 			sourceTree = "<group>";
 		};
+		DEA09C601C1E84FA006FF723 /* WebSeviceFeedApi */ = {
+			isa = PBXGroup;
+			children = (
+				DEA09C621C1E86D9006FF723 /* GourmetFeed */,
+				DE4AF2A21C10931B0010FEFA /* StudyFeed */,
+			);
+			name = WebSeviceFeedApi;
+			sourceTree = "<group>";
+		};
+		DEA09C611C1E8512006FF723 /* SocialFeedApi */ = {
+			isa = PBXGroup;
+			children = (
+				DE488BAB1C00488F007F96B2 /* FaceBookFeed */,
+			);
+			name = SocialFeedApi;
+			sourceTree = "<group>";
+		};
+		DEA09C621C1E86D9006FF723 /* GourmetFeed */ = {
+			isa = PBXGroup;
+			children = (
+				DEA09C631C1E86E8006FF723 /* Cells */,
+			);
+			name = GourmetFeed;
+			sourceTree = "<group>";
+		};
+		DEA09C631C1E86E8006FF723 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEA09C641C1E873B006FF723 /* GourmetCell.swift */,
+				DEA09C651C1E873B006FF723 /* GourmetCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		DEA5F1461C13B78C0081B475 /* Featured */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,6 +703,7 @@
 				DEE796381BB45F77005128DF /* ListController.swift */,
 				DEFD84621BE91EF600DB169A /* HelpController.swift */,
 				DEE7969D1BB6FDC6005128DF /* ProfileEditController.swift */,
+				DE57B7161C1E7233008F29F5 /* GourmetSearchController.swift */,
 				DEE7969F1BB6FE1F005128DF /* NowOpenDetailController.swift */,
 				DEE796041BB4232F005128DF /* Main.storyboard */,
 				DEE796071BB4232F005128DF /* Assets.xcassets */,
@@ -698,6 +741,7 @@
 				DE488BA31C0004EF007F96B2 /* DetailRelateTableDefinition.swift */,
 				DE6C79351BBC536C00F1A6E9 /* TitleText.swift */,
 				DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */,
+				DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -774,6 +818,8 @@
 		DEE796991BB6F9C1005128DF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEA09C611C1E8512006FF723 /* SocialFeedApi */,
+				DEA09C601C1E84FA006FF723 /* WebSeviceFeedApi */,
 				DE779AFD1C08D59B00E4978B /* PopupUnits */,
 				DEE7969C1BB6FD5D005128DF /* Containers */,
 			);
@@ -783,9 +829,7 @@
 		DEE7969C1BB6FD5D005128DF /* Containers */ = {
 			isa = PBXGroup;
 			children = (
-				DE4AF2A21C10931B0010FEFA /* StudyFeed */,
 				DE3F815E1BEF1ABD009EEFE7 /* Banner */,
-				DE488BAB1C00488F007F96B2 /* FaceBookFeed */,
 				DE3F81591BEF1960009EEFE7 /* NowOpenDetail */,
 				DEE796A41BB70067005128DF /* VisitHistory */,
 				DEE796A31BB7005A005128DF /* NowOpen */,
@@ -996,6 +1040,7 @@
 				DE3F817A1BEF3FD3009EEFE7 /* FacebookCell.xib in Resources */,
 				DEE796B81BB7024B005128DF /* NowOpenCell.xib in Resources */,
 				DE1181AA1BC0FA0D002794AE /* coedo.jpg in Resources */,
+				DEA09C671C1E873B006FF723 /* GourmetCell.xib in Resources */,
 				DEE796061BB4232F005128DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1060,6 +1105,7 @@
 				DE2AEE191C0CBCC90038B31A /* PortfolioCollectionViewCell.swift in Sources */,
 				DE3F818D1BEF417B009EEFE7 /* EventAndStudyCell.swift in Sources */,
 				DEE796011BB4232F005128DF /* AppDelegate.swift in Sources */,
+				DEA09C661C1E873B006FF723 /* GourmetCell.swift in Sources */,
 				DEE796351BB4575A005128DF /* DeviceSize.swift in Sources */,
 				DEE796B31BB70228005128DF /* HistoryTappedCell.swift in Sources */,
 				DE3F81501BEF0891009EEFE7 /* DetailTableDefinition.swift in Sources */,
@@ -1067,12 +1113,14 @@
 				DE1181A51BC0F806002794AE /* NowHereController.swift in Sources */,
 				DE3F81541BEF0CE6009EEFE7 /* Profile.swift in Sources */,
 				DE6C79321BBC211100F1A6E9 /* Validation.swift in Sources */,
+				DE57B7171C1E7233008F29F5 /* GourmetSearchController.swift in Sources */,
 				DEE796331BB456D9005128DF /* AnotherWindow.swift in Sources */,
 				DEE796391BB45F77005128DF /* ListController.swift in Sources */,
 				DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */,
 				DE083B051BC70FB8000A35A7 /* History.swift in Sources */,
 				DEE796941BB6F943005128DF /* NowOpenController.swift in Sources */,
 				DEE796A01BB6FE1F005128DF /* NowOpenDetailController.swift in Sources */,
+				DEA09C691C1EB7FB006FF723 /* GourmetStatus.swift in Sources */,
 				DE3F81711BEF3EE9009EEFE7 /* DetailButtonCell.swift in Sources */,
 				DE6C79341BBC519400F1A6E9 /* ColorStatus.swift in Sources */,
 				DE3F81791BEF3FD3009EEFE7 /* FacebookCell.swift in Sources */,

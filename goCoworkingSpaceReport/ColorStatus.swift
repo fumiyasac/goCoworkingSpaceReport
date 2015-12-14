@@ -20,6 +20,10 @@ enum ColorStatus: String {
     case White     = "ffffff"
     case Black     = "000000"
     
+    //その他カラースキーム
+    case GnaviColor = "ff3300"
+    case HotPepperColor = "ff9933"
+    
     //テスト用カラースキーム
     case Test1 = "99ccff"
     case Test2 = "ff6699"
