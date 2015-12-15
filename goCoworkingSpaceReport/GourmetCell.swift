@@ -24,8 +24,8 @@ class GourmetCell: UITableViewCell {
         
         //パーツの配置
         self.frame = CGRectMake(
-            0,
-            0,
+            CGFloat(0),
+            CGFloat(0),
             CGFloat(DeviceSize.screenWidth()),
             CGFloat(200)
         )
@@ -61,7 +61,7 @@ class GourmetCell: UITableViewCell {
         self.gourmetBudget.frame = CGRectMake(
             CGFloat(0),
             CGFloat(130),
-            CGFloat(DeviceSize.screenWidth() - 10),
+            CGFloat(DeviceSize.screenWidth() - 20),
             CGFloat(60)
         )
         

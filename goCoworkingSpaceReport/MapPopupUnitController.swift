@@ -87,7 +87,7 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
         self.mapRoute.text = self.coworkingSpaceRoute
         
         //緯度・軽度を設定
-        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(35.68154, 139.752498)
+        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(35.678697, 139.782127)
         self.mapDisplayArea.setCenterCoordinate(location, animated:true)
         
         //縮尺を設定

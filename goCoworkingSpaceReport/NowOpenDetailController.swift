@@ -279,7 +279,16 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             
             
             
+        } else if segue.identifier == "goGourmetInfo" {
+            
+            
+            
+        } else if segue.identifier == "goStudyInfo" {
+            
+            
+            
         }
+        
     }
     
     //セルをタップした時に呼び出される
@@ -309,6 +318,11 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                     
                     let resultDictionary: [String : String] = [:]
                     self.performSegueWithIdentifier("goGourmetInfo", sender: resultDictionary)
+                    
+                } else if indexPath.row == 3 {
+                    
+                    let resultDictionary: [String : String] = [:]
+                    self.performSegueWithIdentifier("goStudyInfo", sender: resultDictionary)
                     
                 }
             

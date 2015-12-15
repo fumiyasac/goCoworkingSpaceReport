@@ -13,10 +13,9 @@ import QuartzCore
 class EventAndStudyCell: UITableViewCell {
     
     //Element
+    @IBOutlet var scheduleEvent: UILabel!
     @IBOutlet var dateEvent: UILabel!
-    @IBOutlet var imageEvent: UIImageView!
     @IBOutlet var titleEvent: UILabel!
-    @IBOutlet var detailEvent: UILabel!
     @IBOutlet var siteEvent: UILabel!
     
     override func awakeFromNib() {
@@ -29,41 +28,34 @@ class EventAndStudyCell: UITableViewCell {
             CGFloat(DeviceSize.screenWidth()),
             CGFloat(100)
         )
-        
-        self.dateEvent.frame = CGRectMake(
-            CGFloat(5),
-            CGFloat(5),
-            CGFloat(35),
-            CGFloat(35)
-        )
-        self.dateEvent.layer.cornerRadius = CGFloat(17.5)
-        
-        self.imageEvent.frame = CGRectMake(
-            CGFloat(10),
-            CGFloat(10),
-            CGFloat(80),
-            CGFloat(80)
-        )
 
-        self.titleEvent.frame = CGRectMake(
-            CGFloat(100),
+        self.scheduleEvent.frame = CGRectMake(
             CGFloat(10),
-            CGFloat(DeviceSize.screenWidth()-120),
+            CGFloat(10),
+            CGFloat(DeviceSize.screenWidth() - 20),
             CGFloat(20)
         )
         
-        self.detailEvent.frame = CGRectMake(
+        self.siteEvent.frame = CGRectMake(
+            CGFloat(10),
+            CGFloat(35),
             CGFloat(100),
-            CGFloat(30),
-            CGFloat(DeviceSize.screenWidth()-120),
-            CGFloat(40)
+            CGFloat(20)
+        )
+        self.siteEvent.layer.cornerRadius = CGFloat(8.0)
+        
+        self.dateEvent.frame = CGRectMake(
+            CGFloat(120),
+            CGFloat(35),
+            CGFloat(170),
+            CGFloat(20)
         )
         
-        self.siteEvent.frame = CGRectMake(
-            CGFloat(100),
-            CGFloat(72),
-            CGFloat(100),
-            CGFloat(16)
+        self.titleEvent.frame = CGRectMake(
+            CGFloat(10),
+            CGFloat(58),
+            CGFloat(DeviceSize.screenWidth() - 45),
+            CGFloat(40)
         )
         
     }

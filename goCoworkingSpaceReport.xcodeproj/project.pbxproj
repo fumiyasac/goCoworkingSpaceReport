@@ -41,6 +41,8 @@
 		DE6C79341BBC519400F1A6E9 /* ColorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */; };
 		DE6C79361BBC536C00F1A6E9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79351BBC536C00F1A6E9 /* TitleText.swift */; };
 		DE6F333F1BE5916600FF4043 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6F333E1BE5916500FF4043 /* ParseUI.framework */; };
+		DE702BC01C200636001C842D /* StudySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE702BBF1C200636001C842D /* StudySearchController.swift */; };
+		DE702BC21C20A33F001C842D /* StudyAndEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE702BC11C20A33E001C842D /* StudyAndEventStatus.swift */; };
 		DE779AFA1C08D56B00E4978B /* MapPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE779AF81C08D56A00E4978B /* MapPopupUnitController.swift */; };
 		DE779B011C08D89300E4978B /* PhotoPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE779AFF1C08D89300E4978B /* PhotoPopupUnitController.swift */; };
 		DE779B051C0975C900E4978B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE779B041C0975C800E4978B /* MapKit.framework */; };
@@ -212,6 +214,8 @@
 		DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStatus.swift; sourceTree = "<group>"; };
 		DE6C79351BBC536C00F1A6E9 /* TitleText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		DE6F333E1BE5916500FF4043 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		DE702BBF1C200636001C842D /* StudySearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudySearchController.swift; sourceTree = "<group>"; };
+		DE702BC11C20A33E001C842D /* StudyAndEventStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyAndEventStatus.swift; sourceTree = "<group>"; };
 		DE779AF81C08D56A00E4978B /* MapPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPopupUnitController.swift; sourceTree = "<group>"; };
 		DE779AFF1C08D89300E4978B /* PhotoPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPopupUnitController.swift; sourceTree = "<group>"; };
 		DE779B041C0975C800E4978B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -704,6 +708,7 @@
 				DEFD84621BE91EF600DB169A /* HelpController.swift */,
 				DEE7969D1BB6FDC6005128DF /* ProfileEditController.swift */,
 				DE57B7161C1E7233008F29F5 /* GourmetSearchController.swift */,
+				DE702BBF1C200636001C842D /* StudySearchController.swift */,
 				DEE7969F1BB6FE1F005128DF /* NowOpenDetailController.swift */,
 				DEE796041BB4232F005128DF /* Main.storyboard */,
 				DEE796071BB4232F005128DF /* Assets.xcassets */,
@@ -742,6 +747,7 @@
 				DE6C79351BBC536C00F1A6E9 /* TitleText.swift */,
 				DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */,
 				DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */,
+				DE702BC11C20A33E001C842D /* StudyAndEventStatus.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -1087,6 +1093,7 @@
 				DE2AEE1F1C0CBDC50038B31A /* PortfolioController.swift in Sources */,
 				DE488BA91C001FE1007F96B2 /* IntroductionDetailCell.swift in Sources */,
 				DE3F81561BEF0E3F009EEFE7 /* MessageText.swift in Sources */,
+				DE702BC01C200636001C842D /* StudySearchController.swift in Sources */,
 				DE1181AB1BC1133C002794AE /* NowHereCell.swift in Sources */,
 				DEF170241BF72C2800F6E2EB /* BlankCell.swift in Sources */,
 				DEFD84631BE91EF600DB169A /* HelpController.swift in Sources */,
@@ -1126,6 +1133,7 @@
 				DE3F81791BEF3FD3009EEFE7 /* FacebookCell.swift in Sources */,
 				DE779B011C08D89300E4978B /* PhotoPopupUnitController.swift in Sources */,
 				DEBA35F61C0A4088002D3C62 /* NowDetailTableCellDefintion.swift in Sources */,
+				DE702BC21C20A33F001C842D /* StudyAndEventStatus.swift in Sources */,
 				DE4AF2A71C10968A0010FEFA /* PortfolioPopupUnitController.swift in Sources */,
 				DE3F81691BEF3D3E009EEFE7 /* IntroductionTextCell.swift in Sources */,
 				DEE796A71BB70176005128DF /* ProfileNotTapCell.swift in Sources */,

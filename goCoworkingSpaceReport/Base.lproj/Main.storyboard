@@ -561,6 +561,7 @@
                         <segue destination="Hho-rU-m0h" kind="modal" identifier="displayMap" id="Z4a-q6-8ey"/>
                         <segue destination="NG4-QZ-dfa" kind="modal" identifier="displayFeatured" id="c0Y-EQ-QKD"/>
                         <segue destination="J8H-EW-nLD" kind="push" identifier="goGourmetInfo" id="1sq-ZH-Gm8"/>
+                        <segue destination="Kqk-Vl-Zkc" kind="push" identifier="goStudyInfo" id="6mz-NM-fkF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSf-WO-Pbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -585,14 +586,15 @@
         <!--Gourmet Search Controller-->
         <scene sceneID="KTM-M9-Kme">
             <objects>
-                <viewController id="J8H-EW-nLD" customClass="GourmetSearchController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="J8H-EW-nLD" customClass="GourmetSearchController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6oi-e1-Djx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="tMU-bv-19V">
-                                <rect key="frame" x="10" y="112" width="228" height="29"/>
+                                <rect key="frame" x="10" y="110" width="228" height="29"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <segments>
                                     <segment title="ぐるなび"/>
                                     <segment title="Hotpepper"/>
@@ -602,18 +604,18 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dGg-wX-BDz">
-                                <rect key="frame" x="0.0" y="150" width="320" height="418"/>
+                                <rect key="frame" x="0.0" y="188" width="320" height="380"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Aef-33-IFu">
-                                <rect key="frame" x="10" y="75" width="228" height="30"/>
+                                <rect key="frame" x="10" y="73" width="228" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Yr-Ot-zAr">
-                                <rect key="frame" x="246" y="77" width="65" height="65"/>
+                                <rect key="frame" x="246" y="73" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -624,11 +626,49 @@
                                     <action selector="searchApiAction:" destination="J8H-EW-nLD" eventType="touchUpInside" id="lyE-s8-Kep"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="検索結果: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vVc-89-Nee">
+                                <rect key="frame" x="10" y="146" width="55" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="件がヒット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1LC-aV-e2r">
+                                <rect key="frame" x="103" y="146" width="208" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※ 半径500m以内のお店が対象になります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NQr-LA-Bh0">
+                                <rect key="frame" x="10" y="164" width="300" height="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QXe-i5-DII">
+                                <rect key="frame" x="64" y="143" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="6XE-U4-HPD">
+                                <rect key="frame" x="0.0" y="188" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Hq3-0W-3zw" appends="YES" id="VQO-C0-CTH"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="2IH-sW-yuP"/>
                     <connections>
+                        <outlet property="resultHitCount" destination="QXe-i5-DII" id="YdV-Fc-Dxj"/>
+                        <outlet property="resultHitOffset" destination="1LC-aV-e2r" id="AJR-Qc-UNo"/>
                         <outlet property="resultTableView" destination="dGg-wX-BDz" id="evN-AY-uiE"/>
                         <outlet property="searchBtn" destination="6Yr-Ot-zAr" id="qdv-eL-LEu"/>
                         <outlet property="searchKeywordField" destination="Aef-33-IFu" id="Ji6-r2-nG5"/>
@@ -636,8 +676,114 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e8-rK-cAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hq3-0W-3zw">
+                    <connections>
+                        <action selector="backgroundTappedAction:" destination="J8H-EW-nLD" id="XB4-F1-WdQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2101" y="-443"/>
+        </scene>
+        <!--Study Search Controller-->
+        <scene sceneID="NTd-ME-mg5">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Kqk-Vl-Zkc" customClass="StudySearchController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nwp-F5-9Dz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CoZ-pu-2tX">
+                                <rect key="frame" x="0.0" y="188" width="320" height="380"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="HPH-xW-V6j">
+                                <rect key="frame" x="0.0" y="188" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ULg-ri-ier">
+                                <rect key="frame" x="10" y="111" width="228" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="Connpass"/>
+                                    <segment title="DoorKeeper"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeEventAndStudyApi:" destination="Kqk-Vl-Zkc" eventType="valueChanged" id="lig-tp-lsH"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ad5-6B-TIL">
+                                <rect key="frame" x="10" y="72" width="228" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="907-8i-g6M">
+                                <rect key="frame" x="246" y="73" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="検索">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchApiAction:" destination="Kqk-Vl-Zkc" eventType="touchUpInside" id="Z1s-1K-wB3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="検索結果: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yLP-ag-lS4">
+                                <rect key="frame" x="10" y="146" width="55" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="件がヒット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EaN-l8-xPO">
+                                <rect key="frame" x="103" y="146" width="208" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※ セルをタップすると勉強会・イベント詳細へ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yPf-tJ-Jj2">
+                                <rect key="frame" x="10" y="164" width="300" height="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oSG-U6-J0N">
+                                <rect key="frame" x="64" y="143" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="HjT-QI-ZoN" appends="YES" id="OLa-zi-fmn"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ik8-gN-AoM"/>
+                    <connections>
+                        <outlet property="resultHitCount" destination="oSG-U6-J0N" id="tIH-gI-uj6"/>
+                        <outlet property="resultHitOffset" destination="EaN-l8-xPO" id="XZe-og-iPc"/>
+                        <outlet property="resultTableView" destination="CoZ-pu-2tX" id="afK-PI-AZg"/>
+                        <outlet property="searchBtn" destination="907-8i-g6M" id="d9g-jv-2ry"/>
+                        <outlet property="searchKeywordField" destination="ad5-6B-TIL" id="KmK-9U-gyf"/>
+                        <outlet property="searchSegmentControl" destination="ULg-ri-ier" id="FVx-o3-B6J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVK-JH-kfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HjT-QI-ZoN">
+                    <connections>
+                        <action selector="backgroundTappedAction:" destination="Kqk-Vl-Zkc" id="EER-HD-ezO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2494" y="-443"/>
         </scene>
         <!--Camera Controller-->
         <scene sceneID="cKB-Eb-0nw">
