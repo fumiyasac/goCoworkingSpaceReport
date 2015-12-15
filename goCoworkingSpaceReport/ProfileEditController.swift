@@ -12,13 +12,11 @@ import ParseUI
 
 class ProfileEditController: UIViewController, UINavigationControllerDelegate, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
+    //ログインボタン
+    @IBOutlet var loginBtn: UIButton!
+    
     override func viewWillAppear(animated: Bool) {
         
-        //注意：このタイミングでログイン判定をしないとアプリが落ちる...
-        //テストのログイン処理
-        if PFUser.currentUser() == nil {
-            self.login()
-        }
     }
     
     override func viewDidLoad() {
@@ -37,6 +35,19 @@ class ProfileEditController: UIViewController, UINavigationControllerDelegate, P
             NSFontAttributeName : UIFont(name: "Georgia-Bold", size: 15)!
         ]
         self.navigationController?.navigationBar.titleTextAttributes = attrs
+        
+    }
+    
+    //ログインボタン押下時のアクション
+    @IBAction func loginBtnAction(sender: UIButton) {
+        
+        //注意：このタイミングでログイン判定をしないとアプリが落ちる...
+        //テストのログイン処理
+        if PFUser.currentUser() == nil {
+            self.login()
+        } else {
+            self.logout()
+        }
         
     }
     
@@ -60,7 +71,7 @@ class ProfileEditController: UIViewController, UINavigationControllerDelegate, P
     
     //ログアウト処理
     func logout() {
-        
+        PFUser.logOut()
     }
     
     //PFLogInViewControllerDelegateのメソッド
