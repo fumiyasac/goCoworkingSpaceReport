@@ -95,6 +95,18 @@ class ProfileEditController: UIViewController, UINavigationControllerDelegate, P
     }
     
     //PFSignUpViewControllerDelegateのメソッド
+    func signUpViewController(signUpController: PFSignUpViewController, shouldBeginSignUp info: [String : String]) -> Bool {
+        
+        //パスワードは8文字以上でお願いします
+        if let password = info["password"] {
+            return password.utf16.count >= 8
+        } else {
+            return false
+        }
+        
+    }
+    
+    /* parse(v1.9.1のコード)
     func signUpViewController(signUpController: PFSignUpViewController,
         shouldBeginSignUp info: [NSObject : AnyObject]) -> Bool {
             
@@ -105,6 +117,7 @@ class ProfileEditController: UIViewController, UINavigationControllerDelegate, P
                 return false
             }
     }
+    */
     
     func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) -> Void {
         self.dismissViewControllerAnimated(true, completion: nil)
