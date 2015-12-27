@@ -175,8 +175,9 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
         //テキスト・画像等の表示
         cell!.scheduleEvent.text = "2015.12.15"
         cell!.siteEvent.text = "Connpass"
-        cell!.siteEvent.backgroundColor = ColorDefinition.colorWithHexString(ColorStatus.ConpassColor.rawValue)
-        cell!.dateEvent.text = "14:00〜18:00"
+        cell!.siteEvent.textColor = ColorDefinition.colorWithHexString(ColorStatus.ConpassColor.rawValue)
+        cell!.siteEvent.backgroundColor = UIColor.clearColor()
+        cell!.dateEvent.text = "（開催時間）14:00〜18:00"
         cell!.titleEvent.text = "勉強会タイトル勉強会タイトル勉強会タイトル勉強会タイトル勉強会タイトル"
         
         //セルのアクセサリタイプと背景の設定

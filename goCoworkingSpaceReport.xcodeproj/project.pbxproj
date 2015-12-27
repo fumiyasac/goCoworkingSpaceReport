@@ -13,8 +13,6 @@
 		DE1181A71BC0F8EE002794AE /* VisitHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181A41BC0F806002794AE /* VisitHistoryController.swift */; };
 		DE1181AA1BC0FA0D002794AE /* coedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1181A91BC0FA0D002794AE /* coedo.jpg */; };
 		DE1181AB1BC1133C002794AE /* NowHereCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796B91BB7026B005128DF /* NowHereCell.swift */; };
-		DE1181AD1BC11CC6002794AE /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181AC1BC11CC6002794AE /* DetailController.swift */; };
-		DE1181AF1BC11CE4002794AE /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181AE1BC11CE4002794AE /* PersonController.swift */; };
 		DE2AEE191C0CBCC90038B31A /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AEE171C0CBCC90038B31A /* PortfolioCollectionViewCell.swift */; };
 		DE2AEE1A1C0CBCC90038B31A /* PortfolioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2AEE181C0CBCC90038B31A /* PortfolioCollectionViewCell.xib */; };
 		DE2AEE1F1C0CBDC50038B31A /* PortfolioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AEE1E1C0CBDC50038B31A /* PortfolioController.swift */; };
@@ -83,14 +81,6 @@
 		DEE796621BB65292005128DF /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965D1BB65274005128DF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEE796631BB65292005128DF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965E1BB65274005128DF /* RealmSwift.framework */; };
 		DEE796641BB65292005128DF /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965E1BB65274005128DF /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DEE7966C1BB6CEFA005128DF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE7966A1BB6CEFA005128DF /* Interface.storyboard */; };
-		DEE7966E1BB6CEFA005128DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE7966D1BB6CEFA005128DF /* Assets.xcassets */; };
-		DEE796751BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DEE7967C1BB6CEFA005128DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */; };
-		DEE7967E1BB6CEFA005128DF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */; };
-		DEE796821BB6CEFA005128DF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796811BB6CEFA005128DF /* GlanceController.swift */; };
-		DEE796841BB6CEFA005128DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE796831BB6CEFA005128DF /* Assets.xcassets */; };
-		DEE796881BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */; };
 		DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796911BB6EFAD005128DF /* ProfileController.swift */; };
 		DEE796941BB6F943005128DF /* NowOpenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796931BB6F943005128DF /* NowOpenController.swift */; };
 		DEE7969B1BB6FCDA005128DF /* BannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7969A1BB6FCDA005128DF /* BannerController.swift */; };
@@ -127,20 +117,6 @@
 			remoteGlobalIDString = DEE795FC1BB4232F005128DF;
 			remoteInfo = goCoworkingSpaceReport;
 		};
-		DEE796761BB6CEFA005128DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEE795F51BB4232F005128DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEE796731BB6CEFA005128DF;
-			remoteInfo = "goCoworkingSpaceReportWatch Extension";
-		};
-		DEE796861BB6CEFA005128DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEE795F51BB4232F005128DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEE796671BB6CEFA005128DF;
-			remoteInfo = goCoworkingSpaceReportWatch;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -156,24 +132,12 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEE7968C1BB6CEFA005128DF /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				DEE796751BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DEE796901BB6CEFA005128DF /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				DEE796881BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,8 +150,6 @@
 		DE1181A31BC0F806002794AE /* NowHereController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowHereController.swift; sourceTree = "<group>"; };
 		DE1181A41BC0F806002794AE /* VisitHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitHistoryController.swift; sourceTree = "<group>"; };
 		DE1181A91BC0FA0D002794AE /* coedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coedo.jpg; sourceTree = "<group>"; };
-		DE1181AC1BC11CC6002794AE /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
-		DE1181AE1BC11CE4002794AE /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		DE2AEE171C0CBCC90038B31A /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE2AEE181C0CBCC90038B31A /* PortfolioCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortfolioCollectionViewCell.xib; sourceTree = "<group>"; };
 		DE2AEE1E1C0CBDC50038B31A /* PortfolioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioController.swift; sourceTree = "<group>"; };
@@ -258,17 +220,6 @@
 		DEE796551BB461C3005128DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DEE7965D1BB65274005128DF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		DEE7965E1BB65274005128DF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
-		DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goCoworkingSpaceReportWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEE7966B1BB6CEFA005128DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		DEE7966D1BB6CEFA005128DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DEE7966F1BB6CEFA005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "goCoworkingSpaceReportWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEE7967A1BB6CEFA005128DF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		DEE796811BB6CEFA005128DF /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
-		DEE796831BB6CEFA005128DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DEE796851BB6CEFA005128DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE796911BB6EFAD005128DF /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		DEE796931BB6F943005128DF /* NowOpenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowOpenController.swift; sourceTree = "<group>"; };
 		DEE7969A1BB6FCDA005128DF /* BannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerController.swift; sourceTree = "<group>"; };
@@ -327,13 +278,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DEE796191BB4232F005128DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEE796711BB6CEFA005128DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -674,8 +618,6 @@
 				DEE795FF1BB4232F005128DF /* goCoworkingSpaceReport */,
 				DEE796141BB4232F005128DF /* goCoworkingSpaceReportTests */,
 				DEE7961F1BB4232F005128DF /* goCoworkingSpaceReportUITests */,
-				DEE796691BB6CEFA005128DF /* goCoworkingSpaceReportWatch */,
-				DEE796781BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */,
 				DEE795FE1BB4232F005128DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -686,8 +628,6 @@
 				DEE795FD1BB4232F005128DF /* goCoworkingSpaceReport.app */,
 				DEE796111BB4232F005128DF /* goCoworkingSpaceReportTests.xctest */,
 				DEE7961C1BB4232F005128DF /* goCoworkingSpaceReportUITests.xctest */,
-				DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */,
-				DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -788,39 +728,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEE796691BB6CEFA005128DF /* goCoworkingSpaceReportWatch */ = {
-			isa = PBXGroup;
-			children = (
-				DEE7966A1BB6CEFA005128DF /* Interface.storyboard */,
-				DEE7966D1BB6CEFA005128DF /* Assets.xcassets */,
-				DEE7966F1BB6CEFA005128DF /* Info.plist */,
-			);
-			path = goCoworkingSpaceReportWatch;
-			sourceTree = "<group>";
-		};
-		DEE796781BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */ = {
-			isa = PBXGroup;
-			children = (
-				DEE7967D1BB6CEFA005128DF /* ExtensionDelegate.swift */,
-				DEE7967B1BB6CEFA005128DF /* InterfaceController.swift */,
-				DE1181AC1BC11CC6002794AE /* DetailController.swift */,
-				DE1181AE1BC11CE4002794AE /* PersonController.swift */,
-				DEE796811BB6CEFA005128DF /* GlanceController.swift */,
-				DEE796831BB6CEFA005128DF /* Assets.xcassets */,
-				DEE796851BB6CEFA005128DF /* Info.plist */,
-				DEE796791BB6CEFA005128DF /* Supporting Files */,
-			);
-			path = "goCoworkingSpaceReportWatch Extension";
-			sourceTree = "<group>";
-		};
-		DEE796791BB6CEFA005128DF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DEE7967A1BB6CEFA005128DF /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		DEE796991BB6F9C1005128DF /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -897,7 +804,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DEE796871BB6CEFA005128DF /* PBXTargetDependency */,
 			);
 			name = goCoworkingSpaceReport;
 			productName = goCoworkingSpaceReport;
@@ -940,40 +846,6 @@
 			productReference = DEE7961C1BB4232F005128DF /* goCoworkingSpaceReportUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		DEE796671BB6CEFA005128DF /* goCoworkingSpaceReportWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEE7968D1BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch" */;
-			buildPhases = (
-				DEE796661BB6CEFA005128DF /* Resources */,
-				DEE7968C1BB6CEFA005128DF /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DEE796771BB6CEFA005128DF /* PBXTargetDependency */,
-			);
-			name = goCoworkingSpaceReportWatch;
-			productName = goCoworkingSpaceReportWatch;
-			productReference = DEE796681BB6CEFA005128DF /* goCoworkingSpaceReportWatch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		DEE796731BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEE796891BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch Extension" */;
-			buildPhases = (
-				DEE796701BB6CEFA005128DF /* Sources */,
-				DEE796711BB6CEFA005128DF /* Frameworks */,
-				DEE796721BB6CEFA005128DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "goCoworkingSpaceReportWatch Extension";
-			productName = "goCoworkingSpaceReportWatch Extension";
-			productReference = DEE796741BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -994,12 +866,6 @@
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = DEE795FC1BB4232F005128DF;
 					};
-					DEE796671BB6CEFA005128DF = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					DEE796731BB6CEFA005128DF = {
-						CreatedOnToolsVersion = 7.0;
-					};
 				};
 			};
 			buildConfigurationList = DEE795F81BB4232F005128DF /* Build configuration list for PBXProject "goCoworkingSpaceReport" */;
@@ -1018,8 +884,6 @@
 				DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */,
 				DEE796101BB4232F005128DF /* goCoworkingSpaceReportTests */,
 				DEE7961B1BB4232F005128DF /* goCoworkingSpaceReportUITests */,
-				DEE796671BB6CEFA005128DF /* goCoworkingSpaceReportWatch */,
-				DEE796731BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1062,23 +926,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEE796661BB6CEFA005128DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEE7966E1BB6CEFA005128DF /* Assets.xcassets in Resources */,
-				DEE7966C1BB6CEFA005128DF /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEE796721BB6CEFA005128DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEE796841BB6CEFA005128DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1158,18 +1005,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEE796701BB6CEFA005128DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEE7967E1BB6CEFA005128DF /* ExtensionDelegate.swift in Sources */,
-				DEE7967C1BB6CEFA005128DF /* InterfaceController.swift in Sources */,
-				DE1181AD1BC11CC6002794AE /* DetailController.swift in Sources */,
-				DE1181AF1BC11CE4002794AE /* PersonController.swift in Sources */,
-				DEE796821BB6CEFA005128DF /* GlanceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1182,16 +1017,6 @@
 			isa = PBXTargetDependency;
 			target = DEE795FC1BB4232F005128DF /* goCoworkingSpaceReport */;
 			targetProxy = DEE7961D1BB4232F005128DF /* PBXContainerItemProxy */;
-		};
-		DEE796771BB6CEFA005128DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DEE796731BB6CEFA005128DF /* goCoworkingSpaceReportWatch Extension */;
-			targetProxy = DEE796761BB6CEFA005128DF /* PBXContainerItemProxy */;
-		};
-		DEE796871BB6CEFA005128DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DEE796671BB6CEFA005128DF /* goCoworkingSpaceReportWatch */;
-			targetProxy = DEE796861BB6CEFA005128DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1210,14 +1035,6 @@
 				DEE7960A1BB4232F005128DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		DEE7966A1BB6CEFA005128DF /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEE7966B1BB6CEFA005128DF /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1384,66 +1201,6 @@
 			};
 			name = Release;
 		};
-		DEE7968A1BB6CEFA005128DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "goCoworkingSpaceReportWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		DEE7968B1BB6CEFA005128DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "goCoworkingSpaceReportWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		DEE7968E1BB6CEFA005128DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = goCoworkingSpaceReportWatch_Extension;
-				INFOPLIST_FILE = goCoworkingSpaceReportWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		DEE7968F1BB6CEFA005128DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = goCoworkingSpaceReportWatch_Extension;
-				INFOPLIST_FILE = goCoworkingSpaceReportWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = net.just1factory.goCoworkingSpaceReport.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1479,24 +1236,6 @@
 			buildConfigurations = (
 				DEE7962C1BB4232F005128DF /* Debug */,
 				DEE7962D1BB4232F005128DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEE796891BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEE7968A1BB6CEFA005128DF /* Debug */,
-				DEE7968B1BB6CEFA005128DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEE7968D1BB6CEFA005128DF /* Build configuration list for PBXNativeTarget "goCoworkingSpaceReportWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEE7968E1BB6CEFA005128DF /* Debug */,
-				DEE7968F1BB6CEFA005128DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

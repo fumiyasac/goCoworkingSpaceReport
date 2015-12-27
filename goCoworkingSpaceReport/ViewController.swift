@@ -15,9 +15,6 @@ import Parse
 import Realm
 
 class ViewController: UIViewController, UIScrollViewDelegate {
-
-    //Debug.
-    @IBOutlet var debugLabel: UILabel!
     
     //オープニング画像スクロールビュー
     @IBOutlet var openingScrollView: UIScrollView!

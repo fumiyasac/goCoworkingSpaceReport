@@ -36,7 +36,7 @@ class GourmetSearchController: UIViewController, UITableViewDelegate, UITextFiel
     let cellCount: Int = 16
     
     //テーブルビューセルの高さ(Xibのサイズに合わせるのが理想)
-    let cellHeight: CGFloat = 200.0
+    let cellHeight: CGFloat = 220.0
     
     override func viewWillAppear(animated: Bool) {
         
@@ -202,6 +202,10 @@ class GourmetSearchController: UIViewController, UITableViewDelegate, UITextFiel
             fatalError("Unhandled error: \(error)")
         }
 
+        //掲載サービス名
+        cell!.gourmetService.text = "ぐるなび"
+        cell!.gourmetService.textColor = ColorDefinition.colorWithHexString(ColorStatus.GnaviColor.rawValue)
+        
         //セルのアクセサリタイプと背景の設定
         cell!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         cell!.selectionStyle = UITableViewCellSelectionStyle.None

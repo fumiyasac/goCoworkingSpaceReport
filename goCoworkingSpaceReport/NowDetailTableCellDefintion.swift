@@ -52,9 +52,9 @@ struct NowDetailTableCellDefintion {
             ],
             [
                 "facebook_icon",
-                "Facebookページ",
+                "Facebookページからの情報",
                 "お得な情報がゲットできる？",
-                "コワーキングスペースの雰囲気や姿も要チェックpoint！"
+                "コワーキングスペースの雰囲気や日常も要チェックpoint！"
             ],
             [
                 "blog_icon",

@@ -18,7 +18,8 @@ class GourmetCell: UITableViewCell {
     @IBOutlet var gourmetTel: UILabel!
     @IBOutlet var gourmetAddress: UILabel!
     @IBOutlet var gourmetBudget: UITextView!
-
+    @IBOutlet var gourmetService: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

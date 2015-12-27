@@ -14,7 +14,7 @@ import Parse
 import Bolts
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -32,24 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        
-        // WatchConnectivity Check
-        if (WCSession.isSupported()) {
-            let session = WCSession.defaultSession()
-            session.delegate = self
-            session.activateSession()
-            
-            if session.paired != true {
-                print("Apple Watch is not paired")
-            }
-            
-            if session.watchAppInstalled != true {
-                print("WatchKit app is not installed")
-            }
-            
-        } else {
-            print("WatchConnectivity is not supported on this device")
-        }
         
         // Override point for customization after application launch.
         return true
@@ -77,40 +59,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    //Interactive Messagingの処理
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        
-        //コールバック用のDictionaryデータ
-        var replyValues = Dictionary<String, AnyObject>()
-        var backMessage: String!
-        
-        //最初の画面のViewControllerのインスタンス
-        let viewController = self.window!.rootViewController as! ViewController
-        
-        //Watch側から送られてきた値（AnyObjectなのでStringにダウンキャスト）
-        let operation: String = message["command"] as! String
-        
-        if (operation == "checkin") {
-            
-            //(This is Test Code for 10/11)新規登録処理
-            backMessage = "データを追加したよ！"
-            let date = NSDate()
-            let history = History(historyDate: date)
-            history.saveHistory()
-
-        } else if (operation == "checkout") {
-            
-            //(This is Test Code for 10/11)既存削除処理
-            backMessage = "表示をもどしたよ！"
-            
-        } else {
-            
-            //(This is Test Code for 10/11)エラー発生
-            backMessage = "Error!"
-        }
-        viewController.debugLabel.text = backMessage
-        replyValues["status"] = backMessage
-        replyHandler(replyValues)
-    }
 }
 
