@@ -13,12 +13,12 @@ enum GourmetStatus {
     case SelectHotPepper
     
     //Enumに対応するセクション値を返す
-    func returnValue() -> Int {
+    func returnValue() -> String {
         switch (self) {
         case .SelectGnavi:
-            return 0
+            return "gnavi"
         case .SelectHotPepper:
-            return 1
+            return "hotpepper"
         }
     }
 }

@@ -13,12 +13,12 @@ enum StudyAndEventStatus {
     case SelectDoorkeeper
     
     //Enumに対応するセクション値を返す
-    func returnValue() -> Int {
+    func returnValue() -> String {
         switch (self) {
         case .SelectConpass:
-            return 0
+            return "connpass"
         case .SelectDoorkeeper:
-            return 1
+            return "doorkeeper"
         }
     }
 }

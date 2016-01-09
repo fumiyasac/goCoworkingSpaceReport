@@ -8,20 +8,17 @@
 
 import UIKit
 
-class StudySearchController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class StudySearchController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     //選択状態
     var status: StudyAndEventStatus!
-    
-    //キーワード検索バー
-    @IBOutlet var searchKeywordField: UITextField!
     
     //ヒット数とオフセット数（オフセット数は使うかは不明）
     @IBOutlet var resultHitCount: UILabel!
     @IBOutlet var resultHitOffset: UILabel!
     
-    //検索ボタン
-    @IBOutlet var searchBtn: UIButton!
+    //キーワード検索バー
+    @IBOutlet var studySearchBar: UISearchBar!
     
     //セグメントコントーロール
     @IBOutlet var searchSegmentControl: UISegmentedControl!
@@ -33,25 +30,21 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
     let sectionCount: Int = 1
     
     //テーブルビューのセル数
-    let cellCount: Int = 16
+    let cellCount: Int = 20
+    
+    //検索結果用の変数
+    var searchTargetText: String! = ""
+    var studyAndEventServiceText: String! = "connpass"
     
     //テーブルビューセルの高さ(Xibのサイズに合わせるのが理想)
     let cellHeight: CGFloat = 110.0
     
     override func viewWillAppear(animated: Bool) {
         
-        //初期位置
-        self.searchKeywordField.frame = CGRectMake(
-            CGFloat(10),
-            CGFloat(73),
-            CGFloat(DeviceSize.screenWidth() - 95),
-            CGFloat(30)
-        )
-        
         self.searchSegmentControl.frame = CGRectMake(
             CGFloat(10),
-            CGFloat(108),
-            CGFloat(DeviceSize.screenWidth() - 95),
+            CGFloat(115),
+            CGFloat(DeviceSize.screenWidth() - 20),
             CGFloat(30)
         )
         
@@ -70,13 +63,11 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
         self.status = StudyAndEventStatus.SelectConpass
         self.searchSegmentControl.tintColor = ColorDefinition.colorWithHexString(ColorStatus.ConpassColor.rawValue)
         
-        //テキストフィールドのデリゲート
-        self.searchKeywordField.delegate = self
-        self.searchKeywordField.placeholder = "キーワードを入力して下さい"
-        self.searchKeywordField.clearButtonMode = .Always
-        
-        //ボタンの角丸をつける
-        self.searchBtn.layer.cornerRadius = CGFloat(5.0)
+        //検索バーのデリゲート
+        self.studySearchBar.delegate = self
+        self.studySearchBar.showsCancelButton = true
+        self.studySearchBar.placeholder = "キーワードを入力"
+        self.studySearchBar.tintColor = ColorDefinition.colorWithHexString(ColorStatus.Brown.rawValue)
         
         //テーブルビューのデリゲート
         self.resultTableView.delegate = self
@@ -87,11 +78,28 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
         self.resultTableView.registerNib(nibDefault, forCellReuseIdentifier: "EventAndStudyCell")
         
     }
-
-    //タップしてキーボードを引っ込める
-    @IBAction func backgroundTappedAction(sender: UITapGestureRecognizer) {
+    
+    //検索バーのキャンセルボタンがクリックされた場合
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        
+        //キーボードを隠す
         self.view.endEditing(true)
     }
+    
+    //検索バーで検索ボタンが押された場合の処理
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        self.searchTargetText = searchText
+        
+        //@todo: APIからデータを取得してAPIでの検索結果を再度描画する（CakePHP側で作成したもの）
+        
+        
+        //キーボードを隠す
+        self.view.endEditing(true)
+        
+        //@future: これまでの検索結果からSuggest機能をつける（v1.0では実装しないのでv1.1以降）
+    }
+    
     
     //テーブルの要素数を設定する ※必須
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -106,65 +114,6 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
         //セクションのセル数
         return self.cellCount
     }
-    
-    /*
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    
-    var headerViewBase: UIView?
-    
-    //ヘッダーが必要な物はここにaddSubView
-    switch (section) {
-    
-    case DetailTableDefinition.EveryoneGalleryHeaderOnly.returnValue():
-    
-    //@todo: Header用のContainerを突っ込む
-    headerViewBase = UIView()
-    headerViewBase?.addSubview(self.userThumbContainer)
-    headerViewBase?.frame = CGRectMake(
-    CGFloat(0),
-    CGFloat(0),
-    CGFloat(DeviceSize.screenWidth()),
-    CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
-    )
-    return headerViewBase
-    
-    case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
-    
-    //@todo: Social連携等のボタンを配置したものを突っ込む
-    
-    headerViewBase = UIView()
-    headerViewBase?.addSubview(self.portfolioThumbContainer)
-    headerViewBase?.frame = CGRectMake(
-    CGFloat(0),
-    CGFloat(0),
-    CGFloat(DeviceSize.screenWidth()),
-    CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeaderHeight())
-    )
-    return headerViewBase
-    
-    default:
-    headerViewBase = nil
-    return headerViewBase
-    }
-    
-    }
-    
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    
-    //セクションヘッダー高
-    switch (section) {
-    
-    case DetailTableDefinition.EveryoneGalleryHeaderOnly.returnValue():
-    return CGFloat(DetailTableDefinition.EveryoneGalleryHeaderOnly.sectionHeaderHeight())
-    
-    case DetailTableDefinition.SocialButtonHeaderOnly.returnValue():
-    return CGFloat(DetailTableDefinition.SocialButtonHeaderOnly.sectionHeaderHeight())
-    
-    default:
-    return CGFloat(0.0)
-    }
-    }
-    */
     
     //表示するセルの中身を設定する ※必須
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -210,21 +159,24 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
         case 0:
             self.status = StudyAndEventStatus.SelectConpass
             self.searchSegmentControl.tintColor = ColorDefinition.colorWithHexString(ColorStatus.ConpassColor.rawValue)
+            self.studyAndEventServiceText = StudyAndEventStatus.SelectConpass.returnValue()
         case 1:
             self.status = StudyAndEventStatus.SelectDoorkeeper
             self.searchSegmentControl.tintColor = ColorDefinition.colorWithHexString(ColorStatus.DoorkeeperColor.rawValue)
+            self.studyAndEventServiceText = StudyAndEventStatus.SelectDoorkeeper.returnValue()
         default:
             self.status = StudyAndEventStatus.SelectConpass
             self.searchSegmentControl.tintColor = ColorDefinition.colorWithHexString(ColorStatus.ConpassColor.rawValue)
+            self.studyAndEventServiceText = StudyAndEventStatus.SelectConpass.returnValue()
         }
         
     }
     
-    //---------- 3. 検索ボタン押下時の処理 ----------
-    //検索ボタンが押された際のアクション
-    @IBAction func searchApiAction(sender: UIButton) {
+    //---------- 3. APIデータのリロードの処理 ----------
+    //Api取得データをリロードする
+    func reloadStudyAndEventApiData(status: StudyAndEventStatus) {
+        
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
