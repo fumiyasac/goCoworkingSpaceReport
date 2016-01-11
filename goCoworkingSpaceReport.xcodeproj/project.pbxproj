@@ -26,8 +26,6 @@
 		DE3F816A1BEF3D3E009EEFE7 /* IntroductionTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3F81681BEF3D3E009EEFE7 /* IntroductionTextCell.xib */; };
 		DE3F81711BEF3EE9009EEFE7 /* DetailButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F816F1BEF3EE9009EEFE7 /* DetailButtonCell.swift */; };
 		DE3F81721BEF3EE9009EEFE7 /* DetailButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3F81701BEF3EE9009EEFE7 /* DetailButtonCell.xib */; };
-		DE3F81791BEF3FD3009EEFE7 /* FacebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81771BEF3FD3009EEFE7 /* FacebookCell.swift */; };
-		DE3F817A1BEF3FD3009EEFE7 /* FacebookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3F81781BEF3FD3009EEFE7 /* FacebookCell.xib */; };
 		DE3F818D1BEF417B009EEFE7 /* EventAndStudyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F818B1BEF417B009EEFE7 /* EventAndStudyCell.swift */; };
 		DE3F818E1BEF417B009EEFE7 /* EventAndStudyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3F818C1BEF417B009EEFE7 /* EventAndStudyCell.xib */; };
 		DE488BA41C0004EF007F96B2 /* DetailRelateTableDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE488BA31C0004EF007F96B2 /* DetailRelateTableDefinition.swift */; };
@@ -49,6 +47,10 @@
 		DEA09C691C1EB7FB006FF723 /* GourmetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */; };
 		DEA5F1481C13B7DB0081B475 /* FeaturedPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5F1471C13B7DA0081B475 /* FeaturedPopupUnitController.swift */; };
 		DEBA35F61C0A4088002D3C62 /* NowDetailTableCellDefintion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBA35F51C0A4088002D3C62 /* NowDetailTableCellDefintion.swift */; };
+		DEC4D48F1C43944A0021557A /* HotelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4D48E1C43944A0021557A /* HotelController.swift */; };
+		DEC4D4911C43C7CF0021557A /* ConvenienceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4D4901C43C7CF0021557A /* ConvenienceController.swift */; };
+		DEC4D4961C43ECF40021557A /* TravelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4D4941C43ECF40021557A /* TravelCell.swift */; };
+		DEC4D4971C43ECF40021557A /* TravelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC4D4951C43ECF40021557A /* TravelCell.xib */; };
 		DEE796011BB4232F005128DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796001BB4232F005128DF /* AppDelegate.swift */; };
 		DEE796031BB4232F005128DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796021BB4232F005128DF /* ViewController.swift */; };
 		DEE796061BB4232F005128DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE796041BB4232F005128DF /* Main.storyboard */; };
@@ -163,8 +165,6 @@
 		DE3F81681BEF3D3E009EEFE7 /* IntroductionTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroductionTextCell.xib; sourceTree = "<group>"; };
 		DE3F816F1BEF3EE9009EEFE7 /* DetailButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailButtonCell.swift; sourceTree = "<group>"; };
 		DE3F81701BEF3EE9009EEFE7 /* DetailButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailButtonCell.xib; sourceTree = "<group>"; };
-		DE3F81771BEF3FD3009EEFE7 /* FacebookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookCell.swift; sourceTree = "<group>"; };
-		DE3F81781BEF3FD3009EEFE7 /* FacebookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookCell.xib; sourceTree = "<group>"; };
 		DE3F818B1BEF417B009EEFE7 /* EventAndStudyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAndStudyCell.swift; sourceTree = "<group>"; };
 		DE3F818C1BEF417B009EEFE7 /* EventAndStudyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventAndStudyCell.xib; sourceTree = "<group>"; };
 		DE488BA31C0004EF007F96B2 /* DetailRelateTableDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRelateTableDefinition.swift; sourceTree = "<group>"; };
@@ -186,6 +186,10 @@
 		DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GourmetStatus.swift; sourceTree = "<group>"; };
 		DEA5F1471C13B7DA0081B475 /* FeaturedPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedPopupUnitController.swift; sourceTree = "<group>"; };
 		DEBA35F51C0A4088002D3C62 /* NowDetailTableCellDefintion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowDetailTableCellDefintion.swift; sourceTree = "<group>"; };
+		DEC4D48E1C43944A0021557A /* HotelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelController.swift; sourceTree = "<group>"; };
+		DEC4D4901C43C7CF0021557A /* ConvenienceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceController.swift; sourceTree = "<group>"; };
+		DEC4D4941C43ECF40021557A /* TravelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelCell.swift; sourceTree = "<group>"; };
+		DEC4D4951C43ECF40021557A /* TravelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelCell.xib; sourceTree = "<group>"; };
 		DEE795FD1BB4232F005128DF /* goCoworkingSpaceReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goCoworkingSpaceReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE796001BB4232F005128DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE796021BB4232F005128DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -417,15 +421,6 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		DE3F81841BEF409A009EEFE7 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				DE3F81771BEF3FD3009EEFE7 /* FacebookCell.swift */,
-				DE3F81781BEF3FD3009EEFE7 /* FacebookCell.xib */,
-			);
-			name = Facebook;
-			sourceTree = "<group>";
-		};
 		DE3F81861BEF40C2009EEFE7 /* IntroductionImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,22 +473,6 @@
 				DE488BA81C001FE1007F96B2 /* IntroductionDetailCell.xib */,
 			);
 			name = IntroductionDetail;
-			sourceTree = "<group>";
-		};
-		DE488BAB1C00488F007F96B2 /* FaceBookFeed */ = {
-			isa = PBXGroup;
-			children = (
-				DE488BAD1C0048BB007F96B2 /* Cells */,
-			);
-			name = FaceBookFeed;
-			sourceTree = "<group>";
-		};
-		DE488BAD1C0048BB007F96B2 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				DE3F81841BEF409A009EEFE7 /* Facebook */,
-			);
-			name = Cells;
 			sourceTree = "<group>";
 		};
 		DE4AF2A21C10931B0010FEFA /* StudyFeed */ = {
@@ -573,18 +552,18 @@
 		DEA09C601C1E84FA006FF723 /* WebSeviceFeedApi */ = {
 			isa = PBXGroup;
 			children = (
+				DEC4D4921C43ECA50021557A /* TravelFeed */,
 				DEA09C621C1E86D9006FF723 /* GourmetFeed */,
 				DE4AF2A21C10931B0010FEFA /* StudyFeed */,
 			);
 			name = WebSeviceFeedApi;
 			sourceTree = "<group>";
 		};
-		DEA09C611C1E8512006FF723 /* SocialFeedApi */ = {
+		DEA09C611C1E8512006FF723 /* SocialLink */ = {
 			isa = PBXGroup;
 			children = (
-				DE488BAB1C00488F007F96B2 /* FaceBookFeed */,
 			);
-			name = SocialFeedApi;
+			name = SocialLink;
 			sourceTree = "<group>";
 		};
 		DEA09C621C1E86D9006FF723 /* GourmetFeed */ = {
@@ -610,6 +589,23 @@
 				DEA5F1471C13B7DA0081B475 /* FeaturedPopupUnitController.swift */,
 			);
 			name = Featured;
+			sourceTree = "<group>";
+		};
+		DEC4D4921C43ECA50021557A /* TravelFeed */ = {
+			isa = PBXGroup;
+			children = (
+				DEC4D4931C43ECD80021557A /* Cells */,
+			);
+			name = TravelFeed;
+			sourceTree = "<group>";
+		};
+		DEC4D4931C43ECD80021557A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEC4D4941C43ECF40021557A /* TravelCell.swift */,
+				DEC4D4951C43ECF40021557A /* TravelCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		DEE795F41BB4232F005128DF = {
@@ -648,7 +644,9 @@
 				DEFD84621BE91EF600DB169A /* HelpController.swift */,
 				DEE7969D1BB6FDC6005128DF /* ProfileEditController.swift */,
 				DE57B7161C1E7233008F29F5 /* GourmetSearchController.swift */,
+				DEC4D48E1C43944A0021557A /* HotelController.swift */,
 				DE702BBF1C200636001C842D /* StudySearchController.swift */,
+				DEC4D4901C43C7CF0021557A /* ConvenienceController.swift */,
 				DEE7969F1BB6FE1F005128DF /* NowOpenDetailController.swift */,
 				DEE796041BB4232F005128DF /* Main.storyboard */,
 				DEE796071BB4232F005128DF /* Assets.xcassets */,
@@ -731,7 +729,7 @@
 		DEE796991BB6F9C1005128DF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DEA09C611C1E8512006FF723 /* SocialFeedApi */,
+				DEA09C611C1E8512006FF723 /* SocialLink */,
 				DEA09C601C1E84FA006FF723 /* WebSeviceFeedApi */,
 				DE779AFD1C08D59B00E4978B /* PopupUnits */,
 				DEE7969C1BB6FD5D005128DF /* Containers */,
@@ -898,6 +896,7 @@
 				DE3F81661BEF3CC2009EEFE7 /* IntroductionImageCell.xib in Resources */,
 				DEE796BC1BB7026B005128DF /* NowHereCell.xib in Resources */,
 				DEE796B41BB70228005128DF /* HistoryTappedCell.xib in Resources */,
+				DEC4D4971C43ECF40021557A /* TravelCell.xib in Resources */,
 				DEE796A81BB70176005128DF /* ProfileNotTapCell.xib in Resources */,
 				DE488BAA1C001FE1007F96B2 /* IntroductionDetailCell.xib in Resources */,
 				DEF170251BF72C2800F6E2EB /* BlankCell.xib in Resources */,
@@ -907,7 +906,6 @@
 				DE2AEE1A1C0CBCC90038B31A /* PortfolioCollectionViewCell.xib in Resources */,
 				DE3F816A1BEF3D3E009EEFE7 /* IntroductionTextCell.xib in Resources */,
 				DE3F818E1BEF417B009EEFE7 /* EventAndStudyCell.xib in Resources */,
-				DE3F817A1BEF3FD3009EEFE7 /* FacebookCell.xib in Resources */,
 				DEE796B81BB7024B005128DF /* NowOpenCell.xib in Resources */,
 				DE1181AA1BC0FA0D002794AE /* coedo.jpg in Resources */,
 				DEA09C671C1E873B006FF723 /* GourmetCell.xib in Resources */,
@@ -939,6 +937,7 @@
 				DE779AFA1C08D56B00E4978B /* MapPopupUnitController.swift in Sources */,
 				DE2AEE1F1C0CBDC50038B31A /* PortfolioController.swift in Sources */,
 				DE488BA91C001FE1007F96B2 /* IntroductionDetailCell.swift in Sources */,
+				DEC4D4911C43C7CF0021557A /* ConvenienceController.swift in Sources */,
 				DE3F81561BEF0E3F009EEFE7 /* MessageText.swift in Sources */,
 				DE702BC01C200636001C842D /* StudySearchController.swift in Sources */,
 				DE1181AB1BC1133C002794AE /* NowHereCell.swift in Sources */,
@@ -977,12 +976,13 @@
 				DEA09C691C1EB7FB006FF723 /* GourmetStatus.swift in Sources */,
 				DE3F81711BEF3EE9009EEFE7 /* DetailButtonCell.swift in Sources */,
 				DE6C79341BBC519400F1A6E9 /* ColorStatus.swift in Sources */,
-				DE3F81791BEF3FD3009EEFE7 /* FacebookCell.swift in Sources */,
 				DE779B011C08D89300E4978B /* PhotoPopupUnitController.swift in Sources */,
 				DEBA35F61C0A4088002D3C62 /* NowDetailTableCellDefintion.swift in Sources */,
 				DE702BC21C20A33F001C842D /* StudyAndEventStatus.swift in Sources */,
 				DE4AF2A71C10968A0010FEFA /* PortfolioPopupUnitController.swift in Sources */,
 				DE3F81691BEF3D3E009EEFE7 /* IntroductionTextCell.swift in Sources */,
+				DEC4D48F1C43944A0021557A /* HotelController.swift in Sources */,
+				DEC4D4961C43ECF40021557A /* TravelCell.swift in Sources */,
 				DEE796A71BB70176005128DF /* ProfileNotTapCell.swift in Sources */,
 				DEE796B71BB7024B005128DF /* NowOpenCell.swift in Sources */,
 				DE3F81621BEF3AED009EEFE7 /* UserThumbController.swift in Sources */,

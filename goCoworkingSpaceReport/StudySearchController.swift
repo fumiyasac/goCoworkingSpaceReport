@@ -29,7 +29,7 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
     //テーブルビューの要素数
     let sectionCount: Int = 1
     
-    //テーブルビューのセル数
+    //テーブルビューのセル数（現在は決め打ち）
     let cellCount: Int = 20
     
     //検索結果用の変数
@@ -139,6 +139,7 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
     //セルをタップした時に呼び出される
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //@todo: go some controller...
+        print("StudyAndEventTableViewTapped!")
     }
     
     //セルの高さを返す ※必須
