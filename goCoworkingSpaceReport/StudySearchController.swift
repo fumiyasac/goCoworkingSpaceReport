@@ -100,7 +100,6 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
         //@future: これまでの検索結果からSuggest機能をつける（v1.0では実装しないのでv1.1以降）
     }
     
-    
     //テーブルの要素数を設定する ※必須
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
@@ -144,7 +143,7 @@ class StudySearchController: UIViewController, UITableViewDelegate, UITableViewD
     
     //セルの高さを返す ※必須
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return cellHeight
+        return self.cellHeight
     }
     
     //テーブルビューをリロードする

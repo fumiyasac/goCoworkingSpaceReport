@@ -73,6 +73,7 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="hotelMinCharge" destination="PgV-2f-hAI" id="rPd-lo-PaI"/>
                 <outlet property="hotelName" destination="pE5-d5-iLb" id="DK6-fh-Yn6"/>

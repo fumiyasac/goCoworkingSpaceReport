@@ -29,7 +29,7 @@ class GourmetSearchController: UIViewController, UITableViewDelegate, UITableVie
     //テーブルビューの要素数
     let sectionCount: Int = 1
     
-    //テーブルビューのセル数
+    //テーブルビューのセル数（現在は決め打ち）
     let cellCount: Int = 10
     
     //検索結果用の変数
@@ -170,7 +170,7 @@ class GourmetSearchController: UIViewController, UITableViewDelegate, UITableVie
     
     //セルの高さを返す ※必須
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return cellHeight
+        return self.cellHeight
     }
     
     //テーブルビューをリロードする
