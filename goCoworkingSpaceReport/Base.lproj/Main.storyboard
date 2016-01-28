@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
@@ -523,7 +523,7 @@
         <!--Hotel Controller-->
         <scene sceneID="tPf-hF-tXK">
             <objects>
-                <viewController id="WKI-OV-AQ5" customClass="HotelController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="WKI-OV-AQ5" customClass="HotelController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2wM-fu-WFt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -593,7 +593,7 @@
         <!--Convenience Controller-->
         <scene sceneID="885-hG-Df5">
             <objects>
-                <viewController id="u5M-fq-Dz3" customClass="ConvenienceController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="u5M-fq-Dz3" customClass="ConvenienceController" customModule="goCoworkingSpaceReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lgl-ll-BO7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -643,7 +643,7 @@
                                 <rect key="frame" x="23" y="75" width="276" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vfu-Da-pfs">
@@ -707,8 +707,8 @@
                         <segue destination="NG4-QZ-dfa" kind="modal" identifier="displayFeatured" id="c0Y-EQ-QKD"/>
                         <segue destination="J8H-EW-nLD" kind="push" identifier="goGourmetInfo" id="1sq-ZH-Gm8"/>
                         <segue destination="Kqk-Vl-Zkc" kind="push" identifier="goStudyInfo" id="6mz-NM-fkF"/>
-                        <segue destination="WKI-OV-AQ5" kind="push" id="7G6-lZ-2lq"/>
-                        <segue destination="u5M-fq-Dz3" kind="push" id="jrI-8M-xH3"/>
+                        <segue destination="WKI-OV-AQ5" kind="push" identifier="goHotel" id="7G6-lZ-2lq"/>
+                        <segue destination="u5M-fq-Dz3" kind="push" identifier="goConvenience" id="jrI-8M-xH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSf-WO-Pbt" userLabel="First Responder" sceneMemberID="firstResponder"/>

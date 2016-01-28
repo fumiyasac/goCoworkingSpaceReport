@@ -27,10 +27,10 @@ class History: NSObject {
     
     func saveHistory() {
         let testObject = PFObject(className: "History")
-        testObject["mailAddress"]      = mailAddress
-        testObject["coworkingSpaceId"] = coworkingSpaceId
-        testObject["status"]           = status
-        testObject["historyDate"]      = historyDate
+        testObject["mailAddress"]      = self.mailAddress
+        testObject["coworkingSpaceId"] = self.coworkingSpaceId
+        testObject["status"]           = self.status
+        testObject["historyDate"]      = self.historyDate
         
         testObject.saveInBackgroundWithBlock { (success, error) -> Void in
             if success {

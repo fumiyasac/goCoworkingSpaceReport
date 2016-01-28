@@ -264,6 +264,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
     //segueを呼び出したときに呼ばれるメソッド
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        //地図・所在地の情報
         if segue.identifier == "displayMap" {
             
             self.mapDataList = sender as! [String : String]
@@ -274,17 +275,25 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
             mapController.coworkingSpaceTitle = self.mapDataList["title"]
             mapController.coworkingSpaceImage = self.mapDataList["thumb"]
             mapController.coworkingSpaceRoute = self.mapDataList["route"]
-            
+        
+        //特集記事の情報
         } else if segue.identifier == "displayFeatured" {
             
             
-            
+        //グルメの情報
         } else if segue.identifier == "goGourmetInfo" {
             
             
-            
+        //勉強会の情報
         } else if segue.identifier == "goStudyInfo" {
             
+            
+        //コンビニやドラッグストアの情報
+        } else if segue.identifier == "goConvenience" {
+            
+            
+        //宿泊施設の情報
+        } else if segue.identifier == "goHotel" {
             
             
         }
@@ -324,7 +333,17 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
                     let resultDictionary: [String : String] = [:]
                     self.performSegueWithIdentifier("goStudyInfo", sender: resultDictionary)
                     
-                }
+                } else if indexPath.row == 4 {
+                    
+                    let resultDictionary: [String : String] = [:]
+                    self.performSegueWithIdentifier("goConvenience", sender: resultDictionary)
+                    
+                } else if indexPath.row == 5 {
+                    
+                    let resultDictionary: [String : String] = [:]
+                    self.performSegueWithIdentifier("goHotel", sender: resultDictionary)
+                    
+            }
             
             default:
                 break

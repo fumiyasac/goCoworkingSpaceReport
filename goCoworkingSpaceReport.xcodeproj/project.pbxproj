@@ -99,6 +99,8 @@
 		DEE796B71BB7024B005128DF /* NowOpenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796B51BB7024B005128DF /* NowOpenCell.swift */; };
 		DEE796B81BB7024B005128DF /* NowOpenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796B61BB7024B005128DF /* NowOpenCell.xib */; };
 		DEE796BC1BB7026B005128DF /* NowHereCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEE796BA1BB7026B005128DF /* NowHereCell.xib */; };
+		DEEFE0BD1C55121600114AB1 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE0BB1C55121500114AB1 /* LocationCell.swift */; };
+		DEEFE0BE1C55121600114AB1 /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEEFE0BC1C55121500114AB1 /* LocationCell.xib */; };
 		DEF170241BF72C2800F6E2EB /* BlankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF170221BF72C2800F6E2EB /* BlankCell.swift */; };
 		DEF170251BF72C2800F6E2EB /* BlankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF170231BF72C2800F6E2EB /* BlankCell.xib */; };
 		DEFD84631BE91EF600DB169A /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD84621BE91EF600DB169A /* HelpController.swift */; };
@@ -241,6 +243,8 @@
 		DEE796B61BB7024B005128DF /* NowOpenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NowOpenCell.xib; sourceTree = "<group>"; };
 		DEE796B91BB7026B005128DF /* NowHereCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowHereCell.swift; sourceTree = "<group>"; };
 		DEE796BA1BB7026B005128DF /* NowHereCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NowHereCell.xib; sourceTree = "<group>"; };
+		DEEFE0BB1C55121500114AB1 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		DEEFE0BC1C55121500114AB1 /* LocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
 		DEF170221BF72C2800F6E2EB /* BlankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankCell.swift; sourceTree = "<group>"; };
 		DEF170231BF72C2800F6E2EB /* BlankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlankCell.xib; sourceTree = "<group>"; };
 		DEFD84621BE91EF600DB169A /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
@@ -552,6 +556,7 @@
 		DEA09C601C1E84FA006FF723 /* WebSeviceFeedApi */ = {
 			isa = PBXGroup;
 			children = (
+				DEEFE0BA1C5511BA00114AB1 /* LocationFeed */,
 				DEC4D4921C43ECA50021557A /* TravelFeed */,
 				DEA09C621C1E86D9006FF723 /* GourmetFeed */,
 				DE4AF2A21C10931B0010FEFA /* StudyFeed */,
@@ -786,6 +791,23 @@
 			name = VisitHistory;
 			sourceTree = "<group>";
 		};
+		DEEFE0BA1C5511BA00114AB1 /* LocationFeed */ = {
+			isa = PBXGroup;
+			children = (
+				DEEFE0BF1C55123D00114AB1 /* Cells */,
+			);
+			name = LocationFeed;
+			sourceTree = "<group>";
+		};
+		DEEFE0BF1C55123D00114AB1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEEFE0BB1C55121500114AB1 /* LocationCell.swift */,
+				DEEFE0BC1C55121500114AB1 /* LocationCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -901,6 +923,7 @@
 				DE488BAA1C001FE1007F96B2 /* IntroductionDetailCell.xib in Resources */,
 				DEF170251BF72C2800F6E2EB /* BlankCell.xib in Resources */,
 				DE3F81721BEF3EE9009EEFE7 /* DetailButtonCell.xib in Resources */,
+				DEEFE0BE1C55121600114AB1 /* LocationCell.xib in Resources */,
 				DEE796081BB4232F005128DF /* Assets.xcassets in Resources */,
 				DEE796B01BB701C5005128DF /* HistoryCell.xib in Resources */,
 				DE2AEE1A1C0CBCC90038B31A /* PortfolioCollectionViewCell.xib in Resources */,
@@ -982,6 +1005,7 @@
 				DE4AF2A71C10968A0010FEFA /* PortfolioPopupUnitController.swift in Sources */,
 				DE3F81691BEF3D3E009EEFE7 /* IntroductionTextCell.swift in Sources */,
 				DEC4D48F1C43944A0021557A /* HotelController.swift in Sources */,
+				DEEFE0BD1C55121600114AB1 /* LocationCell.swift in Sources */,
 				DEC4D4961C43ECF40021557A /* TravelCell.swift in Sources */,
 				DEE796A71BB70176005128DF /* ProfileNotTapCell.swift in Sources */,
 				DEE796B71BB7024B005128DF /* NowOpenCell.swift in Sources */,
