@@ -8,9 +8,6 @@
 
 import UIKit
 
-//Parseクラスのインポート
-import Parse
-
 class ListController: UIViewController, UIScrollViewDelegate, UINavigationControllerDelegate {
 
     //透明ボタン

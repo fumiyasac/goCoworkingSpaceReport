@@ -8,9 +8,6 @@
 
 import UIKit
 
-//Parseクラスのインポート
-import Parse
-
 class NowHereController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var nowHereTableView: UITableView!

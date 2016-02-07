@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE083B051BC70FB8000A35A7 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE083B041BC70FB8000A35A7 /* History.swift */; };
 		DE083B601BCAA413000A35A7 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE083B5F1BCAA413000A35A7 /* CameraController.swift */; };
 		DE1181A51BC0F806002794AE /* NowHereController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181A31BC0F806002794AE /* NowHereController.swift */; };
 		DE1181A71BC0F8EE002794AE /* VisitHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1181A41BC0F806002794AE /* VisitHistoryController.swift */; };
@@ -17,7 +16,6 @@
 		DE2AEE1A1C0CBCC90038B31A /* PortfolioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2AEE181C0CBCC90038B31A /* PortfolioCollectionViewCell.xib */; };
 		DE2AEE1F1C0CBDC50038B31A /* PortfolioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AEE1E1C0CBDC50038B31A /* PortfolioController.swift */; };
 		DE3F81501BEF0891009EEFE7 /* DetailTableDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F814F1BEF0891009EEFE7 /* DetailTableDefinition.swift */; };
-		DE3F81541BEF0CE6009EEFE7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81531BEF0CE6009EEFE7 /* Profile.swift */; };
 		DE3F81561BEF0E3F009EEFE7 /* MessageText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */; };
 		DE3F81621BEF3AED009EEFE7 /* UserThumbController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81611BEF3AEC009EEFE7 /* UserThumbController.swift */; };
 		DE3F81651BEF3CC2009EEFE7 /* IntroductionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81631BEF3CC2009EEFE7 /* IntroductionImageCell.swift */; };
@@ -36,7 +34,6 @@
 		DE6C79321BBC211100F1A6E9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79311BBC211100F1A6E9 /* Validation.swift */; };
 		DE6C79341BBC519400F1A6E9 /* ColorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */; };
 		DE6C79361BBC536C00F1A6E9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6C79351BBC536C00F1A6E9 /* TitleText.swift */; };
-		DE6F333F1BE5916600FF4043 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6F333E1BE5916500FF4043 /* ParseUI.framework */; };
 		DE702BC01C200636001C842D /* StudySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE702BBF1C200636001C842D /* StudySearchController.swift */; };
 		DE702BC21C20A33F001C842D /* StudyAndEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE702BC11C20A33E001C842D /* StudyAndEventStatus.swift */; };
 		DE779AFA1C08D56B00E4978B /* MapPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE779AF81C08D56A00E4978B /* MapPopupUnitController.swift */; };
@@ -47,6 +44,7 @@
 		DEA09C691C1EB7FB006FF723 /* GourmetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */; };
 		DEA5F1481C13B7DB0081B475 /* FeaturedPopupUnitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5F1471C13B7DA0081B475 /* FeaturedPopupUnitController.swift */; };
 		DEBA35F61C0A4088002D3C62 /* NowDetailTableCellDefintion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBA35F51C0A4088002D3C62 /* NowDetailTableCellDefintion.swift */; };
+		DEC015851C671C6200161C9C /* StockSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC015841C671C6200161C9C /* StockSpace.swift */; };
 		DEC4D48F1C43944A0021557A /* HotelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4D48E1C43944A0021557A /* HotelController.swift */; };
 		DEC4D4911C43C7CF0021557A /* ConvenienceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4D4901C43C7CF0021557A /* ConvenienceController.swift */; };
 		DEC4D4961C43ECF40021557A /* TravelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC4D4941C43ECF40021557A /* TravelCell.swift */; };
@@ -63,20 +61,13 @@
 		DEE796351BB4575A005128DF /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796341BB4575A005128DF /* DeviceSize.swift */; };
 		DEE796371BB4578D005128DF /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796361BB4578D005128DF /* ColorDefinition.swift */; };
 		DEE796391BB45F77005128DF /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE796381BB45F77005128DF /* ListController.swift */; };
-		DEE7963C1BB4608B005128DF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7963A1BB4608B005128DF /* Bolts.framework */; };
-		DEE7963D1BB4608B005128DF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7963B1BB4608B005128DF /* Parse.framework */; };
 		DEE796401BB46107005128DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7963F1BB46107005128DF /* Accounts.framework */; };
 		DEE796421BB46114005128DF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796411BB46114005128DF /* Social.framework */; };
-		DEE796441BB46130005128DF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796431BB46130005128DF /* libsqlite3.tbd */; };
-		DEE796461BB46138005128DF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796451BB46138005128DF /* libz.tbd */; };
 		DEE796481BB46149005128DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796471BB46149005128DF /* SystemConfiguration.framework */; };
-		DEE7964A1BB4615A005128DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796491BB4615A005128DF /* StoreKit.framework */; };
 		DEE7964C1BB4616E005128DF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7964B1BB4616E005128DF /* Security.framework */; };
 		DEE7964E1BB4617E005128DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7964D1BB4617E005128DF /* QuartzCore.framework */; };
 		DEE796501BB4618F005128DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7964F1BB4618F005128DF /* CoreLocation.framework */; };
 		DEE796521BB4619D005128DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796511BB4619D005128DF /* CoreGraphics.framework */; };
-		DEE796541BB461B1005128DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796531BB461B1005128DF /* CFNetwork.framework */; };
-		DEE796561BB461C3005128DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE796551BB461C3005128DF /* AudioToolbox.framework */; };
 		DEE7965F1BB65274005128DF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965D1BB65274005128DF /* Realm.framework */; };
 		DEE796601BB65274005128DF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965E1BB65274005128DF /* RealmSwift.framework */; };
 		DEE796611BB65292005128DF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE7965D1BB65274005128DF /* Realm.framework */; };
@@ -149,7 +140,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DE083B041BC70FB8000A35A7 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DE083B5F1BCAA413000A35A7 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		DE1181A31BC0F806002794AE /* NowHereController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowHereController.swift; sourceTree = "<group>"; };
 		DE1181A41BC0F806002794AE /* VisitHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitHistoryController.swift; sourceTree = "<group>"; };
@@ -158,7 +148,6 @@
 		DE2AEE181C0CBCC90038B31A /* PortfolioCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortfolioCollectionViewCell.xib; sourceTree = "<group>"; };
 		DE2AEE1E1C0CBDC50038B31A /* PortfolioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioController.swift; sourceTree = "<group>"; };
 		DE3F814F1BEF0891009EEFE7 /* DetailTableDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableDefinition.swift; sourceTree = "<group>"; };
-		DE3F81531BEF0CE6009EEFE7 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageText.swift; sourceTree = "<group>"; };
 		DE3F81611BEF3AEC009EEFE7 /* UserThumbController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserThumbController.swift; sourceTree = "<group>"; };
 		DE3F81631BEF3CC2009EEFE7 /* IntroductionImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionImageCell.swift; sourceTree = "<group>"; };
@@ -177,7 +166,6 @@
 		DE6C79311BBC211100F1A6E9 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStatus.swift; sourceTree = "<group>"; };
 		DE6C79351BBC536C00F1A6E9 /* TitleText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
-		DE6F333E1BE5916500FF4043 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		DE702BBF1C200636001C842D /* StudySearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudySearchController.swift; sourceTree = "<group>"; };
 		DE702BC11C20A33E001C842D /* StudyAndEventStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyAndEventStatus.swift; sourceTree = "<group>"; };
 		DE779AF81C08D56A00E4978B /* MapPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPopupUnitController.swift; sourceTree = "<group>"; };
@@ -188,6 +176,7 @@
 		DEA09C681C1EB7FB006FF723 /* GourmetStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GourmetStatus.swift; sourceTree = "<group>"; };
 		DEA5F1471C13B7DA0081B475 /* FeaturedPopupUnitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedPopupUnitController.swift; sourceTree = "<group>"; };
 		DEBA35F51C0A4088002D3C62 /* NowDetailTableCellDefintion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowDetailTableCellDefintion.swift; sourceTree = "<group>"; };
+		DEC015841C671C6200161C9C /* StockSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockSpace.swift; sourceTree = "<group>"; };
 		DEC4D48E1C43944A0021557A /* HotelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelController.swift; sourceTree = "<group>"; };
 		DEC4D4901C43C7CF0021557A /* ConvenienceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceController.swift; sourceTree = "<group>"; };
 		DEC4D4941C43ECF40021557A /* TravelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelCell.swift; sourceTree = "<group>"; };
@@ -210,20 +199,13 @@
 		DEE796341BB4575A005128DF /* DeviceSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
 		DEE796361BB4578D005128DF /* ColorDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefinition.swift; sourceTree = "<group>"; };
 		DEE796381BB45F77005128DF /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
-		DEE7963A1BB4608B005128DF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		DEE7963B1BB4608B005128DF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DEE7963F1BB46107005128DF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		DEE796411BB46114005128DF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		DEE796431BB46130005128DF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		DEE796451BB46138005128DF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DEE796471BB46149005128DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DEE796491BB4615A005128DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DEE7964B1BB4616E005128DF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DEE7964D1BB4617E005128DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DEE7964F1BB4618F005128DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DEE796511BB4619D005128DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DEE796531BB461B1005128DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		DEE796551BB461C3005128DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DEE7965D1BB65274005128DF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		DEE7965E1BB65274005128DF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		DEE796911BB6EFAD005128DF /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
@@ -256,25 +238,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE779B051C0975C900E4978B /* MapKit.framework in Frameworks */,
-				DEE796561BB461C3005128DF /* AudioToolbox.framework in Frameworks */,
-				DEE796541BB461B1005128DF /* CFNetwork.framework in Frameworks */,
 				DEE796631BB65292005128DF /* RealmSwift.framework in Frameworks */,
 				DEE796521BB4619D005128DF /* CoreGraphics.framework in Frameworks */,
 				DEE796501BB4618F005128DF /* CoreLocation.framework in Frameworks */,
 				DEE7964E1BB4617E005128DF /* QuartzCore.framework in Frameworks */,
 				DEE7964C1BB4616E005128DF /* Security.framework in Frameworks */,
-				DEE7964A1BB4615A005128DF /* StoreKit.framework in Frameworks */,
 				DEE796481BB46149005128DF /* SystemConfiguration.framework in Frameworks */,
-				DEE796461BB46138005128DF /* libz.tbd in Frameworks */,
-				DE6F333F1BE5916600FF4043 /* ParseUI.framework in Frameworks */,
 				DEE7965F1BB65274005128DF /* Realm.framework in Frameworks */,
-				DEE796441BB46130005128DF /* libsqlite3.tbd in Frameworks */,
 				DEE796421BB46114005128DF /* Social.framework in Frameworks */,
 				DEE796401BB46107005128DF /* Accounts.framework in Frameworks */,
-				DEE7963D1BB4608B005128DF /* Parse.framework in Frameworks */,
 				DEE796601BB65274005128DF /* RealmSwift.framework in Frameworks */,
 				DEE796611BB65292005128DF /* Realm.framework in Frameworks */,
-				DEE7963C1BB4608B005128DF /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				DE3F81521BEF0C38009EEFE7 /* Realm */,
-				DE3F81511BEF0C27009EEFE7 /* Parse */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -339,18 +312,10 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		DE3F81511BEF0C27009EEFE7 /* Parse */ = {
-			isa = PBXGroup;
-			children = (
-				DE083B041BC70FB8000A35A7 /* History.swift */,
-				DE3F81531BEF0CE6009EEFE7 /* Profile.swift */,
-			);
-			name = Parse;
-			sourceTree = "<group>";
-		};
 		DE3F81521BEF0C38009EEFE7 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				DEC015841C671C6200161C9C /* StockSpace.swift */,
 			);
 			name = Realm;
 			sourceTree = "<group>";
@@ -710,23 +675,15 @@
 			isa = PBXGroup;
 			children = (
 				DE779B041C0975C800E4978B /* MapKit.framework */,
-				DE6F333E1BE5916500FF4043 /* ParseUI.framework */,
 				DEE7965D1BB65274005128DF /* Realm.framework */,
 				DEE7965E1BB65274005128DF /* RealmSwift.framework */,
-				DEE796551BB461C3005128DF /* AudioToolbox.framework */,
-				DEE796531BB461B1005128DF /* CFNetwork.framework */,
 				DEE796511BB4619D005128DF /* CoreGraphics.framework */,
 				DEE7964F1BB4618F005128DF /* CoreLocation.framework */,
 				DEE7964D1BB4617E005128DF /* QuartzCore.framework */,
 				DEE7964B1BB4616E005128DF /* Security.framework */,
-				DEE796491BB4615A005128DF /* StoreKit.framework */,
 				DEE796471BB46149005128DF /* SystemConfiguration.framework */,
-				DEE796451BB46138005128DF /* libz.tbd */,
-				DEE796431BB46130005128DF /* libsqlite3.tbd */,
 				DEE796411BB46114005128DF /* Social.framework */,
 				DEE7963F1BB46107005128DF /* Accounts.framework */,
-				DEE7963A1BB4608B005128DF /* Bolts.framework */,
-				DEE7963B1BB4608B005128DF /* Parse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -987,13 +944,12 @@
 				DE3F81501BEF0891009EEFE7 /* DetailTableDefinition.swift in Sources */,
 				DEE7969B1BB6FCDA005128DF /* BannerController.swift in Sources */,
 				DE1181A51BC0F806002794AE /* NowHereController.swift in Sources */,
-				DE3F81541BEF0CE6009EEFE7 /* Profile.swift in Sources */,
 				DE6C79321BBC211100F1A6E9 /* Validation.swift in Sources */,
 				DE57B7171C1E7233008F29F5 /* GourmetSearchController.swift in Sources */,
 				DEE796331BB456D9005128DF /* AnotherWindow.swift in Sources */,
 				DEE796391BB45F77005128DF /* ListController.swift in Sources */,
 				DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */,
-				DE083B051BC70FB8000A35A7 /* History.swift in Sources */,
+				DEC015851C671C6200161C9C /* StockSpace.swift in Sources */,
 				DEE796941BB6F943005128DF /* NowOpenController.swift in Sources */,
 				DEE796A01BB6FE1F005128DF /* NowOpenDetailController.swift in Sources */,
 				DEA09C691C1EB7FB006FF723 /* GourmetStatus.swift in Sources */,

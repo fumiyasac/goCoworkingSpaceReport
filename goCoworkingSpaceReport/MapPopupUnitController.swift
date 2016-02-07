@@ -11,7 +11,10 @@ import UIKit
 //MapKitをインポート
 import MapKit
 
-class MapPopupUnitController: UIViewController, MKMapViewDelegate {
+//CoreLocationをインポート
+import CoreLocation
+
+class MapPopupUnitController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     //遷移元から送られてきたDictionary
     var mapDataList: [String : String]!
@@ -74,8 +77,32 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         
         //----- サンプル用テストデータ #Start ------
-        print(self.coworkingSpaceId)
+        //ローカルプッシュ表示の許可をもらう
+        /*
+        let setting = UIUserNotificationSettings(forTypes: [.Sound, .Alert], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(setting)
         
+        //Notificationの生成する
+        let myNotification: UILocalNotification = UILocalNotification()
+        
+        //メッセージを代入する
+        myNotification.alertBody = "TEST(Fire)"
+        
+        //再生サウンドを設定する
+        myNotification.soundName = UILocalNotificationDefaultSoundName
+        
+        //Timezoneを設定する
+        myNotification.timeZone = NSTimeZone.defaultTimeZone()
+        
+        //10秒後に設定する
+        myNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        
+        //Notificationを表示する
+        UIApplication.sharedApplication().scheduleLocalNotification(myNotification)
+        */
+
+        /* ----- 取得データに関するのテストコード ----- */
+        print(self.coworkingSpaceId)
         print(self.coworkingSpaceTitle)
         self.mapTitleLbl.text = self.coworkingSpaceTitle
         
@@ -86,9 +113,9 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
         print(self.coworkingSpaceRoute)
         self.mapRoute.text = self.coworkingSpaceRoute
         
-        //緯度・軽度を設定
-        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(35.678697, 139.782127)
-        self.mapDisplayArea.setCenterCoordinate(location, animated:true)
+        //緯度・経度を設定
+        let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(35.678697, 139.782127)
+        self.mapDisplayArea.setCenterCoordinate(location, animated: true)
         
         //縮尺を設定
         var region:MKCoordinateRegion = mapDisplayArea.region
@@ -96,7 +123,15 @@ class MapPopupUnitController: UIViewController, MKMapViewDelegate {
         region.span.latitudeDelta = 0.02
         region.span.longitudeDelta = 0.02
         
-        self.mapDisplayArea.setRegion(region, animated:true)
+        //ピンを設定
+        let pin = MKPointAnnotation()
+        pin.coordinate = location
+        pin.title = "タイトル"
+        pin.subtitle = "サブタイトル"
+
+        //マップに関する設定をする
+        self.mapDisplayArea.addAnnotation(pin)
+        self.mapDisplayArea.setRegion(region, animated: true)
         
         //地図表示
         self.mapDisplayArea.mapType = MKMapType.Standard

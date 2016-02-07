@@ -8,9 +8,6 @@
 
 import UIKit
 
-//Parseクラスのインポート
-import Parse
-
 class VisitHistoryController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var visitHistoryTableView: UITableView!

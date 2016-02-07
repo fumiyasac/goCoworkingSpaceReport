@@ -8,9 +8,6 @@
 
 import UIKit
 
-//Parseクラスのインポート
-import Parse
-
 //CALayerクラスのインポート
 import QuartzCore
 
@@ -46,12 +43,6 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewWillAppear(animated: Bool) {
         
-        //認証中か否かの判定
-        if PFUser.currentUser() == nil {
-            self.currentUser = "UNKNOWN"
-        } else {
-            //@todo: 自分の情報をParse.comより取得
-        }
     }
     
     override func viewDidLoad() {
@@ -135,7 +126,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         //要素数を返す
-        return sectionCount
+        return self.sectionCount
     }
     
     //テーブルの行数を設定する ※必須
@@ -143,9 +134,9 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         //セクションのセル数
         if (section == 0) {
-            return cellCountOne
+            return self.cellCountOne
         } else if (section == 1) {
-            return cellCountTwo
+            return self.cellCountTwo
         } else {
             return 0
         }
@@ -211,9 +202,9 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         //セクションのセル高
         if (indexPath.section == 0) {
-            return cellHeightOne
+            return self.cellHeightOne
         } else if (indexPath.section == 1) {
-            return cellHeightTwo
+            return self.cellHeightTwo
         } else {
             return 0
         }

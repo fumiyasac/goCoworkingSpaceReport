@@ -7,11 +7,6 @@
 //
 
 import UIKit
-import WatchConnectivity
-
-//Parseフレームワークのインポート
-import Parse
-import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,18 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        
-        // [Optional] Power your app with Local Datastore. For more info, go to
-        // https://parse.com/docs/ios_guide#localdatastore/iOS
-        Parse.enableLocalDatastore()
-        
-        //ここをみなさんのアカウントのやつにしてください
-        // Initialize Parse.
-        Parse.setApplicationId("KQAv779gLsy2bLsHW4aZQ0TEqffj69FAvbWziLQk", clientKey: "2tqkviVdZ9q0bUYNKQKhxnjMP02xwUVi1OnaMtBV")
-        
-        // [Optional] Track statistics around application opens.
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         // Override point for customization after application launch.
         return true
