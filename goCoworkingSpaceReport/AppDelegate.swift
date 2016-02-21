@@ -15,7 +15,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        //UINavigationBarに関する設定
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
+        //アプリケーションキーとクライアントキーの設定
+        NCMB.setApplicationKey("3a54f9fbb07543f5defb1d9bac3e28fdc0c2401510910791f5a200363efeb938", clientKey: "63f759590b95bfeacb20fc5ca6fe9defc8d39e6fb4c612d760293f3b4faaebd3")
+        
+        //NCMB疎通試験用テストコード
+        /*
+        let query: NCMBQuery = NCMBQuery(className: "TestClass")
+        query.whereKey("message", equalTo: "Hello, NCMB!")
+        query.findObjectsInBackgroundWithBlock({(NSArray objects, NSError error) in
+            
+            if error == nil {
+                
+                if objects.count > 0 {
+                    let msg: AnyObject? = objects[0].objectForKey("message")
+                    let msgStr: String = msg as! String
+                    print("success find data. \(msgStr)")
+                } else {
+                    var saveError : NSError? = nil
+                    let obj : NCMBObject = NCMBObject(className: "TestClass")
+                    obj.setObject("Hello, NCMB!", forKey: "message")
+                    obj.save(&saveError)
+                    
+                    if saveError == nil {
+                        print("success save data.")
+                    } else {
+                        print("failure save data. \(saveError)")
+                    }
+                }
+                
+            } else {
+                print(error.localizedDescription)
+            }
+        })
+        */
         
         // Override point for customization after application launch.
         return true

@@ -15,6 +15,52 @@
 		DE2AEE191C0CBCC90038B31A /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AEE171C0CBCC90038B31A /* PortfolioCollectionViewCell.swift */; };
 		DE2AEE1A1C0CBCC90038B31A /* PortfolioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2AEE181C0CBCC90038B31A /* PortfolioCollectionViewCell.xib */; };
 		DE2AEE1F1C0CBDC50038B31A /* PortfolioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AEE1E1C0CBDC50038B31A /* PortfolioController.swift */; };
+		DE3E41301C78656F00EA95A0 /* NCMB.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40C21C78656F00EA95A0 /* NCMB.m */; };
+		DE3E41311C78656F00EA95A0 /* NCMB_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3E40C31C78656F00EA95A0 /* NCMB_Info.plist */; };
+		DE3E41321C78656F00EA95A0 /* NCMBACL.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40C51C78656F00EA95A0 /* NCMBACL.m */; };
+		DE3E41331C78656F00EA95A0 /* NCMBAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40C71C78656F00EA95A0 /* NCMBAnalytics.m */; };
+		DE3E41341C78656F00EA95A0 /* NCMBAnonymousUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40C91C78656F00EA95A0 /* NCMBAnonymousUtils.m */; };
+		DE3E41351C78656F00EA95A0 /* NCMBError.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40CC1C78656F00EA95A0 /* NCMBError.m */; };
+		DE3E41361C78656F00EA95A0 /* NCMBFacebookUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40CE1C78656F00EA95A0 /* NCMBFacebookUtils.m */; };
+		DE3E41371C78656F00EA95A0 /* NCMBFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40D01C78656F00EA95A0 /* NCMBFile.m */; };
+		DE3E41381C78656F00EA95A0 /* NCMBGeoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40D21C78656F00EA95A0 /* NCMBGeoPoint.m */; };
+		DE3E41391C78656F00EA95A0 /* NCMBGoogleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40D51C78656F00EA95A0 /* NCMBGoogleUtils.m */; };
+		DE3E413A1C78656F00EA95A0 /* NCMBInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40D71C78656F00EA95A0 /* NCMBInstallation.m */; };
+		DE3E413B1C78656F00EA95A0 /* NCMBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40DA1C78656F00EA95A0 /* NCMBObject.m */; };
+		DE3E413C1C78656F00EA95A0 /* NCMBPush.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40DC1C78656F00EA95A0 /* NCMBPush.m */; };
+		DE3E413D1C78656F00EA95A0 /* NCMBQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40DE1C78656F00EA95A0 /* NCMBQuery.m */; };
+		DE3E413E1C78656F00EA95A0 /* NCMBReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40E11C78656F00EA95A0 /* NCMBReachability.m */; };
+		DE3E413F1C78656F00EA95A0 /* NCMBRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40E31C78656F00EA95A0 /* NCMBRelation.m */; };
+		DE3E41401C78656F00EA95A0 /* NCMBCloseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40E61C78656F00EA95A0 /* NCMBCloseImageView.m */; };
+		DE3E41411C78656F00EA95A0 /* NCMBRichPushView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40E81C78656F00EA95A0 /* NCMBRichPushView.m */; };
+		DE3E41421C78656F00EA95A0 /* NCMBRole.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40EA1C78656F00EA95A0 /* NCMBRole.m */; };
+		DE3E41431C78656F00EA95A0 /* NCMB_Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40ED1C78656F00EA95A0 /* NCMB_Twitter.m */; };
+		DE3E41441C78656F00EA95A0 /* NSMutableURLRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40F11C78656F00EA95A0 /* NSMutableURLRequestParameters.m */; };
+		DE3E41451C78656F00EA95A0 /* NSStringURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40F31C78656F00EA95A0 /* NSStringURLEncoding.m */; };
+		DE3E41461C78656F00EA95A0 /* NSURLBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40F51C78656F00EA95A0 /* NSURLBase.m */; };
+		DE3E41471C78656F00EA95A0 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40F71C78656F00EA95A0 /* Base64Transcoder.c */; };
+		DE3E41481C78656F00EA95A0 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40F91C78656F00EA95A0 /* hmac.c */; };
+		DE3E41491C78656F00EA95A0 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40FB1C78656F00EA95A0 /* sha1.c */; };
+		DE3E414A1C78656F00EA95A0 /* NCMBOAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E40FE1C78656F00EA95A0 /* NCMBOAConsumer.m */; };
+		DE3E414B1C78656F00EA95A0 /* NCMBOADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41001C78656F00EA95A0 /* NCMBOADataFetcher.m */; };
+		DE3E414C1C78656F00EA95A0 /* NCMBOAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41021C78656F00EA95A0 /* NCMBOAHMAC_SHA1SignatureProvider.m */; };
+		DE3E414D1C78656F00EA95A0 /* NCMBOAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41041C78656F00EA95A0 /* NCMBOAMutableURLRequest.m */; };
+		DE3E414E1C78656F00EA95A0 /* NCMBOARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41061C78656F00EA95A0 /* NCMBOARequestParameter.m */; };
+		DE3E414F1C78656F00EA95A0 /* NCMBOAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41081C78656F00EA95A0 /* NCMBOAServiceTicket.m */; };
+		DE3E41501C78656F00EA95A0 /* NCMBOAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E410B1C78656F00EA95A0 /* NCMBOAToken.m */; };
+		DE3E41511C78656F00EA95A0 /* NCMBTwitterLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E410D1C78656F00EA95A0 /* NCMBTwitterLoginView.m */; };
+		DE3E41521C78656F00EA95A0 /* NCMBTwitterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E410F1C78656F00EA95A0 /* NCMBTwitterUtils.m */; };
+		DE3E41531C78656F00EA95A0 /* NCMBURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41121C78656F00EA95A0 /* NCMBURLConnection.m */; };
+		DE3E41541C78656F00EA95A0 /* NCMBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41141C78656F00EA95A0 /* NCMBUser.m */; };
+		DE3E41551C78656F00EA95A0 /* NSDataBase64Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41171C78656F00EA95A0 /* NSDataBase64Encode.m */; };
+		DE3E41561C78656F00EA95A0 /* NCMBAddOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E411A1C78656F00EA95A0 /* NCMBAddOperation.m */; };
+		DE3E41571C78656F00EA95A0 /* NCMBAddUniqueOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E411C1C78656F00EA95A0 /* NCMBAddUniqueOperation.m */; };
+		DE3E41581C78656F00EA95A0 /* NCMBDeleteOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E411E1C78656F00EA95A0 /* NCMBDeleteOperation.m */; };
+		DE3E41591C78656F00EA95A0 /* NCMBIncrementOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41201C78656F00EA95A0 /* NCMBIncrementOperation.m */; };
+		DE3E415A1C78656F00EA95A0 /* NCMBRelationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41221C78656F00EA95A0 /* NCMBRelationOperation.m */; };
+		DE3E415B1C78656F00EA95A0 /* NCMBRemoveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41241C78656F00EA95A0 /* NCMBRemoveOperation.m */; };
+		DE3E415C1C78656F00EA95A0 /* NCMBSetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41261C78656F00EA95A0 /* NCMBSetOperation.m */; };
+		DE3E415D1C78656F00EA95A0 /* SubClassHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E412F1C78656F00EA95A0 /* SubClassHandler.m */; };
 		DE3F81501BEF0891009EEFE7 /* DetailTableDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F814F1BEF0891009EEFE7 /* DetailTableDefinition.swift */; };
 		DE3F81561BEF0E3F009EEFE7 /* MessageText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */; };
 		DE3F81621BEF3AED009EEFE7 /* UserThumbController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81611BEF3AEC009EEFE7 /* UserThumbController.swift */; };
@@ -147,6 +193,107 @@
 		DE2AEE171C0CBCC90038B31A /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE2AEE181C0CBCC90038B31A /* PortfolioCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortfolioCollectionViewCell.xib; sourceTree = "<group>"; };
 		DE2AEE1E1C0CBDC50038B31A /* PortfolioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioController.swift; sourceTree = "<group>"; };
+		DE3E40C11C78656F00EA95A0 /* NCMB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMB.h; sourceTree = "<group>"; };
+		DE3E40C21C78656F00EA95A0 /* NCMB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMB.m; sourceTree = "<group>"; };
+		DE3E40C31C78656F00EA95A0 /* NCMB_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NCMB_Info.plist; sourceTree = "<group>"; };
+		DE3E40C41C78656F00EA95A0 /* NCMBACL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBACL.h; sourceTree = "<group>"; };
+		DE3E40C51C78656F00EA95A0 /* NCMBACL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBACL.m; sourceTree = "<group>"; };
+		DE3E40C61C78656F00EA95A0 /* NCMBAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBAnalytics.h; sourceTree = "<group>"; };
+		DE3E40C71C78656F00EA95A0 /* NCMBAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBAnalytics.m; sourceTree = "<group>"; };
+		DE3E40C81C78656F00EA95A0 /* NCMBAnonymousUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBAnonymousUtils.h; sourceTree = "<group>"; };
+		DE3E40C91C78656F00EA95A0 /* NCMBAnonymousUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBAnonymousUtils.m; sourceTree = "<group>"; };
+		DE3E40CA1C78656F00EA95A0 /* NCMBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBConstants.h; sourceTree = "<group>"; };
+		DE3E40CB1C78656F00EA95A0 /* NCMBError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBError.h; sourceTree = "<group>"; };
+		DE3E40CC1C78656F00EA95A0 /* NCMBError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBError.m; sourceTree = "<group>"; };
+		DE3E40CD1C78656F00EA95A0 /* NCMBFacebookUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBFacebookUtils.h; sourceTree = "<group>"; };
+		DE3E40CE1C78656F00EA95A0 /* NCMBFacebookUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBFacebookUtils.m; sourceTree = "<group>"; };
+		DE3E40CF1C78656F00EA95A0 /* NCMBFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBFile.h; sourceTree = "<group>"; };
+		DE3E40D01C78656F00EA95A0 /* NCMBFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBFile.m; sourceTree = "<group>"; };
+		DE3E40D11C78656F00EA95A0 /* NCMBGeoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBGeoPoint.h; sourceTree = "<group>"; };
+		DE3E40D21C78656F00EA95A0 /* NCMBGeoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBGeoPoint.m; sourceTree = "<group>"; };
+		DE3E40D31C78656F00EA95A0 /* NCMBGoogleUtils+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMBGoogleUtils+Private.h"; sourceTree = "<group>"; };
+		DE3E40D41C78656F00EA95A0 /* NCMBGoogleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBGoogleUtils.h; sourceTree = "<group>"; };
+		DE3E40D51C78656F00EA95A0 /* NCMBGoogleUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBGoogleUtils.m; sourceTree = "<group>"; };
+		DE3E40D61C78656F00EA95A0 /* NCMBInstallation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBInstallation.h; sourceTree = "<group>"; };
+		DE3E40D71C78656F00EA95A0 /* NCMBInstallation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBInstallation.m; sourceTree = "<group>"; };
+		DE3E40D81C78656F00EA95A0 /* NCMBObject+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMBObject+Subclass.h"; sourceTree = "<group>"; };
+		DE3E40D91C78656F00EA95A0 /* NCMBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBObject.h; sourceTree = "<group>"; };
+		DE3E40DA1C78656F00EA95A0 /* NCMBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBObject.m; sourceTree = "<group>"; };
+		DE3E40DB1C78656F00EA95A0 /* NCMBPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBPush.h; sourceTree = "<group>"; };
+		DE3E40DC1C78656F00EA95A0 /* NCMBPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBPush.m; sourceTree = "<group>"; };
+		DE3E40DD1C78656F00EA95A0 /* NCMBQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBQuery.h; sourceTree = "<group>"; };
+		DE3E40DE1C78656F00EA95A0 /* NCMBQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBQuery.m; sourceTree = "<group>"; };
+		DE3E40E01C78656F00EA95A0 /* NCMBReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBReachability.h; sourceTree = "<group>"; };
+		DE3E40E11C78656F00EA95A0 /* NCMBReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBReachability.m; sourceTree = "<group>"; };
+		DE3E40E21C78656F00EA95A0 /* NCMBRelation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBRelation.h; sourceTree = "<group>"; };
+		DE3E40E31C78656F00EA95A0 /* NCMBRelation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBRelation.m; sourceTree = "<group>"; };
+		DE3E40E51C78656F00EA95A0 /* NCMBCloseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBCloseImageView.h; sourceTree = "<group>"; };
+		DE3E40E61C78656F00EA95A0 /* NCMBCloseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBCloseImageView.m; sourceTree = "<group>"; };
+		DE3E40E71C78656F00EA95A0 /* NCMBRichPushView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBRichPushView.h; sourceTree = "<group>"; };
+		DE3E40E81C78656F00EA95A0 /* NCMBRichPushView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBRichPushView.m; sourceTree = "<group>"; };
+		DE3E40E91C78656F00EA95A0 /* NCMBRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBRole.h; sourceTree = "<group>"; };
+		DE3E40EA1C78656F00EA95A0 /* NCMBRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBRole.m; sourceTree = "<group>"; };
+		DE3E40EB1C78656F00EA95A0 /* NCMBSubclassing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBSubclassing.h; sourceTree = "<group>"; };
+		DE3E40ED1C78656F00EA95A0 /* NCMB_Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMB_Twitter.m; sourceTree = "<group>"; };
+		DE3E40F01C78656F00EA95A0 /* NSMutableURLRequestParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableURLRequestParameters.h; sourceTree = "<group>"; };
+		DE3E40F11C78656F00EA95A0 /* NSMutableURLRequestParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableURLRequestParameters.m; sourceTree = "<group>"; };
+		DE3E40F21C78656F00EA95A0 /* NSStringURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringURLEncoding.h; sourceTree = "<group>"; };
+		DE3E40F31C78656F00EA95A0 /* NSStringURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringURLEncoding.m; sourceTree = "<group>"; };
+		DE3E40F41C78656F00EA95A0 /* NSURLBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLBase.h; sourceTree = "<group>"; };
+		DE3E40F51C78656F00EA95A0 /* NSURLBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLBase.m; sourceTree = "<group>"; };
+		DE3E40F71C78656F00EA95A0 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		DE3E40F81C78656F00EA95A0 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		DE3E40F91C78656F00EA95A0 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		DE3E40FA1C78656F00EA95A0 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		DE3E40FB1C78656F00EA95A0 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		DE3E40FC1C78656F00EA95A0 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		DE3E40FD1C78656F00EA95A0 /* NCMBOAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOAConsumer.h; sourceTree = "<group>"; };
+		DE3E40FE1C78656F00EA95A0 /* NCMBOAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBOAConsumer.m; sourceTree = "<group>"; };
+		DE3E40FF1C78656F00EA95A0 /* NCMBOADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOADataFetcher.h; sourceTree = "<group>"; };
+		DE3E41001C78656F00EA95A0 /* NCMBOADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBOADataFetcher.m; sourceTree = "<group>"; };
+		DE3E41011C78656F00EA95A0 /* NCMBOAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		DE3E41021C78656F00EA95A0 /* NCMBOAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBOAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		DE3E41031C78656F00EA95A0 /* NCMBOAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOAMutableURLRequest.h; sourceTree = "<group>"; };
+		DE3E41041C78656F00EA95A0 /* NCMBOAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBOAMutableURLRequest.m; sourceTree = "<group>"; };
+		DE3E41051C78656F00EA95A0 /* NCMBOARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOARequestParameter.h; sourceTree = "<group>"; };
+		DE3E41061C78656F00EA95A0 /* NCMBOARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBOARequestParameter.m; sourceTree = "<group>"; };
+		DE3E41071C78656F00EA95A0 /* NCMBOAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOAServiceTicket.h; sourceTree = "<group>"; };
+		DE3E41081C78656F00EA95A0 /* NCMBOAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBOAServiceTicket.m; sourceTree = "<group>"; };
+		DE3E41091C78656F00EA95A0 /* NCMBOASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOASignatureProviding.h; sourceTree = "<group>"; };
+		DE3E410A1C78656F00EA95A0 /* NCMBOAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBOAToken.h; sourceTree = "<group>"; };
+		DE3E410B1C78656F00EA95A0 /* NCMBOAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBOAToken.m; sourceTree = "<group>"; };
+		DE3E410C1C78656F00EA95A0 /* NCMBTwitterLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBTwitterLoginView.h; sourceTree = "<group>"; };
+		DE3E410D1C78656F00EA95A0 /* NCMBTwitterLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBTwitterLoginView.m; sourceTree = "<group>"; };
+		DE3E410E1C78656F00EA95A0 /* NCMBTwitterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBTwitterUtils.h; sourceTree = "<group>"; };
+		DE3E410F1C78656F00EA95A0 /* NCMBTwitterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBTwitterUtils.m; sourceTree = "<group>"; };
+		DE3E41111C78656F00EA95A0 /* NCMBURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBURLConnection.h; sourceTree = "<group>"; };
+		DE3E41121C78656F00EA95A0 /* NCMBURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBURLConnection.m; sourceTree = "<group>"; };
+		DE3E41131C78656F00EA95A0 /* NCMBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBUser.h; sourceTree = "<group>"; };
+		DE3E41141C78656F00EA95A0 /* NCMBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBUser.m; sourceTree = "<group>"; };
+		DE3E41161C78656F00EA95A0 /* NSDataBase64Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataBase64Encode.h; sourceTree = "<group>"; };
+		DE3E41171C78656F00EA95A0 /* NSDataBase64Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataBase64Encode.m; sourceTree = "<group>"; };
+		DE3E41191C78656F00EA95A0 /* NCMBAddOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBAddOperation.h; sourceTree = "<group>"; };
+		DE3E411A1C78656F00EA95A0 /* NCMBAddOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBAddOperation.m; sourceTree = "<group>"; };
+		DE3E411B1C78656F00EA95A0 /* NCMBAddUniqueOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBAddUniqueOperation.h; sourceTree = "<group>"; };
+		DE3E411C1C78656F00EA95A0 /* NCMBAddUniqueOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBAddUniqueOperation.m; sourceTree = "<group>"; };
+		DE3E411D1C78656F00EA95A0 /* NCMBDeleteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBDeleteOperation.h; sourceTree = "<group>"; };
+		DE3E411E1C78656F00EA95A0 /* NCMBDeleteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBDeleteOperation.m; sourceTree = "<group>"; };
+		DE3E411F1C78656F00EA95A0 /* NCMBIncrementOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBIncrementOperation.h; sourceTree = "<group>"; };
+		DE3E41201C78656F00EA95A0 /* NCMBIncrementOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBIncrementOperation.m; sourceTree = "<group>"; };
+		DE3E41211C78656F00EA95A0 /* NCMBRelationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBRelationOperation.h; sourceTree = "<group>"; };
+		DE3E41221C78656F00EA95A0 /* NCMBRelationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBRelationOperation.m; sourceTree = "<group>"; };
+		DE3E41231C78656F00EA95A0 /* NCMBRemoveOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBRemoveOperation.h; sourceTree = "<group>"; };
+		DE3E41241C78656F00EA95A0 /* NCMBRemoveOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBRemoveOperation.m; sourceTree = "<group>"; };
+		DE3E41251C78656F00EA95A0 /* NCMBSetOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMBSetOperation.h; sourceTree = "<group>"; };
+		DE3E41261C78656F00EA95A0 /* NCMBSetOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCMBSetOperation.m; sourceTree = "<group>"; };
+		DE3E41281C78656F00EA95A0 /* NCMBFacebookUtils+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMBFacebookUtils+Private.h"; sourceTree = "<group>"; };
+		DE3E41291C78656F00EA95A0 /* NCMBObject+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMBObject+Private.h"; sourceTree = "<group>"; };
+		DE3E412A1C78656F00EA95A0 /* NCMBQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMBQuery+Private.h"; sourceTree = "<group>"; };
+		DE3E412B1C78656F00EA95A0 /* NCMBRelation+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMBRelation+Private.h"; sourceTree = "<group>"; };
+		DE3E412C1C78656F00EA95A0 /* NCMBUser+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NCMBUser+Private.h"; sourceTree = "<group>"; };
+		DE3E412E1C78656F00EA95A0 /* SubClassHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubClassHandler.h; sourceTree = "<group>"; };
+		DE3E412F1C78656F00EA95A0 /* SubClassHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubClassHandler.m; sourceTree = "<group>"; };
+		DE3E41611C78947800EA95A0 /* goCoworkingSpaceReport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "goCoworkingSpaceReport-Bridging-Header.h"; sourceTree = "<group>"; };
 		DE3F814F1BEF0891009EEFE7 /* DetailTableDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableDefinition.swift; sourceTree = "<group>"; };
 		DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageText.swift; sourceTree = "<group>"; };
 		DE3F81611BEF3AEC009EEFE7 /* UserThumbController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserThumbController.swift; sourceTree = "<group>"; };
@@ -272,6 +419,7 @@
 		DE083B021BC70F6F000A35A7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DE3E40C01C78656F00EA95A0 /* NCMB */,
 				DE3F81521BEF0C38009EEFE7 /* Realm */,
 			);
 			name = Models;
@@ -310,6 +458,201 @@
 				DE2AEE181C0CBCC90038B31A /* PortfolioCollectionViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		DE3E40C01C78656F00EA95A0 /* NCMB */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E40C11C78656F00EA95A0 /* NCMB.h */,
+				DE3E40C21C78656F00EA95A0 /* NCMB.m */,
+				DE3E40C31C78656F00EA95A0 /* NCMB_Info.plist */,
+				DE3E40C41C78656F00EA95A0 /* NCMBACL.h */,
+				DE3E40C51C78656F00EA95A0 /* NCMBACL.m */,
+				DE3E40C61C78656F00EA95A0 /* NCMBAnalytics.h */,
+				DE3E40C71C78656F00EA95A0 /* NCMBAnalytics.m */,
+				DE3E40C81C78656F00EA95A0 /* NCMBAnonymousUtils.h */,
+				DE3E40C91C78656F00EA95A0 /* NCMBAnonymousUtils.m */,
+				DE3E40CA1C78656F00EA95A0 /* NCMBConstants.h */,
+				DE3E40CB1C78656F00EA95A0 /* NCMBError.h */,
+				DE3E40CC1C78656F00EA95A0 /* NCMBError.m */,
+				DE3E40CD1C78656F00EA95A0 /* NCMBFacebookUtils.h */,
+				DE3E40CE1C78656F00EA95A0 /* NCMBFacebookUtils.m */,
+				DE3E40CF1C78656F00EA95A0 /* NCMBFile.h */,
+				DE3E40D01C78656F00EA95A0 /* NCMBFile.m */,
+				DE3E40D11C78656F00EA95A0 /* NCMBGeoPoint.h */,
+				DE3E40D21C78656F00EA95A0 /* NCMBGeoPoint.m */,
+				DE3E40D31C78656F00EA95A0 /* NCMBGoogleUtils+Private.h */,
+				DE3E40D41C78656F00EA95A0 /* NCMBGoogleUtils.h */,
+				DE3E40D51C78656F00EA95A0 /* NCMBGoogleUtils.m */,
+				DE3E40D61C78656F00EA95A0 /* NCMBInstallation.h */,
+				DE3E40D71C78656F00EA95A0 /* NCMBInstallation.m */,
+				DE3E40D81C78656F00EA95A0 /* NCMBObject+Subclass.h */,
+				DE3E40D91C78656F00EA95A0 /* NCMBObject.h */,
+				DE3E40DA1C78656F00EA95A0 /* NCMBObject.m */,
+				DE3E40DB1C78656F00EA95A0 /* NCMBPush.h */,
+				DE3E40DC1C78656F00EA95A0 /* NCMBPush.m */,
+				DE3E40DD1C78656F00EA95A0 /* NCMBQuery.h */,
+				DE3E40DE1C78656F00EA95A0 /* NCMBQuery.m */,
+				DE3E40DF1C78656F00EA95A0 /* NCMBReachability */,
+				DE3E40E21C78656F00EA95A0 /* NCMBRelation.h */,
+				DE3E40E31C78656F00EA95A0 /* NCMBRelation.m */,
+				DE3E40E41C78656F00EA95A0 /* NCMBRichPush */,
+				DE3E40E91C78656F00EA95A0 /* NCMBRole.h */,
+				DE3E40EA1C78656F00EA95A0 /* NCMBRole.m */,
+				DE3E40EB1C78656F00EA95A0 /* NCMBSubclassing.h */,
+				DE3E40EC1C78656F00EA95A0 /* NCMBTwitter */,
+				DE3E410E1C78656F00EA95A0 /* NCMBTwitterUtils.h */,
+				DE3E410F1C78656F00EA95A0 /* NCMBTwitterUtils.m */,
+				DE3E41101C78656F00EA95A0 /* NCMBURLConnection */,
+				DE3E41131C78656F00EA95A0 /* NCMBUser.h */,
+				DE3E41141C78656F00EA95A0 /* NCMBUser.m */,
+				DE3E41151C78656F00EA95A0 /* NSDataBase64Encode */,
+				DE3E41181C78656F00EA95A0 /* Operations */,
+				DE3E41271C78656F00EA95A0 /* PrivateHeaders */,
+				DE3E412D1C78656F00EA95A0 /* SubClassHandler */,
+			);
+			path = NCMB;
+			sourceTree = "<group>";
+		};
+		DE3E40DF1C78656F00EA95A0 /* NCMBReachability */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E40E01C78656F00EA95A0 /* NCMBReachability.h */,
+				DE3E40E11C78656F00EA95A0 /* NCMBReachability.m */,
+			);
+			path = NCMBReachability;
+			sourceTree = "<group>";
+		};
+		DE3E40E41C78656F00EA95A0 /* NCMBRichPush */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E40E51C78656F00EA95A0 /* NCMBCloseImageView.h */,
+				DE3E40E61C78656F00EA95A0 /* NCMBCloseImageView.m */,
+				DE3E40E71C78656F00EA95A0 /* NCMBRichPushView.h */,
+				DE3E40E81C78656F00EA95A0 /* NCMBRichPushView.m */,
+			);
+			path = NCMBRichPush;
+			sourceTree = "<group>";
+		};
+		DE3E40EC1C78656F00EA95A0 /* NCMBTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E40ED1C78656F00EA95A0 /* NCMB_Twitter.m */,
+				DE3E40EE1C78656F00EA95A0 /* NCMBOAConsumer */,
+				DE3E410C1C78656F00EA95A0 /* NCMBTwitterLoginView.h */,
+				DE3E410D1C78656F00EA95A0 /* NCMBTwitterLoginView.m */,
+			);
+			path = NCMBTwitter;
+			sourceTree = "<group>";
+		};
+		DE3E40EE1C78656F00EA95A0 /* NCMBOAConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E40EF1C78656F00EA95A0 /* Categories */,
+				DE3E40F61C78656F00EA95A0 /* Crypto */,
+				DE3E40FD1C78656F00EA95A0 /* NCMBOAConsumer.h */,
+				DE3E40FE1C78656F00EA95A0 /* NCMBOAConsumer.m */,
+				DE3E40FF1C78656F00EA95A0 /* NCMBOADataFetcher.h */,
+				DE3E41001C78656F00EA95A0 /* NCMBOADataFetcher.m */,
+				DE3E41011C78656F00EA95A0 /* NCMBOAHMAC_SHA1SignatureProvider.h */,
+				DE3E41021C78656F00EA95A0 /* NCMBOAHMAC_SHA1SignatureProvider.m */,
+				DE3E41031C78656F00EA95A0 /* NCMBOAMutableURLRequest.h */,
+				DE3E41041C78656F00EA95A0 /* NCMBOAMutableURLRequest.m */,
+				DE3E41051C78656F00EA95A0 /* NCMBOARequestParameter.h */,
+				DE3E41061C78656F00EA95A0 /* NCMBOARequestParameter.m */,
+				DE3E41071C78656F00EA95A0 /* NCMBOAServiceTicket.h */,
+				DE3E41081C78656F00EA95A0 /* NCMBOAServiceTicket.m */,
+				DE3E41091C78656F00EA95A0 /* NCMBOASignatureProviding.h */,
+				DE3E410A1C78656F00EA95A0 /* NCMBOAToken.h */,
+				DE3E410B1C78656F00EA95A0 /* NCMBOAToken.m */,
+			);
+			path = NCMBOAConsumer;
+			sourceTree = "<group>";
+		};
+		DE3E40EF1C78656F00EA95A0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E40F01C78656F00EA95A0 /* NSMutableURLRequestParameters.h */,
+				DE3E40F11C78656F00EA95A0 /* NSMutableURLRequestParameters.m */,
+				DE3E40F21C78656F00EA95A0 /* NSStringURLEncoding.h */,
+				DE3E40F31C78656F00EA95A0 /* NSStringURLEncoding.m */,
+				DE3E40F41C78656F00EA95A0 /* NSURLBase.h */,
+				DE3E40F51C78656F00EA95A0 /* NSURLBase.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DE3E40F61C78656F00EA95A0 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E40F71C78656F00EA95A0 /* Base64Transcoder.c */,
+				DE3E40F81C78656F00EA95A0 /* Base64Transcoder.h */,
+				DE3E40F91C78656F00EA95A0 /* hmac.c */,
+				DE3E40FA1C78656F00EA95A0 /* hmac.h */,
+				DE3E40FB1C78656F00EA95A0 /* sha1.c */,
+				DE3E40FC1C78656F00EA95A0 /* sha1.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		DE3E41101C78656F00EA95A0 /* NCMBURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E41111C78656F00EA95A0 /* NCMBURLConnection.h */,
+				DE3E41121C78656F00EA95A0 /* NCMBURLConnection.m */,
+			);
+			path = NCMBURLConnection;
+			sourceTree = "<group>";
+		};
+		DE3E41151C78656F00EA95A0 /* NSDataBase64Encode */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E41161C78656F00EA95A0 /* NSDataBase64Encode.h */,
+				DE3E41171C78656F00EA95A0 /* NSDataBase64Encode.m */,
+			);
+			path = NSDataBase64Encode;
+			sourceTree = "<group>";
+		};
+		DE3E41181C78656F00EA95A0 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E41191C78656F00EA95A0 /* NCMBAddOperation.h */,
+				DE3E411A1C78656F00EA95A0 /* NCMBAddOperation.m */,
+				DE3E411B1C78656F00EA95A0 /* NCMBAddUniqueOperation.h */,
+				DE3E411C1C78656F00EA95A0 /* NCMBAddUniqueOperation.m */,
+				DE3E411D1C78656F00EA95A0 /* NCMBDeleteOperation.h */,
+				DE3E411E1C78656F00EA95A0 /* NCMBDeleteOperation.m */,
+				DE3E411F1C78656F00EA95A0 /* NCMBIncrementOperation.h */,
+				DE3E41201C78656F00EA95A0 /* NCMBIncrementOperation.m */,
+				DE3E41211C78656F00EA95A0 /* NCMBRelationOperation.h */,
+				DE3E41221C78656F00EA95A0 /* NCMBRelationOperation.m */,
+				DE3E41231C78656F00EA95A0 /* NCMBRemoveOperation.h */,
+				DE3E41241C78656F00EA95A0 /* NCMBRemoveOperation.m */,
+				DE3E41251C78656F00EA95A0 /* NCMBSetOperation.h */,
+				DE3E41261C78656F00EA95A0 /* NCMBSetOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		DE3E41271C78656F00EA95A0 /* PrivateHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E41281C78656F00EA95A0 /* NCMBFacebookUtils+Private.h */,
+				DE3E41291C78656F00EA95A0 /* NCMBObject+Private.h */,
+				DE3E412A1C78656F00EA95A0 /* NCMBQuery+Private.h */,
+				DE3E412B1C78656F00EA95A0 /* NCMBRelation+Private.h */,
+				DE3E412C1C78656F00EA95A0 /* NCMBUser+Private.h */,
+			);
+			path = PrivateHeaders;
+			sourceTree = "<group>";
+		};
+		DE3E412D1C78656F00EA95A0 /* SubClassHandler */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E412E1C78656F00EA95A0 /* SubClassHandler.h */,
+				DE3E412F1C78656F00EA95A0 /* SubClassHandler.m */,
+			);
+			path = SubClassHandler;
 			sourceTree = "<group>";
 		};
 		DE3F81521BEF0C38009EEFE7 /* Realm */ = {
@@ -602,6 +945,7 @@
 			isa = PBXGroup;
 			children = (
 				DEE796001BB4232F005128DF /* AppDelegate.swift */,
+				DE3E41611C78947800EA95A0 /* goCoworkingSpaceReport-Bridging-Header.h */,
 				DE1181A81BC0F9E8002794AE /* Assets */,
 				DE083B021BC70F6F000A35A7 /* Models */,
 				DEE7963E1BB46091005128DF /* Frameworks */,
@@ -871,6 +1215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEE796AC1BB70198005128DF /* ProfileTapCell.xib in Resources */,
+				DE3E41311C78656F00EA95A0 /* NCMB_Info.plist in Resources */,
 				DEE7960B1BB4232F005128DF /* LaunchScreen.storyboard in Resources */,
 				DE3F81661BEF3CC2009EEFE7 /* IntroductionImageCell.xib in Resources */,
 				DEE796BC1BB7026B005128DF /* NowHereCell.xib in Resources */,
@@ -915,25 +1260,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE779AFA1C08D56B00E4978B /* MapPopupUnitController.swift in Sources */,
+				DE3E41511C78656F00EA95A0 /* NCMBTwitterLoginView.m in Sources */,
+				DE3E41351C78656F00EA95A0 /* NCMBError.m in Sources */,
 				DE2AEE1F1C0CBDC50038B31A /* PortfolioController.swift in Sources */,
+				DE3E41581C78656F00EA95A0 /* NCMBDeleteOperation.m in Sources */,
+				DE3E41461C78656F00EA95A0 /* NSURLBase.m in Sources */,
+				DE3E41331C78656F00EA95A0 /* NCMBAnalytics.m in Sources */,
 				DE488BA91C001FE1007F96B2 /* IntroductionDetailCell.swift in Sources */,
 				DEC4D4911C43C7CF0021557A /* ConvenienceController.swift in Sources */,
 				DE3F81561BEF0E3F009EEFE7 /* MessageText.swift in Sources */,
 				DE702BC01C200636001C842D /* StudySearchController.swift in Sources */,
 				DE1181AB1BC1133C002794AE /* NowHereCell.swift in Sources */,
 				DEF170241BF72C2800F6E2EB /* BlankCell.swift in Sources */,
+				DE3E41591C78656F00EA95A0 /* NCMBIncrementOperation.m in Sources */,
+				DE3E41341C78656F00EA95A0 /* NCMBAnonymousUtils.m in Sources */,
+				DE3E41481C78656F00EA95A0 /* hmac.c in Sources */,
+				DE3E41431C78656F00EA95A0 /* NCMB_Twitter.m in Sources */,
+				DE3E41391C78656F00EA95A0 /* NCMBGoogleUtils.m in Sources */,
+				DE3E41441C78656F00EA95A0 /* NSMutableURLRequestParameters.m in Sources */,
 				DEFD84631BE91EF600DB169A /* HelpController.swift in Sources */,
+				DE3E413A1C78656F00EA95A0 /* NCMBInstallation.m in Sources */,
 				DE1181A71BC0F8EE002794AE /* VisitHistoryController.swift in Sources */,
+				DE3E41361C78656F00EA95A0 /* NCMBFacebookUtils.m in Sources */,
 				DEE796301BB45404005128DF /* ListStatus.swift in Sources */,
 				DEA5F1481C13B7DB0081B475 /* FeaturedPopupUnitController.swift in Sources */,
 				DE6C79361BBC536C00F1A6E9 /* TitleText.swift in Sources */,
+				DE3E414B1C78656F00EA95A0 /* NCMBOADataFetcher.m in Sources */,
+				DE3E41531C78656F00EA95A0 /* NCMBURLConnection.m in Sources */,
+				DE3E413B1C78656F00EA95A0 /* NCMBObject.m in Sources */,
 				DE083B601BCAA413000A35A7 /* CameraController.swift in Sources */,
 				DEE796031BB4232F005128DF /* ViewController.swift in Sources */,
+				DE3E415A1C78656F00EA95A0 /* NCMBRelationOperation.m in Sources */,
+				DE3E414C1C78656F00EA95A0 /* NCMBOAHMAC_SHA1SignatureProvider.m in Sources */,
 				DEE796371BB4578D005128DF /* ColorDefinition.swift in Sources */,
 				DEE7969E1BB6FDC6005128DF /* ProfileEditController.swift in Sources */,
 				DE488BA41C0004EF007F96B2 /* DetailRelateTableDefinition.swift in Sources */,
 				DEE796AB1BB70198005128DF /* ProfileTapCell.swift in Sources */,
 				DE3F81651BEF3CC2009EEFE7 /* IntroductionImageCell.swift in Sources */,
+				DE3E41301C78656F00EA95A0 /* NCMB.m in Sources */,
+				DE3E41551C78656F00EA95A0 /* NSDataBase64Encode.m in Sources */,
+				DE3E41541C78656F00EA95A0 /* NCMBUser.m in Sources */,
 				DEE796AF1BB701C5005128DF /* HistoryCell.swift in Sources */,
 				DE2AEE191C0CBCC90038B31A /* PortfolioCollectionViewCell.swift in Sources */,
 				DE3F818D1BEF417B009EEFE7 /* EventAndStudyCell.swift in Sources */,
@@ -941,16 +1307,26 @@
 				DEA09C661C1E873B006FF723 /* GourmetCell.swift in Sources */,
 				DEE796351BB4575A005128DF /* DeviceSize.swift in Sources */,
 				DEE796B31BB70228005128DF /* HistoryTappedCell.swift in Sources */,
+				DE3E41491C78656F00EA95A0 /* sha1.c in Sources */,
 				DE3F81501BEF0891009EEFE7 /* DetailTableDefinition.swift in Sources */,
 				DEE7969B1BB6FCDA005128DF /* BannerController.swift in Sources */,
+				DE3E41421C78656F00EA95A0 /* NCMBRole.m in Sources */,
+				DE3E413C1C78656F00EA95A0 /* NCMBPush.m in Sources */,
 				DE1181A51BC0F806002794AE /* NowHereController.swift in Sources */,
+				DE3E41471C78656F00EA95A0 /* Base64Transcoder.c in Sources */,
 				DE6C79321BBC211100F1A6E9 /* Validation.swift in Sources */,
+				DE3E41321C78656F00EA95A0 /* NCMBACL.m in Sources */,
 				DE57B7171C1E7233008F29F5 /* GourmetSearchController.swift in Sources */,
 				DEE796331BB456D9005128DF /* AnotherWindow.swift in Sources */,
+				DE3E41371C78656F00EA95A0 /* NCMBFile.m in Sources */,
+				DE3E415D1C78656F00EA95A0 /* SubClassHandler.m in Sources */,
 				DEE796391BB45F77005128DF /* ListController.swift in Sources */,
 				DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */,
+				DE3E414E1C78656F00EA95A0 /* NCMBOARequestParameter.m in Sources */,
 				DEC015851C671C6200161C9C /* StockSpace.swift in Sources */,
+				DE3E41561C78656F00EA95A0 /* NCMBAddOperation.m in Sources */,
 				DEE796941BB6F943005128DF /* NowOpenController.swift in Sources */,
+				DE3E413D1C78656F00EA95A0 /* NCMBQuery.m in Sources */,
 				DEE796A01BB6FE1F005128DF /* NowOpenDetailController.swift in Sources */,
 				DEA09C691C1EB7FB006FF723 /* GourmetStatus.swift in Sources */,
 				DE3F81711BEF3EE9009EEFE7 /* DetailButtonCell.swift in Sources */,
@@ -958,13 +1334,27 @@
 				DE779B011C08D89300E4978B /* PhotoPopupUnitController.swift in Sources */,
 				DEBA35F61C0A4088002D3C62 /* NowDetailTableCellDefintion.swift in Sources */,
 				DE702BC21C20A33F001C842D /* StudyAndEventStatus.swift in Sources */,
+				DE3E415C1C78656F00EA95A0 /* NCMBSetOperation.m in Sources */,
+				DE3E414F1C78656F00EA95A0 /* NCMBOAServiceTicket.m in Sources */,
+				DE3E413E1C78656F00EA95A0 /* NCMBReachability.m in Sources */,
 				DE4AF2A71C10968A0010FEFA /* PortfolioPopupUnitController.swift in Sources */,
 				DE3F81691BEF3D3E009EEFE7 /* IntroductionTextCell.swift in Sources */,
+				DE3E41451C78656F00EA95A0 /* NSStringURLEncoding.m in Sources */,
+				DE3E41401C78656F00EA95A0 /* NCMBCloseImageView.m in Sources */,
+				DE3E41411C78656F00EA95A0 /* NCMBRichPushView.m in Sources */,
+				DE3E413F1C78656F00EA95A0 /* NCMBRelation.m in Sources */,
 				DEC4D48F1C43944A0021557A /* HotelController.swift in Sources */,
 				DEEFE0BD1C55121600114AB1 /* LocationCell.swift in Sources */,
+				DE3E41521C78656F00EA95A0 /* NCMBTwitterUtils.m in Sources */,
 				DEC4D4961C43ECF40021557A /* TravelCell.swift in Sources */,
+				DE3E415B1C78656F00EA95A0 /* NCMBRemoveOperation.m in Sources */,
+				DE3E41501C78656F00EA95A0 /* NCMBOAToken.m in Sources */,
+				DE3E41571C78656F00EA95A0 /* NCMBAddUniqueOperation.m in Sources */,
 				DEE796A71BB70176005128DF /* ProfileNotTapCell.swift in Sources */,
 				DEE796B71BB7024B005128DF /* NowOpenCell.swift in Sources */,
+				DE3E414D1C78656F00EA95A0 /* NCMBOAMutableURLRequest.m in Sources */,
+				DE3E414A1C78656F00EA95A0 /* NCMBOAConsumer.m in Sources */,
+				DE3E41381C78656F00EA95A0 /* NCMBGeoPoint.m in Sources */,
 				DE3F81621BEF3AED009EEFE7 /* UserThumbController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1060,6 +1450,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(SRCROOT)/$(PROJECT)/goCoworkingSpaceReport-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1097,6 +1488,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(SRCROOT)/$(PROJECT)/goCoworkingSpaceReport-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
