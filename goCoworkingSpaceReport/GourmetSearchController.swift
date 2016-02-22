@@ -56,6 +56,8 @@ class GourmetSearchController: UIViewController, UITableViewDelegate, UITableVie
             CGFloat(DeviceSize.screenHeight() - 188)
         )
         
+        //API読み込み試験
+        self.reloadGourmetApiData(GourmetStatus.SelectGnavi)
     }
     
     override func viewDidLoad() {
@@ -174,7 +176,7 @@ class GourmetSearchController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     //テーブルビューをリロードする
-    func reloadData(){
+    func reloadData() {
         self.resultTableView.reloadData()
     }
     
@@ -203,6 +205,57 @@ class GourmetSearchController: UIViewController, UITableViewDelegate, UITableVie
     //---------- 3. APIデータのリロードの処理 ----------
     //Api取得データをリロードする
     func reloadGourmetApiData(status: GourmetStatus) {
+        
+        let gourmetUrlString = RelatedDataUri.GourmetDataUriTest.rawValue
+        
+        let url = NSURL(string: gourmetUrlString)!
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url,
+            completionHandler: { data, response, error in
+                
+                do {
+                    
+                    //JSONデータを辞書に変換する
+                    let json = try NSJSONSerialization.JSONObjectWithData(data!,
+                        options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                    
+                    //各々のデータを取得する
+                    let per_page: Int = Int((json.objectForKey("per_page") as? String)!)!
+                    print(per_page)
+                    
+                    let total: Int = Int((json.objectForKey("total") as? String)!)!
+                    print(total)
+
+                    let offset: Int = Int((json.objectForKey("offset") as? String)!)!
+                    print(offset)
+                    
+                    let shops: NSDictionary = (json.objectForKey("shop") as? NSDictionary)!
+                    print(shops)
+                    
+                    for shop in shops {
+                        
+                        //店舗情報データを取得する
+                        let shopDic: AnyObject = shop.value
+                        
+                        //例.名前を取得する場合
+                        let name: String = (shopDic.objectForKey("name") as? String)!
+                        print(name)
+                    }
+                    
+                } catch {
+                    
+                    //例外が飛んでしまった時の処理を記載
+                    
+                }
+                
+                //メインスレッドにスイッチする
+                dispatch_async(dispatch_get_main_queue(), {
+                    
+                    //テーブルビューを更新する
+                    self.reloadData()
+                    
+                }) //タスク完了時
+        })
+        task.resume()
         
     }
     

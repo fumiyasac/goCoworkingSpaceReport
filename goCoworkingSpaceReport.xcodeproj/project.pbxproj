@@ -61,6 +61,7 @@
 		DE3E415B1C78656F00EA95A0 /* NCMBRemoveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41241C78656F00EA95A0 /* NCMBRemoveOperation.m */; };
 		DE3E415C1C78656F00EA95A0 /* NCMBSetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41261C78656F00EA95A0 /* NCMBSetOperation.m */; };
 		DE3E415D1C78656F00EA95A0 /* SubClassHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E412F1C78656F00EA95A0 /* SubClassHandler.m */; };
+		DE3E41631C7995A300EA95A0 /* RelatedDataUri.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E41621C7995A300EA95A0 /* RelatedDataUri.swift */; };
 		DE3F81501BEF0891009EEFE7 /* DetailTableDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F814F1BEF0891009EEFE7 /* DetailTableDefinition.swift */; };
 		DE3F81561BEF0E3F009EEFE7 /* MessageText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */; };
 		DE3F81621BEF3AED009EEFE7 /* UserThumbController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F81611BEF3AEC009EEFE7 /* UserThumbController.swift */; };
@@ -294,6 +295,7 @@
 		DE3E412E1C78656F00EA95A0 /* SubClassHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubClassHandler.h; sourceTree = "<group>"; };
 		DE3E412F1C78656F00EA95A0 /* SubClassHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubClassHandler.m; sourceTree = "<group>"; };
 		DE3E41611C78947800EA95A0 /* goCoworkingSpaceReport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "goCoworkingSpaceReport-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE3E41621C7995A300EA95A0 /* RelatedDataUri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedDataUri.swift; sourceTree = "<group>"; };
 		DE3F814F1BEF0891009EEFE7 /* DetailTableDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableDefinition.swift; sourceTree = "<group>"; };
 		DE3F81551BEF0E3F009EEFE7 /* MessageText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageText.swift; sourceTree = "<group>"; };
 		DE3F81611BEF3AEC009EEFE7 /* UserThumbController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserThumbController.swift; sourceTree = "<group>"; };
@@ -419,7 +421,6 @@
 		DE083B021BC70F6F000A35A7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DE3E40C01C78656F00EA95A0 /* NCMB */,
 				DE3F81521BEF0C38009EEFE7 /* Realm */,
 			);
 			name = Models;
@@ -991,6 +992,7 @@
 		DEE7962E1BB44791005128DF /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				DE3E41621C7995A300EA95A0 /* RelatedDataUri.swift */,
 				DEE7962F1BB45404005128DF /* ListStatus.swift */,
 				DEE796321BB456D9005128DF /* AnotherWindow.swift */,
 				DE6C79331BBC519400F1A6E9 /* ColorStatus.swift */,
@@ -1007,6 +1009,7 @@
 		DEE796311BB45610005128DF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				DE3E40C01C78656F00EA95A0 /* NCMB */,
 				DEE796341BB4575A005128DF /* DeviceSize.swift */,
 				DEE796361BB4578D005128DF /* ColorDefinition.swift */,
 				DE6C79311BBC211100F1A6E9 /* Validation.swift */,
@@ -1321,6 +1324,7 @@
 				DE3E41371C78656F00EA95A0 /* NCMBFile.m in Sources */,
 				DE3E415D1C78656F00EA95A0 /* SubClassHandler.m in Sources */,
 				DEE796391BB45F77005128DF /* ListController.swift in Sources */,
+				DE3E41631C7995A300EA95A0 /* RelatedDataUri.swift in Sources */,
 				DEE796921BB6EFAD005128DF /* ProfileController.swift in Sources */,
 				DE3E414E1C78656F00EA95A0 /* NCMBOARequestParameter.m in Sources */,
 				DEC015851C671C6200161C9C /* StockSpace.swift in Sources */,
