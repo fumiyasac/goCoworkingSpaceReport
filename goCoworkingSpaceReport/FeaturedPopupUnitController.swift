@@ -157,7 +157,7 @@ class FeaturedPopupUnitController: UIViewController, UIScrollViewDelegate, UITex
             featuredButton.setTitleColor(ColorDefinition.colorWithHexString(ColorStatus.White.rawValue), forState: .Normal)
             featuredButton.setTitle("● 記事の詳細を見る", forState: .Normal)
             featuredButton.tag = i
-            featuredButton.addTarget(self, action: "featuredButtonTapped:", forControlEvents: .TouchUpInside)
+            featuredButton.addTarget(self, action: #selector(FeaturedPopupUnitController.featuredButtonTapped(_:)), forControlEvents: .TouchUpInside)
         }
         
     }

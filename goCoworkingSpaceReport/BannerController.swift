@@ -90,7 +90,7 @@ class BannerController: UIViewController,UIScrollViewDelegate {
             self.bannerScrollView.addSubview(bannerImageView)
         }
         
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(6.0, target: self, selector: Selector("scrollViewAnimation"), userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(6.0, target: self, selector: #selector(BannerController.scrollViewAnimation), userInfo: nil, repeats: true)
     }
     
     //スクロールを検知した際に行われる処理

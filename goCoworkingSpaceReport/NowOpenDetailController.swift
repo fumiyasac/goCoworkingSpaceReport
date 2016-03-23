@@ -80,7 +80,7 @@ class NowOpenDetailController: UIViewController, UINavigationControllerDelegate,
         self.navigationController?.navigationBar.titleTextAttributes = attrs
         
         //Buttonを設置
-        self.helpButton = UIBarButtonItem(title: "ヘルプ", style: .Plain, target: self, action: "onClickHelpButton:")
+        self.helpButton = UIBarButtonItem(title: "ヘルプ", style: .Plain, target: self, action: #selector(NowOpenDetailController.onClickHelpButton(_:)))
         self.navigationItem.title = ""
         self.navigationItem.rightBarButtonItem = self.helpButton
         
